@@ -15,6 +15,57 @@
 (function ($, Drupal, window, document, undefined) {
 
 
+$(document).ready(function() {
+  var $body = $('body');
+  var $w = $(window);
+
+
+  var $fpProjects = $('.view-id-projects.view-display-id-block');
+
+  if($fpProjects.length > 0) {
+    $fpProjects.find('.views-row').matchHeight();
+  }
+
+  /* ===== MEGAMENU ===== */
+  $('li.sf-depth-2', $sfMenu).matchHeight();
+
+  // DROPDOWN BACKGROUND -JUHANI
+  // remove the next mouseenter and mouseleave to remove dropdown bg
+  // navigation overlay fixes
+  var $sfMenu = $('#superfish-1');
+  var $innerModal = $('.nav-modal-inner');
+  var navHideInterval;
+
+  $('li.sf-depth-1', $sfMenu).mouseenter(function() {
+    var $t = $(this);
+    var $ddNav = $t.children('ul');
+
+    if($ddNav.length > 0) {
+      $ddNav.css('display', 'block');
+
+      // console.log($ddNav.height());
+      // calculate height for the gray modal
+      $innerModal.css('height', $ddNav.outerHeight() + 60); // 60 for bottom padding
+
+      $body.addClass('nav-dropdown-open');
+      clearInterval(navHideInterval);
+    }
+  }).mouseleave(function() {
+    var $t = $(this);
+    var $ddNav = $t.children('ul');
+
+    if($ddNav.is(':visible')) {
+      navHideInterval = setInterval(function() {
+        $body.removeClass('nav-dropdown-open');
+        clearInterval(navHideInterval);
+      }, 800);
+    } else {
+      $body.removeClass('nav-dropdown-open');
+    }
+
+  });
+});
+
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
@@ -32,42 +83,38 @@ Drupal.behaviors.my_custom_behavior = {
 	$(window).scroll(function() {
 
 	    if ($(this).scrollTop()>0)
-	     {
-	        $('.front .site-name').fadeOut();
-	     }
+	    {
+        $('.front .site-name').fadeOut();
+	    }
 	    else
-	     {
-	      $('.front .site-name').fadeIn();
-	     }
+	    {
+        $('.front .site-name').fadeIn();
+	   }
  	});
 
-  
+
     // var $window = $(window);
     // var $stickyShare = $('#block-block-10');
     //   var shareTop = ($stickyShare.offset().top) - 60;
     // $window.scroll(function() {
     //   if($(window).scrollTop() > shareTop){
-    //     $stickyShare.addClass('sticky');    
+    //     $stickyShare.addClass('sticky');
     //   }else{
-    //       $stickyShare.removeClass('sticky');          
+    //       $stickyShare.removeClass('sticky');
     //   }
     // });
 
  	/*
-      _        ____    ____   U  ___ u   ____     ____            U  ___ u  _   _    ____
-  U  /"\  u U /"___|U /"___|   \/"_ \/U |  _"\ u |  _"\    ___     \/"_ \/ | \ |"|  / __"| u
-   \/ _ \/  \| | u  \| | u     | | | | \| |_) |//| | | |  |_"_|    | | | |<|  \| |><\___ \/
-   / ___ \   | |/__  | |/__.-,_| |_| |  |  _ <  U| |_| |\  | | .-,_| |_| |U| |\  |u u___) |
-  /_/   \_\   \____|  \____|\_)-\___/   |_| \_\  |____/ uU/| |\u\_)-\___/  |_| \_|  |____/>>
-   \\    >>  _// \\  _// \\      \\     //   \\_  |||_.-,_|___|_,-.  \\    ||   \\,-.)(  (__)
-  (__)  (__)(__)(__)(__)(__)    (__)   (__)  (__)(__)_)\_)-' '-(_/  (__)   (_")  (_/(__)
+    Accordions
   */
   //Hide content
  	var accordionContainers = $('.accordion-container').hide();
 
   //add elements and roles for accessibility
-  var accordContent = jQuery3('.accordion-button').text();
-  jQuery3('.accordion-button').replaceWith('<button class="accordion-button">'+ accordContent + '</button>');
+  jQuery3('.accordion-button').each(function(i, obj) {
+    var accordContent = $(this).text();
+    $(this).replaceWith('<button class="accordion-button">'+ accordContent + '</button>');
+  });
   jQuery3('.accordion-button').attr({role: "button", "aria-expanded": "false", });
   jQuery3('.accordion-button').wrap("<div class='accordion-button-wrapper' role='heading' aria-level='3'> </div>");
   jQuery3('.accordion-container').wrap("<div role='region' aria-level='3'> </div>");
@@ -81,7 +128,7 @@ Drupal.behaviors.my_custom_behavior = {
   });
    var containercounter = 0;
   jQuery3('.accordion-container').each(function() {
-   
+
     $(this).addClass("accordion-container"+containercounter);
     $(this).attr("id", "accordioncontainer"+containercounter);
     containercounter++;
@@ -143,13 +190,13 @@ Drupal.behaviors.my_custom_behavior = {
           }
        }
     });
-    
+
     var API = jQuery3("#mobile-menu").data( "mmenu" );
 
     jQuery3(".mobile-menu-button").click(function() {
         if( !(jQuery3(this).hasClass('open-menu'))){
           API.close();
-      }     
+      }
       });
     /*
     U _____ u __  __    _____  U _____ u   ____     _   _       _       _            _                  _   _       _  __   ____
@@ -176,6 +223,8 @@ Drupal.behaviors.my_custom_behavior = {
     )(  (__).-,_|___|_,-.|||_   <<   >>      ||   \\,-.\\    >>  //
    (__)      \_)-' '-(_/(__)_) (__) (__)     (_")  (_/(__)  (__)(__)
   */
+  // jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li .active ul.menu").toggleClass("open");
+  jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li .active ul.menu").toggleClass("open");
   jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li").click(
     function($e){
       $e.stopPropagation();
@@ -294,6 +343,22 @@ Drupal.behaviors.my_custom_behavior = {
   var linkedinLink = "https://www.linkedin.com/shareArticle?mini=true&url=" + newsPage;
   jQuery3('.linkedin-link').attr("href", linkedinLink );
 
-   }}    
-})(jQuery, Drupal, this, this.document);
 
+  // jQuery( document ).ready(function() {
+    jQuery3('#tableau').append("<div class='tableauPlaceholder' id='viz1490664072387' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DomesticViolenceSA-DSD&#47;DomesticviolenceinSouthAustralia2015&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='DomesticViolenceSA-DSD&#47;DomesticviolenceinSouthAustralia2015' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DomesticViolenceSA-DSD&#47;DomesticviolenceinSouthAustralia2015&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1490664072387');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='944px';vizElement.style.height='950px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='1050px';} else { vizElement.style.width='100%';vizElement.style.height='1362px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>");
+  // });
+
+  //  prevent footer links
+  $('.menu-block-2 > ul > li > a').click(function(e) {
+    e.preventDefault();
+  });
+  //make tables stack on mobile
+  jQuery3('#content table').stacktable();
+
+  //Hide second menu in sidebar top/first region if both are showing
+  if(jQuery3('#block-menu-block-1').length > 0){
+    jQuery3('#block-menu-menu-footer-menu').hide();
+  }
+
+   }}
+})(jQuery, Drupal, this, this.document);

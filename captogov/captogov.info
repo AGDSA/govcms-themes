@@ -71,7 +71,9 @@ scripts[] = js/responsiveslides.min.js
 scripts[] = js/jquery-3.1.1.min.js
 scripts[] = plugins/mmenu/jquery.mmenu.all.min.js
 scripts[] = plugins/slick/slick.min.js
+scripts[] = plugins/stacktable/stacktable.js
 scripts[] = js/jquery-noconflict.js
+scripts[] = js/jquery.matchHeight.js
 scripts[] = js/script.js
 
 

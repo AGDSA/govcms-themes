@@ -1,4 +1,7 @@
 /* GOVCMS RESET */
+html{
+	font-size: 100%;
+}
 body{
 	background-color: #ffffff;
 }
@@ -86,6 +89,17 @@ div.toc-filter-back-to-top{
 .breadcrumb{
 	border-bottom: none;
 }
+
+a:visited{
+	color: inherit;
+}
+.toc-filter-back-to-top{
+	display: none;
+}
+.tabs-primary__tab-link{
+	@include font-size(14);
+}
+
 /* Clearfix */
 .clearfix:after {
   content: ".";

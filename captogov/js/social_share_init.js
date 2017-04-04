@@ -42,9 +42,14 @@ jQuery( document ).ready(function() {
     }    
     $window.scroll(function() {
       if(jQuery(window).scrollTop() > shareTop){
-        $stickyShare.addClass('sticky');    
+        var xpos = jQuery(window).width() - (jQuery('#content').offset().left + jQuery('#content').width());
+        $stickyShare.addClass('sticky');
+        $stickyShare.css({"right": xpos});   
       }else{
-          $stickyShare.removeClass('sticky');          
+          $stickyShare.removeClass('sticky');    
+          $stickyShare.css("right", "");
+
+      
       }
     });
 

@@ -20,6 +20,7 @@
 		$(window).load(function(){
 			var $href = $("#single-tweet-feed").find(".user a").attr("href");
 			$('#single-tweet-feed ul').append('<a href="'+$href+'" class="twitter-link button">View more on twitter</a>');
+			$('#single-tweet-feed').find("a").attr("target","_blank");
 		});
 	}
 	homepageTwitterFeed();

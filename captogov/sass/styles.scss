@@ -14,10 +14,10 @@
 
 /* ---------- Import base ---------- */
 @import 'base/mixins';
-@import 'base/typography';
 @import 'base/breakpoint';
 @import 'base/breakpoint-slicer';
 @import 'base/breakpoint-slicer-debug';
+@import 'base/typography';
 
 /* ---------- Import reset of govcms styles ---------- */
 @import 'design/govcms_reset';

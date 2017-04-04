@@ -12,8 +12,37 @@
    |____|              |_____|/      |____|         \|____||____|/  \|___|    | / |____| |____||____|  |____||____|       |____| |____|    |_____|/
      \(                   )/           \(              \(    )/       \( |____|/    \(     )/    \(      )/    \(           \(     )/         )/
       '                   '             '               '    '         '   )/        '     '      '      '      '            '     '          '
-                                                                           '
-*/
+	/* ICOMOON */
+	@font-face {
+	  font-family: 'icomoon';
+	  src:  url('../fonts/icomoon.eot?eo3vry');
+	  src:  url('../fonts/icomoon.eot?eo3vry#iefix') format('embedded-opentype'),
+	    url('../fonts/icomoon.ttf?eo3vry') format('truetype'),
+	    url('../fonts/icomoon.woff?eo3vry') format('woff'),
+	    url('../fonts/icomoon.svg?eo3vry#icomoon') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	@mixin font-icon($icon) {
+		/* use !important to prevent issues with browser extensions that change fonts */
+	  font-family: 'icomoon' !important;
+	  speak: none;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  line-height: 1;
+
+	  /* Better Font Rendering =========== */
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+
+		$space: ' ';
+		/*==== the icon ====*/
+		 content: $space$icon;
+	}
+	$icon-link-external: '\e900';
 /*
     //    / /
    //___ / /  ___      ___      ___   / ( )   __      ___      ___
@@ -33,11 +62,15 @@ h1{
     background-color:$light-bg-color;
 }
 h2{
+	@include font-size(30);
 	color: $primary-color-lighter;
+	margin-top: 50px;
 }
 h3{
+	@include font-size(24);
 	color: $darker-gray-text;
 }
+
 /*
 
      ______    ____             ______        ______  _______        ______  _____   ______   _________________      ______
@@ -54,6 +87,9 @@ h3{
    '    )/       '    '       '    )/         '          '         '    )/        '       '        '             '    '
         '                          '                                    '
 */
+p{
+	@include font-size(16);
+}
 a{
 	color: $primary-color-lighter;
 	&:hover{
@@ -66,13 +102,13 @@ a{
 }
 a.external{
 	&:after{
-		content:"";
-		display: inline-block;
-		width: 15px;
-		height: 15px;
-		background: no-repeat center url("../images/external-link-symbol.svg");
-		background-size: contain;
-		padding-left: 10px;
+		// content:"";
+		// display: inline-block;
+		// width: 15px;
+		// height: 15px;
+		// background: no-repeat center url("../images/external-link-symbol.svg");
+		// background-size: contain;
+		@include font-icon($icon-link-external);
 	}
 }
 hr{
@@ -106,6 +142,31 @@ div.important{
 	padding: 40px;
 	font-size: 1.3em;
 }
+table{
+	max-width: 100%;
+}
+table.small-only{
+	display: table;
+	margin: auto;
+	tr{
+		border: 1px solid #000;
+		td{
+			text-align: center;
+			border: 1px solid #000;
+		}
+	}
+}
+table.large-only{
+	display: none;
+}
+@include from('desktop-mid'){
+	table.small-only{
+		display: none;
+	}
+	table.large-only{
+		display: table;
+	}
+}
 
 .field-label{
 	font-size: 1.68em;
@@ -115,6 +176,13 @@ div.important{
     color: #143f88;
     font-weight: bold;
 }
+
+span.file{
+	img, a{
+		display: inline-block;
+	}
+}
+
 
 /*
 
@@ -149,6 +217,7 @@ div.important{
     background-color: #fff;
     width: 100%;
     text-align: left;
+		height: auto;
     &:before{
 	    content: "";
 	    font-size: 1em;
@@ -204,8 +273,9 @@ div.accordion-container{
                                                                    '                                                       '                                                               '
 */
 .toc-filter{
-	padding: 10px 0px;;
-	@include title-bar($secondary-color, before, 0); 
+	padding: 10px 0px;
+	border-bottom: 4px solid $primary-color;
+	@include title-bar($secondary-color, before, 0);
 	&:before{
 		left: 0;
 		transform: none;
@@ -217,21 +287,24 @@ div.accordion-container{
 		h3{
 			color: $primary-color-lighter;
 			font-weight: bold;
+			@include font-size(24);
 		}
 		ul{
 			margin-left: 0px;
 			li{
-				text-transform: uppercase;
 				list-style-type: none;
 				a{
-					color: $primary-color-lighter;	
+					color: $primary-color-lighter;
 					font-weight: bold;
-					text-decoration: none;
+					@include font-size(14);
 				}
 			}
 		}
 	}
 }
 
-
-
+.toc-bookmark{
+	display: block;
+	padding-top: 190px;
+    margin-top: -190px;
+}

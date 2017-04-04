@@ -7,12 +7,10 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
+<div class="nav-modal"><div class="nav-modal-inner"></div></div>
 <header class="header clearfix" id="header" role="banner">
   <div class="header__inner clearfix">
-    <?php if ($site_name) : ?>
-      <h1 class="site-name"><a href="<?php print $front_page; ?>" title="Go to <?php print $site_name; ?> homepage" rel="home"><?php print $site_name; ?></a></h1>
-    <?php endif; ?>
+      <h1 class="site-name">Attorney General's Department</h1>
     <?php
      if (($secondary_menu)): ?>
       <nav class="header__secondary-menu" id="secondary-menu" role="navigation">

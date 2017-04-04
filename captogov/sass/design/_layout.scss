@@ -44,9 +44,9 @@ body.navbar-administration {
     }
     .site-name {
         position: absolute;
-        bottom: -54px;
+        bottom: -50px;
         right: -999px;
-        padding: 8px 0px 15px 20px;
+        padding: 20px 0px 19px 24px;
         margin: 0;
         left: 40%;
         @include from(tablet-l) {
@@ -56,6 +56,10 @@ body.navbar-administration {
     .header__logo-image {
         padding-top: 5px;
         padding-left: 5px;
+        max-width: 310px; 
+        @include to(desktop-mid){    
+            max-width: 255px;
+        }
     }
 }
 .not-front .site-name{
@@ -81,38 +85,58 @@ body.navbar-administration {
 */
 
 // SIdebar layout
-body.not-front.node-type-page, body.not-front.node-type-project {
+body.not-front{
+    #content{
+        max-width: 1120px;
+        margin: auto;
+    }
+}
+body.node-type-news-article, 
+body.node-type-landing-page{
+    #main,
+    .breadcrumb{
+        max-width: 830px;
+        margin: auto;
+    }
+}
+body.not-front.node-type-page, body.not-front.node-type-project, body.page-search {
+    #main{
+        max-width: 1120px;
+        margin: auto;
+    }
     aside.sidebars {
         margin-bottom: 20px;
         section.region-sidebar-first {
             margin-bottom: 20px;
         }
     }
-    @include between(tablet-l, desktop-xl) {
-        $gutter-content: $jeet-gutter;
+    // @include from(tablet-l) {
+    //     $gutter-content: $jeet-gutter;
+    //     #content {
+    //         @include column(2/3, $gutter: $gutter-content);
+    //         @include move(1/3, $gutter: $gutter-content);
+    //     }
+    //     aside {
+    //         @include column(1/3, $gutter: $gutter-content);
+    //         @include move(-2/3, $gutter: $gutter-content);
+    //     }
+    // }
+    // //$gutter-content: 8;
+    @include from(desktop) {
+         $gutter-content: $jeet-gutter;
         #content {
-            @include column(2/3, $gutter: $gutter-content);
-            @include move(1/3, $gutter: $gutter-content);
+            @include column(5/8, $gutter: $gutter-content);
+            @include move(3/8, $gutter: $gutter-content);
         }
         aside {
-            @include column(1/3, $gutter: $gutter-content);
-            @include move(-2/3, $gutter: $gutter-content);
-        }
-    }
-    $gutter-content: 8;
-    @include from(desktop-xl) {
-        #content {
-            @include column(3/4, $gutter: $gutter-content);
-            @include move(1/4, $gutter: $gutter-content);
-        }
-        aside {
-            @include column(1/4, $gutter: $gutter-content);
-            @include move(-3/4, $gutter: $gutter-content);
+            @include column(3/8, $gutter: $gutter-content);
+            @include move(-5/8, $gutter: $gutter-content);
         }
     }
     @include from(desktop-xl) {
         #content {
-            padding-right: #{$gutter-content}%;
+            //padding-right: #{$gutter-content}%;
+            //padding-right:  calc((#{$gutter-content}%) * 2);
             /*
             // Virtual centering in grid size 
             width: calc(74.25% - (100% - #{$container-width} ) / 2  );
@@ -135,7 +159,7 @@ body.not-front.node-type-page, body.not-front.node-type-project {
         overflow: hidden;
         transition: all 1s ease;
         &.open {
-            max-height: 500px;
+            max-height: 2000px;
         }
     }
     .is-active-trail > ul.menu {
@@ -143,17 +167,15 @@ body.not-front.node-type-page, body.not-front.node-type-project {
     }
 }
 
-
-
-#block-menu-block-1 {
+#block-menu-block-1, #block-menu-menu-footer-menu {
     .block__content {
         padding: 0;
     }
-    .menu-block-1 {
+    .menu-block-1, .block__content {
         a {
             display: block;
-            padding: 25px 0px;
-            margin-right: 70px;
+            padding: 20px 0px;
+            margin-right: 50px;
         }
         & > ul.menu {
             & > li {
@@ -162,26 +184,30 @@ body.not-front.node-type-page, body.not-front.node-type-project {
             //top level
             & > li.is-active-trail {
                 display: block;
+                // ul.menu{
+                //     max-height: 500px;
+                //     display: block;
+                // }
                 & > a {
-                    padding-left: 35px;
+                    padding-left: 20px;
                 }
                 //second level
                 & > ul.menu {
                     & > li {
                         & > a {
-                            padding-left: 35px;
+                            padding-left: 20px;
                         }
                         //third level
                         & > ul.menu {
                             & > li {
                                 & > a {
-                                    padding-left: 60px;
+                                    padding-left: 40px;
                                 }
                                 //forth level
                                 & > ul.menu {
                                     & > li {
                                         a {
-                                            padding-left: 80px;
+                                            padding-left: 60px;
                                         }
                                     }
                                 }
@@ -223,7 +249,7 @@ body.not-front.node-type-page, body.not-front.node-type-project {
                     display: none;
                 }
                 //top level
-                & > li {
+                & > li.active-trail {
                     display: block;
                     & > a {
                         padding-left: 35px;
@@ -257,6 +283,11 @@ body.not-front.node-type-page, body.not-front.node-type-project {
         }
     }
 }
+
+
+
+
+
 /*
 
  ____   ____         _____         ______  _______        ______        _____          ____         _____         ______
@@ -279,7 +310,8 @@ body.not-front.node-type-page, body.not-front.node-type-project {
     .panels-flexible-region-inside {
         position: relative;
     }
-    .pane-search-api-page-default-search {
+    #panels-ipe-paneid-16,
+    .pane-search-api-page-search  {
         position: absolute;
         top: 0;
     }
@@ -308,7 +340,12 @@ body.not-front.node-type-page, body.not-front.node-type-project {
 
 //Homepage main content
 #main {
-    .pane-search-api-page-default-search, .search-form {
+    #panels-ipe-paneid-16,
+    .pane-search-api-page-search  {
+        width: 100%;
+        z-index: 10;
+    }
+    .search-form-widget {
         width: 100%;
         padding-top: 170px;
         padding-bottom: 350px;
@@ -316,7 +353,7 @@ body.not-front.node-type-page, body.not-front.node-type-project {
             padding-top: 300px;
             padding-bottom: 220px;
         }
-        .form-item-keys-1 {
+        .form-item-keys-2 {
             width: 85%;
             margin: auto;
             text-align: center;
@@ -331,7 +368,7 @@ body.not-front.node-type-page, body.not-front.node-type-project {
                 padding: 30px;
             }
         }
-        #edit-submit-1 {
+        #edit-submit-2 {
             position: absolute;
             right: 7%;
             top: 34.6%;
@@ -440,13 +477,14 @@ div.workbench-info-block{
         '                                                                                 '                 '
 */
 
-//card-view layout
+//card-view layout - Front page
+.front{
 #main {
     .card-view {
         width: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
-        margin-bottom: 15px;
+        margin-bottom: 40px;
         h2 {
             text-align: center;
             a{
@@ -456,10 +494,10 @@ div.workbench-info-block{
         .view,
         .card-wrapper {
             @extend .clearfix;
-            padding: 40px 40px 140px 40px;
+            padding: 40px 40px 40px 40px;
             position: relative;
             @include to(tablet-l) {
-                padding: 40px 0px 140px 0px;
+                padding: 40px 0px 40px 0px;
             }
             .more-link {
                 position: absolute;
@@ -474,7 +512,7 @@ div.workbench-info-block{
         .card-wrapper {
             max-width: 1120px;
             margin: auto;
-            .views-row > .view-mode-compact.node-page {
+            .views-row > .view-mode-compact.node-page, .views-row > .view-mode-compact.node-project, .views-row > .view-mode-compact.node-landing-page  {
                 float: none;
                 clear: none;
                 text-align: inherit;
@@ -483,11 +521,13 @@ div.workbench-info-block{
                 margin-right: 0;
             }
             .views-row,
-            .view-mode-compact.node-page {
-                @include column(1/4, $gutter: 5, $cycle: 4);
+            .view-mode-compact.node-page,
+            .view-mode-compact.node-project,
+            .view-mode-compact.node-landing-page{
+                @include column(1/4, $gutter: 3, $cycle: 4);
                 min-height: 410px;
                 position: relative;
-                margin-bottom: 15px;
+                margin-bottom: 30px;
                 @include to(tablet-l) {
                     margin-right: 0.25% !important;
                     clear: none !important;
@@ -514,24 +554,26 @@ div.workbench-info-block{
                 .field-name-title{
                     margin: 0; 
                     a {
-                        padding-bottom: 16px;
+                        padding-bottom: 19px;
                     }
                 } 
                 .field-name-body,
-                .field-name-field-summary {
+                .field-name-field-summary,
+                .field-type-text-long {
                     height: 100px;
                     overflow: hidden;
                     margin-bottom: 50px;
                 }
                 .field-name-node-link {
                     position: absolute;
-                    bottom: 20px;
-                    left: 15px;
+                    bottom: 24px;
+                    left: 16px;
                     margin: 0;
                 }
                 .field-name-body,
                 .field-name-title,
-                .field-name-field-summary {
+                .field-name-field-summary,
+                .field-type-text-long {
                     padding-right: 18px;
                     padding-left: 18px;
                 }
@@ -539,6 +581,114 @@ div.workbench-info-block{
         }
     }
 }
+}
+
+//Card-view layout - Not front
+.not-front{
+    #main {
+        .card-view {
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            h2 {
+                text-align: center;
+                a{
+                    display: block;
+                }
+            }
+            .view,
+            .card-wrapper {
+                @extend .clearfix;
+                padding: 40px 40px 40px 40px;
+                position: relative;
+                @include to(tablet-l) {
+                    padding: 40px 0px 40px 0px;
+                }
+                .more-link {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    margin-bottom: 40px;
+                    min-width: 200px;
+                }
+            }
+            .view-content,
+            .card-wrapper {
+                max-width: 1120px;
+                margin: auto;
+                .views-row > .view-mode-compact.node-page, .views-row > .view-mode-compact.node-project, .views-row > .view-mode-compact.node-landing-page  {
+                    float: none;
+                    clear: none;
+                    text-align: inherit;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .views-row,
+                .view-mode-compact.node-page,
+                .view-mode-compact.node-project,
+                .view-mode-compact.node-landing-page{
+                    @include column(1/3, $gutter: 4, $cycle: 3);
+                    min-height: 410px;
+                    position: relative;
+                    margin-bottom: 30px;
+                    @include to(tablet-l) {
+                        margin-right: 0.25% !important;
+                        clear: none !important;
+                        float: left !important;
+                    }
+                    &.slick-slide {
+                        width: 250px;
+                    }
+                    .contextual-links-region {
+                        position: initial;
+                    }
+                    h2 {
+                        margin-top: 0;
+                        text-align: left;
+                        margin-bottom: 0;
+                    }
+                    .field-type-image a {
+                        margin-bottom: 20px;
+                        display: block;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .field-name-title{
+                        margin: 0; 
+                        a {
+                            padding-bottom: 19px;
+                        }
+                    } 
+                    .field-name-body,
+                    .field-name-field-summary,
+                    .field-type-text-long {
+                        height: 100px;
+                        overflow: hidden;
+                        margin-bottom: 50px;
+                    }
+                    .field-name-node-link {
+                        position: absolute;
+                        bottom: 24px;
+                        left: 16px;
+                        margin: 0;
+                    }
+                    .field-name-body,
+                    .field-name-title,
+                    .field-name-field-summary,
+                    .field-type-text-long {
+                        padding-right: 18px;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 /*
@@ -583,8 +733,11 @@ div.workbench-info-block{
                         margin-top: 0px;
                         margin-bottom: 0px;
                     }
+                    h2{
+                        margin-top: 0px;
+                    }
                     .node {
-                        padding: 35px;
+                        padding: 45px;
                         height: 100%;
                     }
                     .field-name-body {
@@ -784,12 +937,18 @@ pages with constrained content
     }
 }
 
-//Search
-#main{
-        #content{
-        .search-form{
+//Search Results
+.page-search{
+    .banner-wrapper{
+        margin-bottom: 40px;
+    }
+    .breadcrumb{
+        display: none;
+    }
+    #content{
+        #search-api-page-search-form{
             @extend .clearfix;
-            box-shadow: -5px -5px 97px -7px $primary-gray-text;
+            box-shadow: 0px 0px 33px 0px $primary-gray-text;
             border: none;
             padding-top: 0;
             padding-bottom: 0;
@@ -798,37 +957,112 @@ pages with constrained content
             position: relative;
             margin-top: 60px;
             margin-bottom: 50px;
-            .form-item-keys-1{
+            .form-item-keys-2{
                 width: 100%;
+                margin: 0;
                 @extend .clearfix;
                 label{
                     display: none;
                 }
                 input{
-                    width: 100%;
+                    width: calc(100% - 60px;);
                     margin-top: 0px;
-
+                    border: none;
+                    background-color: #fff;
+                    color: $primary-color;
+                    font-weight: bold;
+                    padding: 30px 20px;
+                    @include from(tablet-l){
+                        padding: 30px;
+                    }
                 }
             }
-            #edit-submit-1{
+            #edit-submit-2{
                 position: absolute;
                 top: 0;
                 right: 0;
                 transform: none;
+                background: #c6003c url(../images/search.png) no-repeat center center;
+                font-size: 0px;
+                width: 60px;
+                height: 60px;
             }
         }
         .search-api-page-results{
-            h2{
-                margin-top: 10px;
-                padding-top: 20px;
-                @include title-bar($secondary-color, before, 0px)
+            .search-performance{
+                @include font-size($h2_font_size);
+                color: $primary-color-lighter;
+                padding-top: 30px;
+                margin-bottom: 40px;
+                @include title-bar($secondary-color, before, 0px);
                 &:before{
-                    left: 0;
-                    transform: none;
+                    left: 25px;
                 }
+            }
+            & > h2{
+                display: none;
             }
             .search-results{
                 padding-left: 0;
+                padding-top: 40px;
+                border-top: 6px solid $primary-color;
+                .node{
+                    border-bottom: 1px solid $primary-gray;
+                    margin-bottom: 40px;
+                    .field-name-title{
+                        a{
+                            text-decoration: none;
+                        }
+                    }  
+                    .field-name-node-link{
+                        margin-bottom: 40px;
+                        a{
+                            text-decoration: none;
+                            color: #c6003c;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            @include  font-size(12);
+                            padding: 8px 12px;
+                            border: 2px solid $secondary-color;
+                            letter-spacing: 1px;
+                            transition: 0.3s all ease-in-out;
+                            &:hover{
+                                background-color: #c6003c;
+                                color: #fff;
+                            }
+                        }
+                    }  
+                }
+            }
+            .pager{
+                background-color: #ffffff;
+                border: none;
+                padding-top: 0;
+                li.pager-item{
+                    background: none;
+                    a{
+                        color: $text-color;
+                        text-decoration: none;
+                        font-weight: normal;
+                    }
+                }
+                li.pager-current{
+                    @include font-size(24);
+                    color: $secondary-color;
+                    background: none;
+                    border-bottom: 4px solid $secondary-color;
+                    padding-bottom: 10px;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    margin: 0px 8px;
+                }
+                .pager-ellipsis,
+                .pager-next,
+                .pager-last,
+                .pager-previous,
+                .pager-first{
+                    display: none;
+                }
             }
         }
     }
@@ -908,17 +1142,23 @@ pages with constrained content
 .node-type-news-article{
     #content{
         position: relative;
+        div.node{
+            margin-right: 40px;
+        }
         #block-block-10{
             position: absolute;
             top: 0;
-            right: -80px;
+            right: 0px;
             &.sticky{
                 position: fixed;
-                top: 200px;
-                right: 50px;
+                top: 85px;
+                // right: 20px;
             }
         }
 
     }
 }
-
+//back to newsroom link
+#main #content #block-block-11{
+    margin-bottom: 40px;
+}

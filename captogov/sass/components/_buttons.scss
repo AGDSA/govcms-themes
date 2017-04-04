@@ -34,3 +34,14 @@ input[type=submit]:hover,
   color: #fff;
   text-decoration: none;
 }
+
+.button > a.external,
+a.button.external{
+  &:after{
+    // content:none;
+        border: none;
+    transform: none;
+        width: 15px;
+    height: 15px;
+  }
+}
