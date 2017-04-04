@@ -358,7 +358,7 @@ Drupal.behaviors.my_custom_behavior = {
   jQuery3('#content table').stacktable();
 
   //Hide second menu in sidebar top/first region if both are showing
-  if(jQuery3('#block-menu-block-1').length > 0){
+  if(jQuery3('#block-menu-block-1 .active').length > 0){
     jQuery3('#block-menu-menu-footer-menu').hide();
   }
 

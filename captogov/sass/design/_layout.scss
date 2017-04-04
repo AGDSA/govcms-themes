@@ -39,6 +39,7 @@ body.navbar-administration {
 //header
 .header__inner {
     position: relative;
+    min-height: 87px;
     .header__region {
         width: 72%;
     }
@@ -365,7 +366,8 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
             }
             input {
                 width: 100%;
-                padding: 30px;
+                min-height: 60px;
+                padding-left: 30px;
             }
         }
         #edit-submit-2 {
@@ -749,7 +751,7 @@ div.workbench-info-block{
                 }
             }
             .more-link {
-                min-width: 210px;
+                min-width: 225px;
                 position: absolute;
                 left: 50%;
                 bottom: 0;
@@ -780,8 +782,8 @@ div.workbench-info-block{
 */
 
 #mobile-menu {
-    top: 93px;
-        box-shadow: 0 0 10px black;
+    top: 71px;
+    box-shadow: 0 0 10px black;
     .region-mobile-menu {
         height: 100vh;
         // padding-right: 135px;
@@ -971,10 +973,8 @@ pages with constrained content
                     background-color: #fff;
                     color: $primary-color;
                     font-weight: bold;
-                    padding: 30px 20px;
-                    @include from(tablet-l){
-                        padding: 30px;
-                    }
+                    min-height: 60px;
+                    padding-left: 30px;
                 }
             }
             #edit-submit-2{
