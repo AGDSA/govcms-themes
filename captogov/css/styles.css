@@ -232,8 +232,8 @@ span.file img, span.file a {
 
 .accordion-button {
   padding: 25px 35px;
-  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #e4e4e3;
+  border-bottom: 1px solid #e4e4e3;
   display: block;
   position: relative;
   color: #818285;
@@ -275,8 +275,8 @@ span.file img, span.file a {
 
 div.accordion-container {
   padding: 25px 35px;
-  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #e4e4e3;
+  border-bottom: 1px solid #e4e4e3;
   color: #002056;
   font-size: 1.2em; }
 
@@ -1062,12 +1062,12 @@ header.header {
     position: relative; }
     @media (min-width: 961px) {
       #single-tweet-feed ul {
-        height: 160px; } }
+        height: 150px; } }
     #single-tweet-feed ul:before {
       content: "";
       display: block;
       float: left;
-      height: 156px;
+      height: 146px;
       width: 85px;
       border-right: 2px solid #CDCDCD;
       background: url(../images/twitter.png) no-repeat center center;
@@ -1242,6 +1242,7 @@ footer {
   .page-bottom-wrapper .region-bottom {
     padding: 30px 0; }
     .page-bottom-wrapper .region-bottom #block-block-2 {
+      float: right;
       width: 340px;
       position: relative;
       margin: auto;
@@ -1264,6 +1265,8 @@ footer {
         transform: translatey(-63%); }
         .page-bottom-wrapper .region-bottom #block-block-2 .block__content a:nth-child(2) {
           left: 50%; }
+      .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-gov-au-logo {
+        padding-top: 20px; }
     .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu {
       width: 100%;
       display: inline-block;
@@ -1273,7 +1276,7 @@ footer {
       @media (min-width: 769px) {
         .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu {
           width: 46%;
-          padding: 0 15px 16px 15px; } }
+          padding: 0px 15px 16px 0px; } }
       .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li {
         float: left;
         clear: none;
@@ -1389,9 +1392,13 @@ footer {
     color: #002056; }
 
 .node-type-page .field-name-field-summary {
-  margin: 30px 0; }
+  margin: 30px 0;
+  font-size: 20px;
+  font-size: 1.25rem; }
   .node-type-page .field-name-field-summary p {
-    font-style: italic; }
+    font-style: italic;
+    font-size: 20px;
+    font-size: 1.25rem; }
 
 .node-type-page #block-views-banner-image-top-block .block__content,
 .node-type-news-article #block-views-banner-image-top-block .block__content,
@@ -1440,7 +1447,7 @@ footer {
     z-index: 100; }
 
 .field-type-file .file {
-  border: 1px solid #F8F7F7;
+  border: 1px solid #e4e4e3;
   padding: 20px;
   margin: 10px;
   display: block;
@@ -1711,13 +1718,15 @@ body.not-front #page #main aside.sidebars a.active {
   #main .field-name-field-reference .field-name-node-link {
     display: none; }
   #main .field-name-field-reference div.node {
-    border: 1px solid #F8F7F7;
-    padding: 20px;
+    border: 1px solid #e4e4e3;
+    padding: 15px 40px;
     margin: 10px;
     display: block;
     margin: 5px 0px; }
+    #main .field-name-field-reference div.node .field-name-title {
+      margin: 0; }
     #main .field-name-field-reference div.node h2 {
-      margin: none; }
+      margin: 0; }
     #main .field-name-field-reference div.node a {
       font-size: 16px;
       font-size: 1rem;
@@ -1798,8 +1807,13 @@ body.not-front #page #main aside.sidebars a.active {
         background-color: #fff;
         color: #142b69; }
 
-.node-type-project #main .field-name-field-cta-buttons .field-item a:after {
-  content: none !important; }
+.node-type-project #main .field-name-field-cta-buttons .field-item a {
+  padding: 15px 10px !important;
+  letter-spacing: initial !important;
+  font-size: 13px;
+  font-size: 0.8125rem; }
+  .node-type-project #main .field-name-field-cta-buttons .field-item a:after {
+    content: none !important; }
 
 #block-webform-client-block-22 {
   padding: 40px 0px; }
@@ -2395,7 +2409,7 @@ body.not-front.node-type-page aside.sidebars, body.not-front.node-type-project a
     width: auto; }
 
 #page {
-  margin-top: 87px; }
+  margin-top: 95px; }
 
 #main #panels-ipe-paneid-16,
 #main .pane-search-api-page-search {
@@ -3438,6 +3452,8 @@ pages with constrained content
           clear: both; }
         .node-type-project .field-name-field-cta-buttons .field-item:last-child {
           margin-right: 0%; } }
+    .node-type-project .field-name-field-cta-buttons .field-item a {
+      width: 100%; }
 
 .node-type-news-article #content {
   position: relative; }
@@ -3452,6 +3468,9 @@ pages with constrained content
       top: 85px; }
 
 #main #content #block-block-11 {
+  margin-bottom: 40px; }
+
+.webform-client-form {
   margin-bottom: 40px; }
 
 /* ---------- Components ---------- 
@@ -3531,5 +3550,9 @@ a.button.external:after,
   transform: none;
   width: 15px;
   height: 15px; }
+
+.node-type-webform input[value=Upload] {
+  font-size: 13px;
+  font-size: 0.8125rem; }
 
 /*# sourceMappingURL=styles.css.map */

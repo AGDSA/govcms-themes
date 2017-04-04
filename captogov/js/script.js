@@ -223,8 +223,10 @@ Drupal.behaviors.my_custom_behavior = {
     )(  (__).-,_|___|_,-.|||_   <<   >>      ||   \\,-.\\    >>  //
    (__)      \_)-' '-(_/(__)_) (__) (__)     (_")  (_/(__)  (__)(__)
   */
-  // jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li .active ul.menu").toggleClass("open");
-  jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li .active ul.menu").toggleClass("open");
+  //Open current page's menu iten by default
+  jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li .active > ul.menu").toggleClass("open");
+  jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li.is-active").toggleClass("is-open");
+  //Toggle classes on click to show children
   jQuery3("#block-menu-block-1 .menu-block-1 > ul.menu li").click(
     function($e){
       $e.stopPropagation();

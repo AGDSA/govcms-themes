@@ -715,13 +715,13 @@ header.header {
         border: 2px solid #CDCDCD;
         position: relative;
         @include from(desktop) {
-            height: 160px;
+            height: 150px;
         }
         &:before {
             content: "";
             display: block;
             float: left;
-            height: 156px;
+            height: 146px;
             width: 85px;
             border-right: 2px solid #CDCDCD;
             background: url(../images/twitter.png) no-repeat center center;
@@ -896,6 +896,7 @@ footer {
     .region-bottom {
         padding: 30px 0;
         #block-block-2 {
+            float: right;
             width: 340px;
             position: relative;
             margin: auto;
@@ -920,7 +921,9 @@ footer {
 								}
 							}
 							.sa-logo {}
-							.sa-gov-au-logo {		}
+						.sa-gov-au-logo {	
+                            padding-top: 20px;	
+                        }
             }
         }
         #block-menu-menu-footer-sub-menu {
@@ -930,7 +933,7 @@ footer {
             @include font-size(14);
             @include from(tablet-l) {
                 width: 46%;
-                padding: 0 15px 16px 15px;
+                padding: 0px 15px 16px 0px;
                 // @include font-size(18);
             }
             li {
@@ -1044,8 +1047,10 @@ footer {
 
 .node-type-page .field-name-field-summary {
     margin: 30px 0;
+    @include font-size(20);
     p {
         font-style: italic;
+        @include font-size(20);
     }
 }
 .node-type-page,
@@ -1104,7 +1109,7 @@ footer {
 }
 
 .field-type-file .file {
-    border: 1px solid $light-bg-color;
+    border: 1px solid $primary-gray;
     padding: 20px;
     margin: 10px;
     display: block;
@@ -1381,13 +1386,16 @@ body.not-front #page #main aside.sidebars {
             display: none;
         }
         div.node{
-            border: 1px solid $light-bg-color;
-            padding: 20px;
+            border: 1px solid $primary-gray;
+            padding: 15px 40px;
             margin: 10px;
             display: block;
             margin: 5px 0px;
+            .field-name-title{
+                margin: 0;
+            }
             h2{
-                margin: none;
+                margin: 0;
             }
                 a {
                 @include font-size(16);
@@ -1490,8 +1498,13 @@ body.not-front #page #main aside.sidebars {
         .field-name-field-cta-buttons{
             .field-item{
                 @extend .button;
-                a:after{
-                    content: none !important;
+                a{
+                    padding: 15px 10px !important;
+                    letter-spacing: initial !important;
+                    @include font-size($base-font-size);
+                    &:after{
+                        content: none !important;
+                    }
                 }
             }
         }

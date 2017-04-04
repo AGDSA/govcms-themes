@@ -45,3 +45,7 @@ a.button.external{
     height: 15px;
   }
 }
+
+.node-type-webform input[value=Upload] {
+  @include font-size($base-font-size);
+}

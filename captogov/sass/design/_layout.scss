@@ -335,7 +335,7 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
 }
 
 #page {
-    margin-top: 87px;
+    margin-top: 95px;
 }
 
 //Homepage main content
@@ -1135,6 +1135,9 @@ pages with constrained content
                 @include column(1/6);
                 text-align: center;
             }
+            a{
+                width: 100%;
+            }
         }
     }
 }
@@ -1160,5 +1163,10 @@ pages with constrained content
 }
 //back to newsroom link
 #main #content #block-block-11{
+    margin-bottom: 40px;
+}
+
+//margin under all webforms
+.webform-client-form{
     margin-bottom: 40px;
 }
