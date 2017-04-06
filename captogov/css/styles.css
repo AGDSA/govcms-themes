@@ -3619,7 +3619,8 @@ pages with constrained content
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    display: inline-block; }
+    display: inline-block;
+    margin-right: 20px; }
     .node-type-project .field-name-field-cta-buttons .field-item a {
       width: 100%; }
 
