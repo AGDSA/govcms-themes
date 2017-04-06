@@ -239,6 +239,7 @@ Drupal.behaviors.my_custom_behavior = {
     //Landing page slick slider
   jQuery3('.card-wrapper').slick({
     mobileFirst: true,
+    accessibility: true,
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 1,
@@ -362,5 +363,8 @@ Drupal.behaviors.my_custom_behavior = {
     jQuery3('#block-menu-menu-footer-menu').hide();
   }
 
+    //Add text for accessibility
+  jQuery3('.mm-next').text('See pages in this section');
+  jQuery3('.mm-prev').text('See the previous sections');
    }}
 })(jQuery, Drupal, this, this.document);

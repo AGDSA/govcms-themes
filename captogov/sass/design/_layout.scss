@@ -57,13 +57,14 @@ body.navbar-administration {
     .header__logo-image {
         padding-top: 5px;
         padding-left: 5px;
-        max-width: 310px; 
-        @include to(desktop-mid){    
+        max-width: 310px;
+        @include to(desktop-mid) {
             max-width: 255px;
         }
     }
 }
-.not-front .site-name{
+
+.not-front .site-name {
     display: none;
 }
 
@@ -86,22 +87,26 @@ body.navbar-administration {
 */
 
 // SIdebar layout
-body.not-front{
-    #content{
+body.not-front {
+    #content {
         max-width: 1120px;
         margin: auto;
     }
 }
-body.node-type-news-article, 
-body.node-type-landing-page{
+
+body.node-type-news-article,
+body.node-type-landing-page {
     #main,
-    .breadcrumb{
+    .breadcrumb {
         max-width: 830px;
         margin: auto;
     }
 }
-body.not-front.node-type-page, body.not-front.node-type-project, body.page-search {
-    #main{
+
+body.not-front.node-type-page,
+body.not-front.node-type-project,
+body.page-search {
+    #main {
         max-width: 1120px;
         margin: auto;
     }
@@ -124,7 +129,7 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
     // }
     // //$gutter-content: 8;
     @include from(desktop) {
-         $gutter-content: $jeet-gutter;
+        $gutter-content: $jeet-gutter;
         #content {
             @include column(5/8, $gutter: $gutter-content);
             @include move(3/8, $gutter: $gutter-content);
@@ -168,11 +173,13 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
     }
 }
 
-#block-menu-block-1, #block-menu-menu-footer-menu {
+#block-menu-block-1,
+#block-menu-menu-footer-menu {
     .block__content {
         padding: 0;
     }
-    .menu-block-1, .block__content {
+    .menu-block-1,
+    .block__content {
         a {
             display: block;
             padding: 20px 0px;
@@ -220,7 +227,8 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
         }
     }
 }
-.node-type-project{
+
+.node-type-project {
     #block-menu-block-1 .menu-block-1 > ul.menu > li > ul.menu {
         .is-expanded ul.menu,
         li > ul.menu {
@@ -234,7 +242,7 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
         .is-active-trail > ul.menu {
             max-height: 500px;
         }
-    }    
+    }
     #block-menu-block-1 {
         .block__content {
             padding: 0;
@@ -286,9 +294,6 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
 }
 
 
-
-
-
 /*
 
  ____   ____         _____         ______  _______        ______        _____          ____         _____         ______
@@ -312,7 +317,7 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
         position: relative;
     }
     #panels-ipe-paneid-16,
-    .pane-search-api-page-search  {
+    .pane-search-api-page-search {
         position: absolute;
         top: 0;
     }
@@ -342,7 +347,7 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
 //Homepage main content
 #main {
     #panels-ipe-paneid-16,
-    .pane-search-api-page-search  {
+    .pane-search-api-page-search {
         width: 100%;
         z-index: 10;
     }
@@ -398,7 +403,8 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
     max-width: $container-width;
     margin: 0 auto;
 }
-.messages{
+
+.messages {
     margin-bottom: 15px;
 }
 
@@ -447,7 +453,7 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
 
 .not-front #content {
     margin-bottom: 40px;
-    @include to(desktop){
+    @include to(desktop) {
         padding: 0px 15px;
     }
     .field {
@@ -457,7 +463,8 @@ body.not-front.node-type-page, body.not-front.node-type-project, body.page-searc
         margin-top: 0px;
     }
 }
-div.workbench-info-block{
+
+div.workbench-info-block {
     margin: 15px 0;
 }
 
@@ -480,113 +487,7 @@ div.workbench-info-block{
 */
 
 //card-view layout - Front page
-.front{
-#main {
-    .card-view {
-        width: 100%;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        margin-bottom: 40px;
-        h2 {
-            text-align: center;
-            a{
-                display: block;
-            }
-        }
-        .view,
-        .card-wrapper {
-            @extend .clearfix;
-            padding: 40px 40px 40px 40px;
-            position: relative;
-            @include to(tablet-l) {
-                padding: 40px 0px 40px 0px;
-            }
-            .more-link {
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                transform: translateX(-50%);
-                margin-bottom: 40px;
-                min-width: 200px;
-            }
-        }
-        .view-content,
-        .card-wrapper {
-            max-width: 1120px;
-            margin: auto;
-            .views-row > .view-mode-compact.node-page, .views-row > .view-mode-compact.node-project, .views-row > .view-mode-compact.node-landing-page  {
-                float: none;
-                clear: none;
-                text-align: inherit;
-                width: 100%;
-                margin-left: 0;
-                margin-right: 0;
-            }
-            .views-row,
-            .view-mode-compact.node-page,
-            .view-mode-compact.node-project,
-            .view-mode-compact.node-landing-page{
-                @include column(1/4, $gutter: 3, $cycle: 4);
-                min-height: 410px;
-                position: relative;
-                margin-bottom: 30px;
-                @include to(tablet-l) {
-                    margin-right: 0.25% !important;
-                    clear: none !important;
-                    float: left !important;
-                }
-                &.slick-slide {
-                    width: 250px;
-                }
-                .contextual-links-region {
-                    position: initial;
-                }
-                h2 {
-                    margin-top: 0;
-                    text-align: left;
-                    margin-bottom: 0;
-                }
-                .field-type-image a {
-                    margin-bottom: 20px;
-                    display: block;
-                    img {
-                        width: 100%;
-                    }
-                }
-                .field-name-title{
-                    margin: 0; 
-                    a {
-                        padding-bottom: 19px;
-                    }
-                } 
-                .field-name-body,
-                .field-name-field-summary,
-                .field-type-text-long {
-                    height: 100px;
-                    overflow: hidden;
-                    margin-bottom: 50px;
-                }
-                .field-name-node-link {
-                    position: absolute;
-                    bottom: 24px;
-                    left: 16px;
-                    margin: 0;
-                }
-                .field-name-body,
-                .field-name-title,
-                .field-name-field-summary,
-                .field-type-text-long {
-                    padding-right: 18px;
-                    padding-left: 18px;
-                }
-            }
-        }
-    }
-}
-}
-
-//Card-view layout - Not front
-.not-front{
+.front {
     #main {
         .card-view {
             width: 100%;
@@ -595,7 +496,7 @@ div.workbench-info-block{
             margin-bottom: 40px;
             h2 {
                 text-align: center;
-                a{
+                a {
                     display: block;
                 }
             }
@@ -620,7 +521,10 @@ div.workbench-info-block{
             .card-wrapper {
                 max-width: 1120px;
                 margin: auto;
-                .views-row > .view-mode-compact.node-page, .views-row > .view-mode-compact.node-project, .views-row > .view-mode-compact.node-landing-page  {
+                .views-row > .view-mode-compact.node-page,
+                .views-row > .view-mode-compact.node-project,
+                .views-row > .view-mode-compact.node-landing-page,
+                .views-row > .view-mode-compact.node-webform {
                     float: none;
                     clear: none;
                     text-align: inherit;
@@ -631,7 +535,118 @@ div.workbench-info-block{
                 .views-row,
                 .view-mode-compact.node-page,
                 .view-mode-compact.node-project,
-                .view-mode-compact.node-landing-page{
+                .view-mode-compact.node-landing-page,
+                .view-mode-compact.node-webform {
+                    @include column(1/4, $gutter: 3, $cycle: 4);
+                    min-height: 410px;
+                    position: relative;
+                    margin-bottom: 30px;
+                    @include to(tablet-l) {
+                        margin-right: 0.25% !important;
+                        clear: none !important;
+                        float: left !important;
+                    }
+                    &.slick-slide {
+                        width: 250px;
+                    }
+                    .contextual-links-region {
+                        position: initial;
+                    }
+                    h2 {
+                        margin-top: 0;
+                        text-align: left;
+                        margin-bottom: 0;
+                    }
+                    .field-type-image a {
+                        margin-bottom: 20px;
+                        display: block;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .field-name-title {
+                        margin: 0;
+                        a {
+                            padding-bottom: 19px;
+                        }
+                    }
+                    .field-name-body,
+                    .field-name-field-summary,
+                    .field-type-text-long {
+                        height: 100px;
+                        overflow: hidden;
+                        margin-bottom: 50px;
+                    }
+                    .field-name-node-link {
+                        position: absolute;
+                        bottom: 24px;
+                        left: 16px;
+                        margin: 0;
+                    }
+                    .field-name-body,
+                    .field-name-title,
+                    .field-name-field-summary,
+                    .field-type-text-long {
+                        padding-right: 18px;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Card-view layout - Not front
+.not-front {
+    #main {
+        .card-view {
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            h2 {
+                text-align: center;
+                a {
+                    display: block;
+                }
+            }
+            .view,
+            .card-wrapper {
+                @extend .clearfix;
+                padding: 40px 40px 40px 40px;
+                position: relative;
+                @include to(tablet-l) {
+                    padding: 40px 0px 40px 0px;
+                }
+                .more-link {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    margin-bottom: 40px;
+                    min-width: 200px;
+                }
+            }
+            .view-content,
+            .card-wrapper {
+                max-width: 1120px;
+                margin: auto;
+                .views-row > .view-mode-compact.node-page,
+                .views-row > .view-mode-compact.node-project,
+                .views-row > .view-mode-compact.node-landing-page,
+                .views-row > .view-mode-compact.node-webform {
+                    float: none;
+                    clear: none;
+                    text-align: inherit;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .views-row,
+                .view-mode-compact.node-page,
+                .view-mode-compact.node-project,
+                .view-mode-compact.node-landing-page,
+                .view-mode-compact.node-webform {
                     @include column(1/3, $gutter: 4, $cycle: 3);
                     min-height: 410px;
                     position: relative;
@@ -659,12 +674,12 @@ div.workbench-info-block{
                             width: 100%;
                         }
                     }
-                    .field-name-title{
-                        margin: 0; 
+                    .field-name-title {
+                        margin: 0;
                         a {
                             padding-bottom: 19px;
                         }
-                    } 
+                    }
                     .field-name-body,
                     .field-name-field-summary,
                     .field-type-text-long {
@@ -690,7 +705,6 @@ div.workbench-info-block{
         }
     }
 }
-
 
 
 /*
@@ -735,7 +749,7 @@ div.workbench-info-block{
                         margin-top: 0px;
                         margin-bottom: 0px;
                     }
-                    h2{
+                    h2 {
                         margin-top: 0px;
                     }
                     .node {
@@ -863,11 +877,11 @@ div.workbench-info-block{
             }
         }
     }
-    .mm-navbar{
+    .mm-navbar {
         background-color: #ffffff;
         border: none;
         height: 60px;
-        .mm-title{
+        .mm-title {
             color: $secondary-color;
             font-size: 1.2em;
             font-weight: bold;
@@ -884,8 +898,8 @@ div.workbench-info-block{
             border: none;
         }
     }
-    .mm-btn{
-        &:before{
+    .mm-btn {
+        &:before {
             border-color: $secondary-color;
             top: 18px;
         }
@@ -926,9 +940,11 @@ div.workbench-info-block{
     }
 }
 
+
 /*
 pages with constrained content
 */
+
 .node-type-news-article,
 .page-user,
 .page-search,
@@ -940,15 +956,15 @@ pages with constrained content
 }
 
 //Search Results
-.page-search{
-    .banner-wrapper{
+.page-search {
+    .banner-wrapper {
         margin-bottom: 40px;
     }
-    .breadcrumb{
+    .breadcrumb {
         display: none;
     }
-    #content{
-        #search-api-page-search-form{
+    #content {
+        #search-api-page-search-form {
             @extend .clearfix;
             box-shadow: 0px 0px 33px 0px $primary-gray-text;
             border: none;
@@ -959,15 +975,16 @@ pages with constrained content
             position: relative;
             margin-top: 60px;
             margin-bottom: 50px;
-            .form-item-keys-2{
+            .form-item-keys-2 {
                 width: 100%;
                 margin: 0;
                 @extend .clearfix;
-                label{
+                label {
                     display: none;
                 }
-                input{
-                    width: calc(100% - 60px;);
+                input {
+                    width: calc(100% - 60px;
+                    );
                     margin-top: 0px;
                     border: none;
                     background-color: #fff;
@@ -977,7 +994,7 @@ pages with constrained content
                     padding-left: 30px;
                 }
             }
-            #edit-submit-2{
+            #edit-submit-2 {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -988,65 +1005,65 @@ pages with constrained content
                 height: 60px;
             }
         }
-        .search-api-page-results{
-            .search-performance{
+        .search-api-page-results {
+            .search-performance {
                 @include font-size($h2_font_size);
                 color: $primary-color-lighter;
                 padding-top: 30px;
                 margin-bottom: 40px;
                 @include title-bar($secondary-color, before, 0px);
-                &:before{
+                &:before {
                     left: 25px;
                 }
             }
-            & > h2{
+            & > h2 {
                 display: none;
             }
-            .search-results{
+            .search-results {
                 padding-left: 0;
                 padding-top: 40px;
                 border-top: 6px solid $primary-color;
-                .node{
+                .node {
                     border-bottom: 1px solid $primary-gray;
                     margin-bottom: 40px;
-                    .field-name-title{
-                        a{
+                    .field-name-title {
+                        a {
                             text-decoration: none;
                         }
-                    }  
-                    .field-name-node-link{
+                    }
+                    .field-name-node-link {
                         margin-bottom: 40px;
-                        a{
+                        a {
                             text-decoration: none;
                             color: #c6003c;
                             text-transform: uppercase;
                             font-weight: bold;
-                            @include  font-size(12);
+                            @include font-size(12);
                             padding: 8px 12px;
                             border: 2px solid $secondary-color;
                             letter-spacing: 1px;
                             transition: 0.3s all ease-in-out;
-                            &:hover{
+                            &:hover {
                                 background-color: #c6003c;
                                 color: #fff;
                             }
                         }
-                    }  
+                    }
                 }
             }
-            .pager{
+            .pager {
                 background-color: #ffffff;
                 border: none;
                 padding-top: 0;
-                li.pager-item{
+                li.pager-item {
                     background: none;
-                    a{
+                    a {
                         color: $text-color;
                         text-decoration: none;
                         font-weight: normal;
                     }
                 }
-                li.pager-current{
+                li.pager-current {
                     @include font-size(24);
                     color: $secondary-color;
                     background: none;
@@ -1060,7 +1077,7 @@ pages with constrained content
                 .pager-next,
                 .pager-last,
                 .pager-previous,
-                .pager-first{
+                .pager-first {
                     display: none;
                 }
             }
@@ -1069,29 +1086,29 @@ pages with constrained content
 }
 
 //News page
-
-.page-news-media-news{
-    .view-id-latest_news{
+.page-news-media-news {
+    .view-id-latest_news {
         max-width: 1120px;
         margin: auto;
-        @include to(desktop){
+        @include to(desktop) {
             padding: 20px;
         }
-        .views-exposed-form{
-            #edit-combine-wrapper{
+        .views-exposed-form {
+            #edit-combine-wrapper {
                 width: 100%;
-                @include from(tablet-l){
+                @include from(tablet-l) {
                     width: 50%;
                 }
-                input{
+                input {
                     width: 100%;
                     padding: 30px;
                 }
             }
-            #edit-field-news-date-value-min-wrapper, #edit-field-news-date-value-max-wrapper{
+            #edit-field-news-date-value-min-wrapper,
+            #edit-field-news-date-value-max-wrapper {
                 display: inline-block;
             }
-            .form-submit{
+            .form-submit {
                 margin: 0;
             }
         }
@@ -1099,74 +1116,85 @@ pages with constrained content
 }
 
 //Project pages
-.node-type-project{
-    #block-views-related-new-stories-block{
+.node-type-project {
+    #block-views-related-new-stories-block {
         position: relative;
-        .block-title{
+        .block-title {
             position: absolute;
             top: 15px;
             right: 50%;
             transform: translateX(50%);
             z-index: 10;
         }
-        .view-id-related_new_stories{
-        padding-top: 60px;            
+        .view-id-related_new_stories {
+            padding-top: 60px;
+        }
+        .node {
+            background-color: $light-bg-color;
+            padding: 40px;
+            margin-bottom: 20px;
+            .field-name-title a,
+            .field-name-field-summary {
+                text-decoration: none;
+                @include font-size($card-title-font-size);
+            }
+            h2 {
+                margin-top: 0;
+            }
+            .field-name-field-news-date {
+                span {
+                    display: inline-block;
+                    background-color: #002056;
+                    padding: 4px 20px;
+                    color: #fff;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    @include font-size($base-font-size);
+                }
+            }
         }
     }
-    .field-name-field-cta-buttons{
+    .field-name-field-cta-buttons {
         @extend .clearfix;
         margin: 15px 0px;
-        .field-item{
+        .field-item {
             text-align: center;
             margin-top: 10px;
             margin-bottom: 10px;
-            @include to(tablet-l){
-                @include column(1/2);
-                text-align: center;
-                width: 47.5%;
-                margin-right: 2%;
-            }
-            @include between(tablet-l, desktop) {
-                @include column(1/3);
-                text-align: center;
-                margin-right: 2%;
-            }
-            @include from(desktop){
-                @include column(1/6);
-                text-align: center;
-            }
-            a{
+            display: inline-block;
+            a {
                 width: 100%;
             }
         }
     }
 }
+
 //news pages
-.node-type-news-article{
-    #content{
+.node-type-news-article {
+    #content {
         position: relative;
-        div.node{
+        div.node {
             margin-right: 40px;
         }
-        #block-block-10{
+        #block-block-10 {
             position: absolute;
             top: 0;
             right: 0px;
-            &.sticky{
+            &.sticky {
                 position: fixed;
                 top: 85px;
                 // right: 20px;
             }
         }
-
     }
 }
+
 //back to newsroom link
-#main #content #block-block-11{
+#main #content #block-block-11 {
     margin-bottom: 40px;
 }
 
 //margin under all webforms
-.webform-client-form{
+.webform-client-form {
     margin-bottom: 40px;
 }
