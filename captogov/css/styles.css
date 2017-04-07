@@ -105,7 +105,8 @@ h2 {
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
-  color: #6f6f6f; }
+  color: #6f6f6f;
+  margin-top: 30px; }
 
 /*
 
@@ -282,9 +283,7 @@ img {
 div.accordion-container {
   padding: 25px 35px;
   border-top: 1px solid #e4e4e3;
-  border-bottom: 1px solid #e4e4e3;
-  color: #002056;
-  font-size: 1.2em; }
+  border-bottom: 1px solid #e4e4e3; }
 
 /*
 
@@ -301,7 +300,7 @@ div.accordion-container {
 */
 .toc-filter {
   padding: 10px 0px;
-  border-bottom: 4px solid #002056;
+  border-bottom: 4px solid #143f88;
   position: relative; }
   .toc-filter:before {
     content: "";
@@ -1871,7 +1870,7 @@ body.not-front #page #main aside.sidebars a.active {
 
 #block-webform-client-block-22 {
   padding: 40px 0px;
-  border-top: 4px solid #002056; }
+  border-top: 4px solid #143f88; }
   #block-webform-client-block-22 .form-item {
     display: inline-block;
     padding-left: 20px; }
@@ -1944,6 +1943,7 @@ body.not-front #page #main aside.sidebars a.active {
                          '                                        '                                             '
 */
 body #main aside.sidebars #block-facetapi-m0l5azttpkq0e1pwu9r002xpm0wet7wo {
+  display: none;
   padding: 30px 10px 10px 10px;
   background: #F8F7F7; }
   body #main aside.sidebars #block-facetapi-m0l5azttpkq0e1pwu9r002xpm0wet7wo .block__title {
@@ -2312,24 +2312,20 @@ body.node-type-landing-page .breadcrumb {
   margin: auto; }
 
 body.not-front.node-type-page #main,
-body.not-front.node-type-project #main,
-body.page-search #main {
+body.not-front.node-type-project #main {
   max-width: 1120px;
   margin: auto; }
 
 body.not-front.node-type-page aside.sidebars,
-body.not-front.node-type-project aside.sidebars,
-body.page-search aside.sidebars {
+body.not-front.node-type-project aside.sidebars {
   margin-bottom: 20px; }
   body.not-front.node-type-page aside.sidebars section.region-sidebar-first,
-  body.not-front.node-type-project aside.sidebars section.region-sidebar-first,
-  body.page-search aside.sidebars section.region-sidebar-first {
+  body.not-front.node-type-project aside.sidebars section.region-sidebar-first {
     margin-bottom: 20px; }
 
 @media (min-width: 961px) {
   body.not-front.node-type-page #content,
-  body.not-front.node-type-project #content,
-  body.page-search #content {
+  body.not-front.node-type-project #content {
     float: left;
     clear: none;
     text-align: inherit;
@@ -2339,18 +2335,15 @@ body.page-search aside.sidebars {
     position: relative;
     left: 39%; }
     body.not-front.node-type-page #content::after,
-    body.not-front.node-type-project #content::after,
-    body.page-search #content::after {
+    body.not-front.node-type-project #content::after {
       content: '';
       display: table;
       clear: both; }
     body.not-front.node-type-page #content:last-child,
-    body.not-front.node-type-project #content:last-child,
-    body.page-search #content:last-child {
+    body.not-front.node-type-project #content:last-child {
       margin-right: 0%; }
   body.not-front.node-type-page aside,
-  body.not-front.node-type-project aside,
-  body.page-search aside {
+  body.not-front.node-type-project aside {
     float: left;
     clear: none;
     text-align: inherit;
@@ -2360,20 +2353,17 @@ body.page-search aside.sidebars {
     position: relative;
     left: -65%; }
     body.not-front.node-type-page aside::after,
-    body.not-front.node-type-project aside::after,
-    body.page-search aside::after {
+    body.not-front.node-type-project aside::after {
       content: '';
       display: table;
       clear: both; }
     body.not-front.node-type-page aside:last-child,
-    body.not-front.node-type-project aside:last-child,
-    body.page-search aside:last-child {
+    body.not-front.node-type-project aside:last-child {
       margin-right: 0%; } }
 
 @media (min-width: 1351px) {
   body.not-front.node-type-page #content,
-  body.not-front.node-type-project #content,
-  body.page-search #content {
+  body.not-front.node-type-project #content {
     /*
             // Virtual centering in grid size 
             width: calc(74.25% - (100% - 1120px ) / 2  );
@@ -3514,6 +3504,8 @@ pages with constrained content
   .page-search #content .search-api-page-results .search-results .node {
     border-bottom: 1px solid #e4e4e3;
     margin-bottom: 40px; }
+    .page-search #content .search-api-page-results .search-results .node img {
+      display: none; }
     .page-search #content .search-api-page-results .search-results .node .field-name-title a {
       text-decoration: none; }
     .page-search #content .search-api-page-results .search-results .node .field-name-node-link {
@@ -3612,6 +3604,12 @@ pages with constrained content
       letter-spacing: 2px;
       font-size: 13px;
       font-size: 0.8125rem; }
+  .node-type-project #block-views-related-new-stories-block .view-footer {
+    text-align: center; }
+    .node-type-project #block-views-related-new-stories-block .view-footer .button, .node-type-project #block-views-related-new-stories-block .view-footer #main .card-view .more-link a, #main .card-view .more-link .node-type-project #block-views-related-new-stories-block .view-footer a, .node-type-project #block-views-related-new-stories-block .view-footer .square-view .view .more-link a, .square-view .view .more-link .node-type-project #block-views-related-new-stories-block .view-footer a, .node-type-project #block-views-related-new-stories-block .view-footer #main .field-name-field-cta-buttons .field-item, .node-type-project #main .field-name-field-cta-buttons #block-views-related-new-stories-block .view-footer .field-item {
+      font-size: 16px;
+      font-size: 1rem;
+      margin-bottom: 20px; }
 
 .node-type-project .field-name-field-cta-buttons {
   margin: 15px 0px; }

@@ -69,6 +69,7 @@ h2{
 h3{
 	@include font-size(24);
 	color: $darker-gray-text;
+	margin-top: 30px;
 }
 
 /*
@@ -256,8 +257,7 @@ div.accordion-container{
 	padding: 25px 35px;
     border-top: 1px solid $primary-gray;
     border-bottom: 1px solid $primary-gray;
-    color: $primary-color;
-    font-size: 1.2em;
+
 }
 
 /*
@@ -278,7 +278,7 @@ div.accordion-container{
 */
 .toc-filter{
 	padding: 10px 0px;
-	border-bottom: 4px solid $primary-color;
+	border-bottom: 4px solid $primary-color-lighter;
 	@include title-bar($secondary-color, before, 0);
 	&:before{
 		left: 0;

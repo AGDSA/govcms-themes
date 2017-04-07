@@ -104,8 +104,7 @@ body.node-type-landing-page {
 }
 
 body.not-front.node-type-page,
-body.not-front.node-type-project,
-body.page-search {
+body.not-front.node-type-project{
     #main {
         max-width: 1120px;
         margin: auto;
@@ -1026,6 +1025,9 @@ pages with constrained content
                 .node {
                     border-bottom: 1px solid $primary-gray;
                     margin-bottom: 40px;
+                    img{
+                        display: none;
+                    }
                     .field-name-title {
                         a {
                             text-decoration: none;
@@ -1151,6 +1153,13 @@ pages with constrained content
                     letter-spacing: 2px;
                     @include font-size($base-font-size);
                 }
+            }
+        }
+        .view-footer{
+            text-align: center;
+            .button{
+               @include font-size(16);
+               margin-bottom: 20px;
             }
         }
     }

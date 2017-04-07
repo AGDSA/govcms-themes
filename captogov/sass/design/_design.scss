@@ -28,7 +28,7 @@
                                                                            '
 */
 
-// DROPDOWN BACKGROUND -JUHANI
+// DROPDOWN BACKGROUND -JUHANIf
 // nav modal
 .nav-modal {
 	content: "";
@@ -1538,7 +1538,7 @@ body.not-front #page #main aside.sidebars {
 //Was this page useful form 
 #block-webform-client-block-22{
     padding: 40px 0px;
-        border-top: 4px solid $primary-color;
+        border-top: 4px solid $primary-color-lighter;
     .form-item{
         display: inline-block;
         padding-left: 20px;
@@ -1625,6 +1625,7 @@ body {
     #main {
         aside.sidebars{
             #block-facetapi-m0l5azttpkq0e1pwu9r002xpm0wet7wo{
+            	display: none;
                 padding: 30px 10px 10px 10px;
                 background: $light-bg-color;
                 .block__title{
