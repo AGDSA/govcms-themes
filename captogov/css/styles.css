@@ -1881,6 +1881,50 @@ body.not-front #page #main aside.sidebars a.active {
     font-size: 0.75rem;
     padding: 8px 12px; }
 
+body.not-front #superfish-1 {
+  position: relative; }
+
+body.not-front #menu-1186-1 {
+  position: absolute;
+  right: -80px;
+  width: 60px;
+  height: 60px; }
+  body.not-front #menu-1186-1 a {
+    font-size: 0px;
+    width: 60px;
+    height: 60px;
+    background: #ffffff url(../images/search.svg) no-repeat center center; }
+
+body.not-front.search-open header.header {
+  top: 60px !important; }
+
+body.not-front.search-open .header-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px; }
+  body.not-front.search-open .header-search #block-search-api-page-search {
+    width: 100%;
+    background-color: #143f88; }
+    body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2 {
+      color: #ffffff;
+      height: 60px;
+      padding: 10px 40px;
+      background-color: #143f88; }
+    body.not-front.search-open .header-search #block-search-api-page-search #edit-submit-2 {
+      height: 60px;
+      width: 60px; }
+
+body.not-front.search-closed .header-search {
+  height: 0px; }
+  body.not-front.search-closed .header-search #edit-submit-2,
+  body.not-front.search-closed .header-search #edit-keys-2 {
+    display: none; }
+
+body.not-front.search-closed header.header {
+  top: 60px !important; }
+
 /*
 
      ______  _______           _____          _____    ____  ____             ______              ______  _______        ______  _____   ______    ____   ____

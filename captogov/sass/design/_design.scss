@@ -1552,6 +1552,62 @@ body.not-front #page #main aside.sidebars {
     }
 }
 
+//header search
+body.not-front{
+	#superfish-1{
+		position: relative;
+	}
+	#menu-1186-1{
+		position: absolute;
+    	right: -80px;
+    	width: 60px;
+    	height: 60px;
+		a{
+			font-size:0px;
+			width: 60px;
+    		height: 60px;
+    		background: #ffffff url(../images/search.svg) no-repeat center center;
+		}
+	}
+}
+body.not-front.search-open{
+	header.header{
+		top: 60px !important;
+	}
+	.header-search{
+		position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 60px;
+		#block-search-api-page-search{
+			width: 100%;
+			background-color: $primary-color-lighter;
+			#edit-keys-2{
+				color: #ffffff;
+				height: 60px;
+				padding: 10px 40px;
+				background-color: $primary-color-lighter;
+			}
+			#edit-submit-2{
+				height: 60px;
+				width: 60px;
+			}
+		}
+	}
+}
+body.not-front.search-closed{
+	.header-search{
+		height: 0px;
+		#edit-submit-2,
+		#edit-keys-2{
+			display: none;
+		}
+	}
+	header.header{
+		top: 60px !important;
+	}
+}
 
 /*
 

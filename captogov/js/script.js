@@ -366,5 +366,21 @@ Drupal.behaviors.my_custom_behavior = {
     //Add text for accessibility
   jQuery3('.mm-next').text('See pages in this section');
   jQuery3('.mm-prev').text('See the previous sections');
+
+  //Open/close the header search bar
+  var $body = jQuery3('body');
+  jQuery3('#menu-1186-1 a').click(function() {
+    if($body.hasClass('search-closed')){
+      $body.removeClass('search-closed');
+      $body.addClass('search-open');
+    }
+    if($body.hasClass('search-open')){
+      $body.removeClass('search-open');
+      $body.addClass('search-closed');
+    }
+  });
+  
+
+
    }}
 })(jQuery, Drupal, this, this.document);

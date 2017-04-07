@@ -40,7 +40,7 @@
     <![endif]-->
   <?php endif; ?>
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body class="<?php print $classes; ?> search-closed" <?php print $attributes;?>>
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
 <script>(function(d, s, id) {
