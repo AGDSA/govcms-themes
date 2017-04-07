@@ -134,6 +134,8 @@ a {
     color: #818285; }
 
 a.external:after {
+  font-size: 13px;
+  font-size: 0.8125rem;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -217,6 +219,12 @@ input {
 
 img {
   display: inline-block; }
+
+ul {
+  margin-top: 15px;
+  margin-left: 30px; }
+  ul li {
+    margin-bottom: 5px; }
 
 /*
 
@@ -1468,14 +1476,25 @@ footer {
 .node-type-news-article #block-views-banner-image-top-block .block__content,
 .node-type-project #block-views-banner-image-top-block .block__content,
 .node-type-webform #block-views-banner-image-top-block .block__content {
-  max-height: 200px;
-  height: 200px; }
+  max-height: 150px;
+  height: 150px; }
+  @media (min-width: 769px) {
+    .node-type-page #block-views-banner-image-top-block .block__content,
+    .node-type-news-article #block-views-banner-image-top-block .block__content,
+    .node-type-project #block-views-banner-image-top-block .block__content,
+    .node-type-webform #block-views-banner-image-top-block .block__content {
+      max-height: 200px;
+      height: 200px; } }
 
 #block-views-banner-image-top-block .block__content {
-  max-height: 400px;
-  height: 400px;
+  max-height: 200px;
+  height: 200px;
   overflow: hidden;
   position: relative; }
+  @media (min-width: 769px) {
+    #block-views-banner-image-top-block .block__content {
+      max-height: 400px;
+      height: 400px; } }
   #block-views-banner-image-top-block .block__content .view-banner-image-top .view-content:after {
     content: "";
     display: block;
@@ -3113,7 +3132,7 @@ div.workbench-info-block {
         .not-front #main .card-view .card-wrapper .view-mode-compact.node-project,
         .not-front #main .card-view .card-wrapper .view-mode-compact.node-landing-page,
         .not-front #main .card-view .card-wrapper .view-mode-compact.node-webform {
-          margin-right: 0.25% !important;
+          margin-right: 0.08% !important;
           clear: none !important;
           float: left !important; } }
       .not-front #main .card-view .view-content .views-row.slick-slide,

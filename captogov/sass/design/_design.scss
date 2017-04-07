@@ -1098,18 +1098,26 @@ footer {
 .node-type-project,
 .node-type-webform{
     #block-views-banner-image-top-block {
-    .block__content {
-            max-height: 200px;
-            height: 200px;
+	    .block__content {
+	    	max-height: 150px;
+	            height: 150px;
+	    	@include from(tablet-l){
+	    		max-height: 200px;
+	            height: 200px;
+	    	}
         }
     }
 }
 #block-views-banner-image-top-block {
     .block__content {
-        max-height: 400px;
-        height: 400px;
+        max-height: 200px;
+        height: 200px;
         overflow: hidden;
         position: relative;
+        @include from(tablet-l){
+	    	max-height: 400px;
+	        height: 400px;
+	    }
         .view-banner-image-top{
             .view-content{
                 &:after{

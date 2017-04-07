@@ -45,7 +45,7 @@ $(document).ready(function() {
 
       // console.log($ddNav.height());
       // calculate height for the gray modal
-      $innerModal.css('height', $ddNav.outerHeight() + 60); // 60 for bottom padding
+      $innerModal.css('height', $ddNav.outerHeight() + 100); // 60 for bottom padding
 
       $body.addClass('nav-dropdown-open');
       clearInterval(navHideInterval);
