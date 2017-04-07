@@ -1558,15 +1558,23 @@ body.not-front{
 		position: relative;
 	}
 	#menu-1186-1{
-		position: absolute;
+		position: absolute !important;
     	right: -80px;
     	width: 60px;
     	height: 60px;
+    	top: -18px;
 		a{
-			font-size:0px;
+			font-size:0px !important;
 			width: 60px;
     		height: 60px;
     		background: #ffffff url(../images/search.svg) no-repeat center center;
+    		background-size: 58%;
+    		&:after{
+    			content: none;
+    		}
+    		 &:before{
+    			content: none;
+    		}
 		}
 	}
 }
@@ -1598,14 +1606,11 @@ body.not-front.search-open{
 }
 body.not-front.search-closed{
 	.header-search{
-		height: 0px;
+		height: 0px !important;
 		#edit-submit-2,
 		#edit-keys-2{
 			display: none;
 		}
-	}
-	header.header{
-		top: 60px !important;
 	}
 }
 
