@@ -66,6 +66,24 @@
 
 //header
 // @include debug($color: blue, $important: false);
+
+.not-front{
+	header.header{
+		#block-superfish-1{
+			margin-right: 70px;
+			#menu-914-1{
+				margin-left: 0px;
+			}
+			li.sf-depth-1{
+				margin-left: 20px;
+				@include font-size(16);
+			}
+		}
+	}
+}
+.menu-mlid-1186{
+	display: none;
+}
 header.header {
     position: fixed;
     top: 0;
@@ -1553,6 +1571,13 @@ body.not-front #page #main aside.sidebars {
 }
 
 //header search
+.front{
+	#superfish-1{
+		#menu-1186-1{
+			display: none;
+		}
+	}
+}
 body.not-front{
 	#superfish-1{
 		position: relative;
@@ -1560,8 +1585,8 @@ body.not-front{
 	#menu-1186-1{
 		position: absolute !important;
     	right: -80px;
-    	width: 60px;
-    	height: 60px;
+    	width: 50px;
+    	height: 50px;
     	top: -18px;
 		a{
 			font-size:0px !important;
@@ -1581,6 +1606,7 @@ body.not-front{
 body.not-front.search-open{
 	header.header{
 		top: 60px !important;
+		transition: all 0.3s ease;
 	}
 	.header-search{
 		position: fixed;
@@ -1588,6 +1614,7 @@ body.not-front.search-open{
 	    left: 0;
 	    right: 0;
 	    height: 60px;
+	        transition: all 0.3s ease;
 		#block-search-api-page-search{
 			width: 100%;
 			background-color: $primary-color-lighter;
@@ -1596,6 +1623,9 @@ body.not-front.search-open{
 				height: 60px;
 				padding: 10px 40px;
 				background-color: $primary-color-lighter;
+				&::placeholder{
+					color: #ffffff;
+				}
 			}
 			#edit-submit-2{
 				height: 60px;
@@ -1609,7 +1639,7 @@ body.not-front.search-closed{
 		height: 0px !important;
 		#edit-submit-2,
 		#edit-keys-2{
-			display: none;
+			display: none !important;
 		}
 	}
 }

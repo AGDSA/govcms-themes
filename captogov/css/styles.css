@@ -500,6 +500,18 @@ body.page-search #content .search-form .form-item-keys:after, .front #main .card
     background-color: #e4e4e3;
     transition: 0.5s height ease-in-out; }
 
+.not-front header.header #block-superfish-1 {
+  margin-right: 70px; }
+  .not-front header.header #block-superfish-1 #menu-914-1 {
+    margin-left: 0px; }
+  .not-front header.header #block-superfish-1 li.sf-depth-1 {
+    margin-left: 20px;
+    font-size: 16px;
+    font-size: 1rem; }
+
+.menu-mlid-1186 {
+  display: none; }
+
 header.header {
   position: fixed;
   top: 0;
@@ -1881,14 +1893,17 @@ body.not-front #page #main aside.sidebars a.active {
     font-size: 0.75rem;
     padding: 8px 12px; }
 
+.front #superfish-1 #menu-1186-1 {
+  display: none; }
+
 body.not-front #superfish-1 {
   position: relative; }
 
 body.not-front #menu-1186-1 {
   position: absolute !important;
   right: -80px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   top: -18px; }
   body.not-front #menu-1186-1 a {
     font-size: 0px !important;
@@ -1902,14 +1917,16 @@ body.not-front #menu-1186-1 {
       content: none; }
 
 body.not-front.search-open header.header {
-  top: 60px !important; }
+  top: 60px !important;
+  transition: all 0.3s ease; }
 
 body.not-front.search-open .header-search {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 60px; }
+  height: 60px;
+  transition: all 0.3s ease; }
   body.not-front.search-open .header-search #block-search-api-page-search {
     width: 100%;
     background-color: #143f88; }
@@ -1918,6 +1935,14 @@ body.not-front.search-open .header-search {
       height: 60px;
       padding: 10px 40px;
       background-color: #143f88; }
+      body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2::-webkit-input-placeholder {
+        color: #ffffff; }
+      body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2::-moz-placeholder {
+        color: #ffffff; }
+      body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2:-ms-input-placeholder {
+        color: #ffffff; }
+      body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2::placeholder {
+        color: #ffffff; }
     body.not-front.search-open .header-search #block-search-api-page-search #edit-submit-2 {
       height: 60px;
       width: 60px; }
@@ -1926,7 +1951,7 @@ body.not-front.search-closed .header-search {
   height: 0px !important; }
   body.not-front.search-closed .header-search #edit-submit-2,
   body.not-front.search-closed .header-search #edit-keys-2 {
-    display: none; }
+    display: none !important; }
 
 /*
 
