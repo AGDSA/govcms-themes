@@ -369,15 +369,9 @@ Drupal.behaviors.my_custom_behavior = {
 
   //Open/close the header search bar
   var $body = jQuery3('body');
-  jQuery3('#menu-1186-1 a').click(function() {
-    if($body.hasClass('search-closed')){
-      $body.removeClass('search-closed');
-      $body.addClass('search-open');
-    }
-    if($body.hasClass('search-open')){
-      $body.removeClass('search-open');
-      $body.addClass('search-closed');
-    }
+  jQuery3('#menu-1186-1 a').click(function(e) {
+    e.preventDefault();
+    jQuery3('body').toggleClass("search-closed search-open");
   });
   
 
