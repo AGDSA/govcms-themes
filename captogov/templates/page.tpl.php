@@ -8,6 +8,13 @@
  */
 ?>
 <div class="nav-modal"><div class="nav-modal-inner"></div></div>
+
+<?php if ($page['header_search']) : ?>
+<div class="header-search">
+  <?php print render($page['header_search']); ?>
+</div>
+<?php endif; ?>
+
 <header class="header clearfix" id="header" role="banner">
   <div class="header__inner clearfix">
       <h1 class="site-name">Attorney General's Department</h1>
