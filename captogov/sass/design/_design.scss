@@ -978,7 +978,6 @@ footer {
             }
             li {
                 @include column(1/5, $gutter: 1);
-                text-align: center;
                 a {
                     color: #ffffff;
                     text-align: center !important;
@@ -990,6 +989,7 @@ footer {
         #block-block-16{
         	p{
         		color: #ffffff;
+        		@include font-size($base-font-size);
         	}
         }
         #block-block-3 {

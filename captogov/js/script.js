@@ -373,7 +373,8 @@ Drupal.behaviors.my_custom_behavior = {
     e.preventDefault();
     jQuery3('body').toggleClass("search-closed search-open");
   });
-  
+
+  $('.view-mode-compact').matchHeight();
 
 
    }}

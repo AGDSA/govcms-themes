@@ -327,6 +327,8 @@ div.accordion-container {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; }
+  .toc-filter .item-list ul {
+    margin-left: 0px; }
   .toc-filter .toc-filter-content {
     padding: 0px;
     background-color: #ffffff;
@@ -1355,8 +1357,7 @@ footer {
         text-align: inherit;
         width: 19.2%;
         margin-left: 0%;
-        margin-right: 1%;
-        text-align: center; }
+        margin-right: 1%; }
         .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li::after {
           content: '';
           display: table;
@@ -1370,7 +1371,9 @@ footer {
           font-size: 13px;
           font-size: 0.8125rem; }
     .page-bottom-wrapper .region-bottom #block-block-16 p {
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 13px;
+      font-size: 0.8125rem; }
     .page-bottom-wrapper .region-bottom #block-block-3 {
       position: relative;
       display: block;
@@ -3794,7 +3797,8 @@ input[type=submit] {
   letter-spacing: 2px;
   padding: 15px 25px;
   background-color: #c6003c;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 5px; }
   .button > a:after, #main .card-view .more-link a > a:after, .square-view .view .more-link a > a:after, .node-type-project #main .field-name-field-cta-buttons .field-item > a:after,
   a.button:after,
   #main .card-view .more-link a:after,
