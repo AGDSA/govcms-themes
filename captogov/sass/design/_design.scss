@@ -1603,10 +1603,10 @@ body.not-front{
     		background: #ffffff url(../images/search.svg) no-repeat center center;
     		background-size: 58%;
     		&:after{
-    			content: none;
+    			content: none !important;
     		}
     		 &:before{
-    			content: none;
+    			content: none !important;
     		}
 		}
 	}
@@ -1775,6 +1775,9 @@ body {
 
 body.page-search404,
 body.page-search{
+	.ui-datepicker-calendar{
+		display: none;
+	}
     #content{
         .search-form{
             box-shadow: 0px 0px 33px 0px $primary-gray-text;
@@ -1901,12 +1904,35 @@ body.page-search{
                     font-weight: normal;
                     margin: 0;
                     height: 50px;
-                    color: $primary-color;
+                    color: #ffffff;
                     font-weight: bold;
+                    padding-left: 19px;
                     @include from(tablet-l){
                         height: 60px;
                     }
                 }               
+            }
+            .form-item-field-news-date-value-min-date{
+            	position: relative;
+                #edit-field-news-date-value-min-datepicker-popup-0{
+    				content:"Start date";
+    				position: absolute;
+    				top: 0;
+    				left: 0;
+    				@include font-size($base-font-size);
+    				color: $darker-gray-text;
+                }
+            }
+            .form-item-field-news-date-value-max-date{
+            	position: relative;
+                #edit-field-news-date-value-max-datepicker-popup-0{
+    				content:"End date";
+    				position: absolute;
+    				top: 0;
+    				left: 0;
+    				@include font-size($base-font-size);
+    				color: $darker-gray-text;
+                }
             }
         }
         .view-content{

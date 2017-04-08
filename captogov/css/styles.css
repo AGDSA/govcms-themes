@@ -1931,9 +1931,9 @@ body.not-front #menu-1186-1 {
     background: #ffffff url(../images/search.svg) no-repeat center center;
     background-size: 58%; }
     body.not-front #menu-1186-1 a:after {
-      content: none; }
+      content: none !important; }
     body.not-front #menu-1186-1 a:before {
-      content: none; }
+      content: none !important; }
 
 body.not-front.search-open header.header {
   top: 60px !important;
@@ -2092,6 +2092,10 @@ body #main .search-form {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+body.page-search404 .ui-datepicker-calendar,
+body.page-search .ui-datepicker-calendar {
+  display: none; }
+
 body.page-search404 #content .search-form,
 body.page-search #content .search-form {
   box-shadow: 0px 0px 33px 0px #818285;
@@ -2211,11 +2215,34 @@ body.page-search #content .search-form {
     font-weight: normal;
     margin: 0;
     height: 50px;
-    color: #002056;
-    font-weight: bold; }
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 19px; }
     @media (min-width: 769px) {
       .page-newsroom .view-id-latest_news .views-exposed-form .views-submit-button input {
         height: 60px; } }
+
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date {
+  position: relative; }
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date #edit-field-news-date-value-min-datepicker-popup-0 {
+    content: "Start date";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    color: #6f6f6f; }
+
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date {
+  position: relative; }
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date #edit-field-news-date-value-max-datepicker-popup-0 {
+    content: "End date";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    color: #6f6f6f; }
 
 .page-newsroom .view-id-latest_news .view-content {
   border-top: 6px solid #002056;
@@ -2398,7 +2425,9 @@ body.not-front #content {
 body.node-type-news-article #main,
 body.node-type-news-article .breadcrumb,
 body.node-type-landing-page #main,
-body.node-type-landing-page .breadcrumb {
+body.node-type-landing-page .breadcrumb,
+body.page-search #main,
+body.page-search .breadcrumb {
   max-width: 830px;
   margin: auto; }
 
@@ -2593,7 +2622,7 @@ body.not-front.node-type-project aside.sidebars {
     width: auto; }
 
 #page {
-  margin-top: 95px; }
+  margin-top: 110px; }
 
 #main #panels-ipe-paneid-16,
 #main .pane-search-api-page-search {

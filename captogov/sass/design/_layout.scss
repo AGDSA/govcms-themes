@@ -95,7 +95,8 @@ body.not-front {
 }
 
 body.node-type-news-article,
-body.node-type-landing-page {
+body.node-type-landing-page,
+body.page-search {
     #main,
     .breadcrumb {
         max-width: 830px;
@@ -340,7 +341,7 @@ body.not-front.node-type-project{
 }
 
 #page {
-    margin-top: 95px;
+    margin-top: 110px;
 }
 
 //Homepage main content
