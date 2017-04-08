@@ -220,10 +220,10 @@ input {
 img {
   display: inline-block; }
 
-ul {
+#content ul {
   margin-top: 15px;
   margin-left: 30px; }
-  ul li {
+  #content ul li {
     margin-bottom: 5px; }
 
 /*
@@ -1369,6 +1369,8 @@ footer {
           text-decoration: none;
           font-size: 13px;
           font-size: 0.8125rem; }
+    .page-bottom-wrapper .region-bottom #block-block-16 p {
+      color: #ffffff; }
     .page-bottom-wrapper .region-bottom #block-block-3 {
       position: relative;
       display: block;
@@ -1452,8 +1454,7 @@ footer {
     transform: translateX(-50%); }
 
 .breadcrumb {
-  color: #c6003c;
-  font-weight: bold; }
+  color: #c6003c; }
   .breadcrumb a {
     font-size: 14px;
     font-size: 0.875rem;
@@ -1519,9 +1520,9 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
     line-height: 35px;
     text-align: center;
     font-size: 40px;
@@ -2222,24 +2223,24 @@ body.page-search #content .search-form {
       .page-newsroom .view-id-latest_news .views-exposed-form .views-submit-button input {
         height: 60px; } }
 
-.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date {
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date #edit-field-news-date-value-min-datepicker-popup-0 {
   position: relative; }
-  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date #edit-field-news-date-value-min-datepicker-popup-0 {
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date #edit-field-news-date-value-min-datepicker-popup-0:before {
     content: "Start date";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 3px;
+    left: 3px;
     font-size: 13px;
     font-size: 0.8125rem;
     color: #6f6f6f; }
 
-.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date {
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date #edit-field-news-date-value-max-datepicker-popup-0 {
   position: relative; }
-  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date #edit-field-news-date-value-max-datepicker-popup-0 {
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date #edit-field-news-date-value-max-datepicker-popup-0:before {
     content: "End date";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 3px;
+    left: 3px;
     font-size: 13px;
     font-size: 0.8125rem;
     color: #6f6f6f; }
@@ -2622,7 +2623,7 @@ body.not-front.node-type-project aside.sidebars {
     width: auto; }
 
 #page {
-  margin-top: 110px; }
+  margin-top: 95px; }
 
 #main #panels-ipe-paneid-16,
 #main .pane-search-api-page-search {
@@ -2924,7 +2925,8 @@ div.workbench-info-block {
         .front #main .card-view .card-wrapper .view-mode-compact.node-project .field-type-image a img,
         .front #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-type-image a img,
         .front #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-image a img {
-          width: 100%; }
+          width: 100%;
+          display: block; }
       .front #main .card-view .view-content .views-row .field-name-title,
       .front #main .card-view .view-content .view-mode-compact.node-page .field-name-title,
       .front #main .card-view .view-content .view-mode-compact.node-project .field-name-title,
@@ -3556,121 +3558,120 @@ pages with constrained content
 .page-search .breadcrumb {
   display: none; }
 
-.page-search #content #search-api-page-search-form {
-  box-shadow: 0px 0px 33px 0px #818285;
-  border: none;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  margin-top: 60px;
-  margin-bottom: 50px; }
-  .page-search #content #search-api-page-search-form .form-item-keys-2 {
-    width: 100%;
-    margin: 0; }
-    .page-search #content #search-api-page-search-form .form-item-keys-2 label {
-      display: none; }
-    .page-search #content #search-api-page-search-form .form-item-keys-2 input {
-      width: calc(100% - 60px);
-      margin-top: 0px;
-      border: none;
-      background-color: #fff;
-      color: #002056;
-      font-weight: bold;
-      min-height: 60px;
-      padding-left: 30px; }
-  .page-search #content #search-api-page-search-form #edit-submit-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    background: #c6003c url(../images/search.png) no-repeat center center;
-    font-size: 0px;
-    width: 60px;
-    height: 60px; }
-
-.page-search #content .search-api-page-results .search-performance {
-  font-size: 24px;
-  font-size: 1.5rem;
-  color: #143f88;
-  padding-top: 30px;
-  margin-bottom: 40px;
-  position: relative; }
-  .page-search #content .search-api-page-results .search-performance:before {
-    content: "";
-    display: block;
-    height: 5px;
-    width: 50px;
-    background-color: #c6003c;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
-  .page-search #content .search-api-page-results .search-performance:before {
-    left: 25px; }
-
-.page-search #content .search-api-page-results > h2 {
-  display: none; }
-
-.page-search #content .search-api-page-results .search-results {
-  padding-left: 0;
-  padding-top: 40px;
-  border-top: 6px solid #002056; }
-  .page-search #content .search-api-page-results .search-results .node {
-    border-bottom: 1px solid #e4e4e3;
-    margin-bottom: 40px; }
-    .page-search #content .search-api-page-results .search-results .node img {
-      display: none; }
-    .page-search #content .search-api-page-results .search-results .node .field-name-title a {
-      text-decoration: none; }
-    .page-search #content .search-api-page-results .search-results .node .field-name-node-link {
-      margin-bottom: 40px; }
-      .page-search #content .search-api-page-results .search-results .node .field-name-node-link a {
-        text-decoration: none;
-        color: #c6003c;
-        text-transform: uppercase;
+.page-search #content {
+  max-width: 830px;
+  padding-top: 20px; }
+  .page-search #content #search-api-page-search-form {
+    box-shadow: 0px 0px 33px 0px #818285;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .page-search #content #search-api-page-search-form .form-item-keys-2 {
+      width: 100%;
+      margin: 0; }
+      .page-search #content #search-api-page-search-form .form-item-keys-2 label {
+        display: none; }
+      .page-search #content #search-api-page-search-form .form-item-keys-2 input {
+        width: calc(100% - 60px);
+        margin-top: 0px;
+        border: none;
+        background-color: #fff;
+        color: #002056;
         font-weight: bold;
-        font-size: 12px;
-        font-size: 0.75rem;
-        padding: 8px 12px;
-        border: 2px solid #c6003c;
-        letter-spacing: 1px;
-        transition: 0.3s all ease-in-out; }
-        .page-search #content .search-api-page-results .search-results .node .field-name-node-link a:hover {
-          background-color: #c6003c;
-          color: #fff; }
-
-.page-search #content .search-api-page-results .pager {
-  background-color: #ffffff;
-  border: none;
-  padding-top: 0; }
-  .page-search #content .search-api-page-results .pager li.pager-item {
-    background: none; }
-    .page-search #content .search-api-page-results .pager li.pager-item a {
-      color: #555;
-      text-decoration: none;
-      font-weight: normal; }
-  .page-search #content .search-api-page-results .pager li.pager-current {
+        min-height: 60px;
+        padding-left: 30px; }
+    .page-search #content #search-api-page-search-form #edit-submit-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      background: #c6003c url(../images/search.png) no-repeat center center;
+      font-size: 0px;
+      width: 60px;
+      height: 60px; }
+  .page-search #content .search-api-page-results .search-performance {
     font-size: 24px;
     font-size: 1.5rem;
-    color: #c6003c;
-    background: none;
-    border-bottom: 4px solid #c6003c;
-    padding-bottom: 10px;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin: 0px 8px; }
-  .page-search #content .search-api-page-results .pager .pager-ellipsis,
-  .page-search #content .search-api-page-results .pager .pager-next,
-  .page-search #content .search-api-page-results .pager .pager-last,
-  .page-search #content .search-api-page-results .pager .pager-previous,
-  .page-search #content .search-api-page-results .pager .pager-first {
+    color: #143f88;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    position: relative; }
+    .page-search #content .search-api-page-results .search-performance:before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 50px;
+      background-color: #c6003c;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .page-search #content .search-api-page-results .search-performance:before {
+      left: 25px; }
+  .page-search #content .search-api-page-results > h2 {
     display: none; }
+  .page-search #content .search-api-page-results .search-results {
+    padding-left: 0;
+    padding-top: 40px;
+    border-top: 6px solid #002056; }
+    .page-search #content .search-api-page-results .search-results .node {
+      border-bottom: 1px solid #e4e4e3;
+      margin-bottom: 40px; }
+      .page-search #content .search-api-page-results .search-results .node img {
+        display: none; }
+      .page-search #content .search-api-page-results .search-results .node .field-name-title a {
+        text-decoration: none; }
+      .page-search #content .search-api-page-results .search-results .node .field-name-node-link {
+        margin-bottom: 40px; }
+        .page-search #content .search-api-page-results .search-results .node .field-name-node-link a {
+          text-decoration: none;
+          color: #c6003c;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 12px;
+          font-size: 0.75rem;
+          padding: 8px 12px;
+          border: 2px solid #c6003c;
+          letter-spacing: 1px;
+          transition: 0.3s all ease-in-out; }
+          .page-search #content .search-api-page-results .search-results .node .field-name-node-link a:hover {
+            background-color: #c6003c;
+            color: #fff; }
+  .page-search #content .search-api-page-results .pager {
+    background-color: #ffffff;
+    border: none;
+    padding-top: 0; }
+    .page-search #content .search-api-page-results .pager li.pager-item {
+      background: none; }
+      .page-search #content .search-api-page-results .pager li.pager-item a {
+        color: #555;
+        text-decoration: none;
+        font-weight: normal; }
+    .page-search #content .search-api-page-results .pager li.pager-current {
+      font-size: 24px;
+      font-size: 1.5rem;
+      color: #c6003c;
+      background: none;
+      border-bottom: 4px solid #c6003c;
+      padding-bottom: 10px;
+      padding-left: 3px;
+      padding-right: 3px;
+      margin: 0px 8px; }
+    .page-search #content .search-api-page-results .pager .pager-ellipsis,
+    .page-search #content .search-api-page-results .pager .pager-next,
+    .page-search #content .search-api-page-results .pager .pager-last,
+    .page-search #content .search-api-page-results .pager .pager-previous,
+    .page-search #content .search-api-page-results .pager .pager-first {
+      display: none; }
 
 .page-news-media-news .view-id-latest_news {
   max-width: 1120px;

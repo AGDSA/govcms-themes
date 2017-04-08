@@ -987,6 +987,11 @@ footer {
                 }
             }
         }
+        #block-block-16{
+        	p{
+        		color: #ffffff;
+        	}
+        }
         #block-block-3 {
             position: relative;
             display: block;
@@ -1073,7 +1078,6 @@ footer {
 
 .breadcrumb {
     color: $secondary-color;
-    font-weight: bold;
     a {
         @include font-size(14);
         text-decoration: none;
@@ -1144,7 +1148,7 @@ footer {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform:translate(-50%,-50%);
+                    transform:translate(-50%,-60%);
                     line-height: 35px;
                     text-align: center;
                     @include font-size(40);
@@ -1913,25 +1917,29 @@ body.page-search{
                 }               
             }
             .form-item-field-news-date-value-min-date{
-            	position: relative;
                 #edit-field-news-date-value-min-datepicker-popup-0{
-    				content:"Start date";
-    				position: absolute;
-    				top: 0;
-    				left: 0;
-    				@include font-size($base-font-size);
-    				color: $darker-gray-text;
+	            	position: relative;
+                	&:before{
+	    				content:"Start date";
+	    				position: absolute;
+	    				top: 3px;
+	    				left: 3px;
+	    				@include font-size($base-font-size);
+	    				color: $darker-gray-text;
+	    			}
                 }
             }
             .form-item-field-news-date-value-max-date{
-            	position: relative;
                 #edit-field-news-date-value-max-datepicker-popup-0{
-    				content:"End date";
-    				position: absolute;
-    				top: 0;
-    				left: 0;
-    				@include font-size($base-font-size);
-    				color: $darker-gray-text;
+    	        	position: relative;                	
+                	&:before{
+	    				content:"End date";
+	    				position: absolute;
+	    				top: 3px;
+	    				left: 3px;
+	    				@include font-size($base-font-size);
+	    				color: $darker-gray-text;
+	    			}
                 }
             }
         }

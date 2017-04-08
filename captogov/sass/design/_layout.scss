@@ -341,7 +341,7 @@ body.not-front.node-type-project{
 }
 
 #page {
-    margin-top: 110px;
+    margin-top: 95px;
 }
 
 //Homepage main content
@@ -562,6 +562,7 @@ div.workbench-info-block {
                         display: block;
                         img {
                             width: 100%;
+                            display: block;
                         }
                     }
                     .field-name-title {
@@ -964,6 +965,8 @@ pages with constrained content
         display: none;
     }
     #content {
+        max-width: 830px;
+        padding-top: 20px;
         #search-api-page-search-form {
             @extend .clearfix;
             box-shadow: 0px 0px 33px 0px $primary-gray-text;
