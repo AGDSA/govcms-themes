@@ -134,8 +134,8 @@ a {
     color: #818285; }
 
 a.external:after {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -1556,6 +1556,10 @@ footer {
       font-weight: bold;
       letter-spacing: 1px;
       margin-top: -5px; }
+
+.field-name-body p {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 section.region-sidebar-second {
   background-color: #F8F7F7; }

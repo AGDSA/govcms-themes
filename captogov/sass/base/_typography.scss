@@ -109,7 +109,7 @@ a.external{
 		// height: 15px;
 		// background: no-repeat center url("../images/external-link-symbol.svg");
 		// background-size: contain;
-		@include font-size($base-font-size);
+		@include font-size(14);
 		@include font-icon($icon-link-external);
 	}
 }
