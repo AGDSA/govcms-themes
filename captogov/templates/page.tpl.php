@@ -17,7 +17,7 @@
 
 <header class="header clearfix" id="header" role="banner">
   <div class="header__inner clearfix">
-      <h1 class="site-name">Attorney General's Department</h1>
+      <!-- h1 class="site-name">Attorney General's Department</h1 -->
     <?php
      if (($secondary_menu)): ?>
       <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
