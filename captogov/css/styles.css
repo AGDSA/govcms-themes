@@ -1544,18 +1544,22 @@ footer {
     text-decoration: none;
     display: inline-block;
     width: 95%;
-    color: #818285; }
+    color: #818285;
+    padding-right: 140px;
+    position: relative; }
     .field-type-file .file a:after {
       content: "DOWNLOAD";
       display: block;
       color: #c6003c;
       border: 2px solid #c6003c;
       padding: 2px 15px;
-      float: right;
       font-size: 0.8em;
       font-weight: bold;
       letter-spacing: 1px;
-      margin-top: -5px; }
+      margin-top: -5px;
+      position: absolute;
+      right: 10px;
+      top: 10px; }
 
 .field-name-body p {
   margin-top: 40px;
