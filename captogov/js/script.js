@@ -369,13 +369,14 @@ Drupal.behaviors.my_custom_behavior = {
 
   //Open/close the header search bar
   var $body = jQuery3('body');
-  jQuery3('#menu-1186-1 a').click(function(e) {
+  jQuery3('#menu-1186-1 a, .menu-mlid-1186 a').click(function(e) {
     e.preventDefault();
     jQuery3('body').toggleClass("search-closed search-open");
   });
 
   $('.view-mode-compact').matchHeight();
-
+  $('.node-teaser').matchHeight();
+  
 
    }}
 })(jQuery, Drupal, this, this.document);

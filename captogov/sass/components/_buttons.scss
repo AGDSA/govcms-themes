@@ -9,12 +9,12 @@ input[type=submit] {
   display: inline-block;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: 2px;
   padding: 15px 25px;
   background-color: $secondary-color;
   text-decoration: none;
   margin-bottom: 5px;
+  @include font-size($base-font-size);
   &:after{
     content: "";
     display: inline-block;
