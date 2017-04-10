@@ -8,13 +8,16 @@ input[type=submit] {
   transition: all .3s;
   display: inline-block;
   color: #ffffff;
-  text-transform: uppercase;
   letter-spacing: 2px;
   padding: 15px 25px;
   background-color: $secondary-color;
   text-decoration: none;
   margin-bottom: 5px;
+  box-shadow: none;
   @include font-size($base-font-size);
+  &:focus{
+    outline: none;
+  }
   &:after{
     content: "";
     display: inline-block;

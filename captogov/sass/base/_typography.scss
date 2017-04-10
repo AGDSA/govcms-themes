@@ -120,6 +120,7 @@ a.external{
 }
 hr{
 	border: 2px solid $primary-color-lighter;
+	margin: 4em 0;
 }
 blockquote{
 	color: $primary-color-lighter;
@@ -209,6 +210,9 @@ img{
 			margin-bottom: 5px;
 		}
 	}
+}
+textarea:focus, input:focus{
+    outline: none;
 }
 /*
 

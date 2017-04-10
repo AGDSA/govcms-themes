@@ -91,6 +91,7 @@ body.not-front {
     #content {
         max-width: 1120px;
         margin: auto;
+        margin-top: 40px;
     }
 }
 
@@ -383,7 +384,7 @@ body.not-front.node-type-project{
             width: 60px;
             transform: translateY(-31px);
             @include from(tablet-l) {
-                top: 57%;
+                top: 57.11%;
             }
             @include from(tablet-p) {
                 right: 17%;
@@ -492,10 +493,9 @@ div.workbench-info-block {
         .card-view {
             width: 100%;
             padding-top: 40px;
-            padding-bottom: 40px;
-            margin-bottom: 40px;
             h2 {
                 text-align: center;
+                margin-top: 12px;
                 a {
                     display: block;
                 }
@@ -1024,15 +1024,18 @@ pages with constrained content
             }
             .search-results {
                 padding-left: 0;
-                padding-top: 40px;
-                border-top: 6px solid $primary-color;
+                padding-top: 20px;
+                border-top: 6px solid $primary-color-lighter;
                 .node {
                     border-bottom: 1px solid $primary-gray;
-                    margin-bottom: 40px;
+                    margin-bottom: 35px;
                     img{
                         display: none;
                     }
                     .field-name-title {
+                        h2{
+                            margin-top: 12px;
+                        }
                         a {
                             text-decoration: none;
                         }
@@ -1205,10 +1208,22 @@ pages with constrained content
 
 //back to newsroom link
 #main #content #block-block-11 {
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 
 //margin under all webforms
 .webform-client-form {
     margin-bottom: 40px;
+}
+
+//Special layout for tableau page /projects/domestic-violence/explore-data
+.page-node-108 #page #main{
+    #content{
+        max-width: 900px;
+        margin: auto;
+        width: auto;
+        float: none;
+        left: 0;
+    }
 }

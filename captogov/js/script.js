@@ -316,6 +316,8 @@ Drupal.behaviors.my_custom_behavior = {
       }
     ]
   });
+
+
   //slick slider slick/unslick workaround, see: https://github.com/kenwheeler/slick/issues/1730#issuecomment-161691797
   jQuery3(window).resize(function() {
     jQuery3('.view-related-new-stories .view-content').slick('resize');
@@ -372,10 +374,14 @@ Drupal.behaviors.my_custom_behavior = {
   jQuery3('#menu-1186-1 a, .menu-mlid-1186 a').click(function(e) {
     e.preventDefault();
     jQuery3('body').toggleClass("search-closed search-open");
+    jQuery3('#edit-keys-2').focus();
   });
 
   $('.view-mode-compact').matchHeight();
   $('.node-teaser').matchHeight();
+
+  //set target="_blank" on downloads field links
+  $('.node-type-project .field-name-field-file .file a').attr('target', '_blank');
   
 
    }}
