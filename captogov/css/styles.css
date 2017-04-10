@@ -365,6 +365,11 @@ div.accordion-container {
   padding-top: 190px;
   margin-top: -190px; }
 
+.media-element-container {
+  display: inline; }
+  .media-element-container .file, .media-element-container h2, .media-element-container div, .media-element-container a {
+    display: inline; }
+
 /* ---------- Import reset of govcms styles ---------- */
 /* GOVCMS RESET */
 html {

@@ -341,3 +341,11 @@ div.accordion-container{
 	padding-top: 190px;
     margin-top: -190px;
 }
+
+
+.media-element-container{
+	display: inline;
+	.file, h2, div, a{
+		display: inline;
+	}
+}
