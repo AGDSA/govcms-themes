@@ -1492,7 +1492,6 @@ footer {
   font-size: 20px;
   font-size: 1.25rem; }
   .node-type-page .field-name-field-summary p, .node-type-page .node-type-project p {
-    font-style: italic;
     font-size: 20px;
     font-size: 1.25rem; }
 
@@ -2149,10 +2148,6 @@ body #main .search-form {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-body.page-search404 .ui-datepicker-calendar,
-body.page-search .ui-datepicker-calendar {
-  display: none; }
-
 body.page-search404 #content .search-form,
 body.page-search #content .search-form {
   box-shadow: 0px 0px 33px 0px #818285;
@@ -2196,6 +2191,9 @@ body.page-search #content .search-form {
     font-size: 0px;
     width: 60px;
     height: 60px; }
+
+.page-newsroom table.ui-datepicker-calendar {
+  display: none; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper {
   width: 100%;
@@ -2279,9 +2277,9 @@ body.page-search #content .search-form {
       .page-newsroom .view-id-latest_news .views-exposed-form .views-submit-button input {
         height: 60px; } }
 
-.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date #edit-field-news-date-value-min-datepicker-popup-0 {
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date {
   position: relative; }
-  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date #edit-field-news-date-value-min-datepicker-popup-0:before {
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date:before {
     content: "Start date";
     position: absolute;
     top: 3px;
@@ -2290,9 +2288,9 @@ body.page-search #content .search-form {
     font-size: 0.8125rem;
     color: #6f6f6f; }
 
-.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date #edit-field-news-date-value-max-datepicker-popup-0 {
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date {
   position: relative; }
-  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date #edit-field-news-date-value-max-datepicker-popup-0:before {
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date:before {
     content: "End date";
     position: absolute;
     top: 3px;
