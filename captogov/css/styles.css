@@ -151,7 +151,7 @@ a.external:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*==== the icon ====*/
-  content: " " ""; }
+  content: " " "" !important; }
 
 hr {
   border: 2px solid #143f88;

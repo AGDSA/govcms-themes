@@ -40,7 +40,7 @@
 
 		$space: ' ';
 		/*==== the icon ====*/
-		 content: $space$icon;
+		 content: $space$icon !important;
 	}
 	$icon-link-external: '\e900';
 /*
