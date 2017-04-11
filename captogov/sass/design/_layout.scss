@@ -166,11 +166,11 @@ body.not-front.node-type-project{
         overflow: hidden;
         transition: all 1s ease;
         &.open {
-            max-height: 2000px;
+            max-height: 2500px;
         }
     }
     .is-active-trail > ul.menu {
-        max-height: 500px;
+        max-height: 700px;
     }
 }
 

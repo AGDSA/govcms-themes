@@ -1520,11 +1520,6 @@ footer {
     .node-type-webform #block-views-banner-image-top-block .block__content {
       max-height: 200px;
       height: 200px; } }
-  .node-type-page #block-views-banner-image-top-block .block__content img,
-  .node-type-news-article #block-views-banner-image-top-block .block__content img,
-  .node-type-project #block-views-banner-image-top-block .block__content img,
-  .node-type-webform #block-views-banner-image-top-block .block__content img {
-    height: 200px; }
 
 #block-views-banner-image-top-block .block__content {
   max-height: 200px;
@@ -1554,7 +1549,11 @@ footer {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    height: 200px; }
+    @media (min-width: 769px) {
+      #block-views-banner-image-top-block .block__content .view-banner-image-top .view-content img {
+        height: auto; } }
   #block-views-banner-image-top-block .block__content .view-banner-image-top .view-content h1 {
     position: absolute;
     top: 50%;
@@ -2590,10 +2589,10 @@ body.not-front.node-type-project aside.sidebars {
   transition: all 1s ease; }
   #block-menu-block-1 .menu-block-1 > ul.menu > li.is-active-trail > ul.menu .is-expanded ul.menu.open,
   #block-menu-block-1 .menu-block-1 > ul.menu > li.is-active-trail > ul.menu li.active > ul.menu.open {
-    max-height: 2000px; }
+    max-height: 2500px; }
 
 #block-menu-block-1 .menu-block-1 > ul.menu > li.is-active-trail > ul.menu .is-active-trail > ul.menu {
-  max-height: 500px; }
+  max-height: 700px; }
 
 #block-menu-block-1 .block__content,
 #block-menu-menu-footer-menu .block__content {

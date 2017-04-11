@@ -1121,9 +1121,6 @@ footer {
 	            height: 200px;
 
 	    	}
-            img{
-                height: 200px;
-            }
         }
     }
 }
@@ -1158,6 +1155,10 @@ footer {
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
+                    height: 200px;
+                    @include from(tablet-l){
+                        height: auto;
+                    }
                 }
                 h1{
                     position: absolute;
