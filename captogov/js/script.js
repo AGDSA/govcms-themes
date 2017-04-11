@@ -391,7 +391,14 @@ Drupal.behaviors.my_custom_behavior = {
 
   //set target="_blank" on downloads field links
   $('.node-type-project .field-name-field-file .file a').attr('target', '_blank');
-  
+
+  //Make footer sidenav top level item non-clickable
+  jQuery3('#block-menu-menu-footer-menu .block__content > ul.menu > li.menu__item > a').click(function(e) {
+  	e.preventDefault();
+   });
+
+  //Make table of contents top elements height smaller
+  jQuery('.toc-filter-top').parent().css('height', '25px');
 
    }}
 })(jQuery, Drupal, this, this.document);

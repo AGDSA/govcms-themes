@@ -1514,7 +1514,12 @@ footer {
     .node-type-project #block-views-banner-image-top-block .block__content,
     .node-type-webform #block-views-banner-image-top-block .block__content {
       max-height: 200px;
-      height: 200px; } }
+      height: 200px; }
+      .node-type-page #block-views-banner-image-top-block .block__content img,
+      .node-type-news-article #block-views-banner-image-top-block .block__content img,
+      .node-type-project #block-views-banner-image-top-block .block__content img,
+      .node-type-webform #block-views-banner-image-top-block .block__content img {
+        height: 200px; } }
 
 #block-views-banner-image-top-block .block__content {
   max-height: 200px;
@@ -1852,6 +1857,8 @@ body.not-front #page #main aside.sidebars a.active {
     margin: 10px;
     display: block;
     margin: 5px 0px; }
+    #main .field-name-field-reference div.node .contextual-links-wrapper {
+      display: none; }
     #main .field-name-field-reference div.node .field-name-title {
       margin: 0; }
     #main .field-name-field-reference div.node h2 {

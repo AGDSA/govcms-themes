@@ -1113,6 +1113,9 @@ footer {
 	    	@include from(tablet-l){
 	    		max-height: 200px;
 	            height: 200px;
+                img{
+                    height: 200px;
+                }
 	    	}
         }
     }
@@ -1467,6 +1470,9 @@ body.not-front #page #main aside.sidebars {
             margin: 10px;
             display: block;
             margin: 5px 0px;
+            .contextual-links-wrapper{
+                display: none;
+            }
             .field-name-title{
                 margin: 0;
             }
