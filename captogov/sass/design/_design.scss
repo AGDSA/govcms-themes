@@ -1203,6 +1203,13 @@ footer {
     		top: 71%;
             transform: translateY(-50%);
         }
+        &:hover{
+            &::after{
+                color: #ffffff;
+                border: 2px solid #ffffff;
+                background-color: $secondary-color;
+            }
+        }
     }
 }
 
@@ -1504,6 +1511,13 @@ body.not-front #page #main aside.sidebars {
                     top: 57%;
                     transform: translateY(-50%);
                     line-height: 23px;
+                }
+                &:hover{
+                    &::after{
+                        color: #ffffff;
+                        border: 2px solid #ffffff;
+                        background-color: $secondary-color;
+                    }
                 }
             }
         }
@@ -2142,4 +2156,9 @@ body.page-search{
             }
         }
     }
+}
+
+//remove cursor on footer links in sidebar
+#block-menu-menu-footer-menu .block__content > ul.menu > li.menu__item > a{
+    cursor: initial;
 }
