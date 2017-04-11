@@ -42,13 +42,13 @@ $(document).ready(function() {
      if($ddNav.not(':visible')) {
     navShowInterval = setInterval(function() {
    
-    console.log('mouseenter');
+    console.log($ddNav.outerHeight());
       if($ddNav.length > 0) {
         $ddNav.css('display', 'block');
 
         // console.log($ddNav.height());
         // calculate height for the gray modal
-        $innerModal.css('height', $ddNav.outerHeight() + 90); // 60 for bottom padding
+        $innerModal.css('height', $ddNav.outerHeight() + 60); // 60 for bottom padding
 
         $body.addClass('nav-dropdown-open');
         clearInterval(navHideInterval);
@@ -61,7 +61,7 @@ $(document).ready(function() {
     var $ddNav = $t.children('ul');
     clearInterval(navShowInterval);
     if($ddNav.is(':visible')) {
-      console.log('mouseleave');
+      // console.log('mouseleave');
       navHideInterval = setInterval(function() {
         $body.removeClass('nav-dropdown-open');
         clearInterval(navHideInterval);

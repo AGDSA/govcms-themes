@@ -7,13 +7,14 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-<div class="nav-modal"><div class="nav-modal-inner"></div></div>
+
 
 <?php if ($page['header_search']) : ?>
 <div class="header-search">
   <?php print render($page['header_search']); ?>
 </div>
 <?php endif; ?>
+<div class="nav-modal"><div class="nav-modal-inner"></div></div>
 
 <header class="header clearfix" id="header" role="banner">
   <div class="header__inner clearfix">
