@@ -1900,7 +1900,8 @@ body.not-front #page #main aside.sidebars a.active {
     float: none;
     margin: 0;
     margin-right: 0px;
-    max-height: 350px; }
+    max-height: 250px;
+    overflow: hidden; }
     #page #main .bean-image-and-text .field-name-field-bean-image img {
       width: 100%; }
   #page #main .bean-image-and-text .text {
@@ -2198,9 +2199,6 @@ body.page-search #content .search-form {
     width: 60px;
     height: 60px; }
 
-.page-newsroom table.ui-datepicker-calendar {
-  display: none; }
-
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper {
   width: 100%;
   padding: .5em 0 0 0; }
@@ -2252,7 +2250,8 @@ body.page-search #content .search-form {
     background-color: #ffffff; }
     @media (min-width: 769px) {
       .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper input {
-        padding: 30px; } }
+        padding: 30px;
+        padding-top: 35px; } }
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #form-item-field-news-date-value-min,
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-min,
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper .form-item,
@@ -2288,10 +2287,10 @@ body.page-search #content .search-form {
   .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date:before {
     content: "Start date";
     position: absolute;
-    top: 3px;
-    left: 3px;
-    font-size: 13px;
-    font-size: 0.8125rem;
+    top: 5px;
+    left: 30px;
+    font-size: 14px;
+    font-size: 0.875rem;
     color: #6f6f6f; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date {
@@ -2299,14 +2298,14 @@ body.page-search #content .search-form {
   .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date:before {
     content: "End date";
     position: absolute;
-    top: 3px;
-    left: 3px;
-    font-size: 13px;
-    font-size: 0.8125rem;
+    top: 5px;
+    left: 30px;
+    font-size: 14px;
+    font-size: 0.875rem;
     color: #6f6f6f; }
 
 .page-newsroom .view-id-latest_news .view-content {
-  border-top: 6px solid #002056;
+  border-top: 6px solid #143f88;
   padding-top: 35px;
   margin: 40px 0px; }
 

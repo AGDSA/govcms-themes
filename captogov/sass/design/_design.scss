@@ -1522,10 +1522,11 @@ body.not-front #page #main aside.sidebars {
     }
     .field-name-field-bean-image{
         position: relative;
-            float: none;
-            margin: 0;
-            margin-right: 0px;
-                max-height: 350px;
+        float: none;
+        margin: 0;
+        margin-right: 0px;
+        max-height: 250px;
+        overflow: hidden;
         img{
             width: 100%;
         }
@@ -1882,9 +1883,6 @@ body.page-search{
 
 //News view page
 .page-newsroom {
-    table.ui-datepicker-calendar{
-        display: none;
-    }
     .view-id-latest_news {
         .views-exposed-form{
             #edit-combine-wrapper{
@@ -1938,6 +1936,7 @@ body.page-search{
                     background-color: #ffffff;
                     @include from(tablet-l){
                         padding: 30px;
+                        padding-top: 35px;
                     }
                 }
                 #form-item-field-news-date-value-min, 
@@ -1976,9 +1975,9 @@ body.page-search{
                 	&:before{
 	    				content:"Start date";
 	    				position: absolute;
-	    				top: 3px;
-	    				left: 3px;
-	    				@include font-size($base-font-size);
+	    				top: 5px;
+	    				left: 30px;
+	    				@include font-size(14);
 	    				color: $darker-gray-text;
 	    			}
             }
@@ -1987,15 +1986,15 @@ body.page-search{
                 	&:before{
 	    				content:"End date";
 	    				position: absolute;
-	    				top: 3px;
-	    				left: 3px;
-	    				@include font-size($base-font-size);
+	    				top: 5px;
+                        left: 30px;
+	    				@include font-size(14);
 	    				color: $darker-gray-text;
 	    			}
             }
         }
         .view-content{
-            border-top: 6px solid $primary-color;
+            border-top: 6px solid $primary-color-lighter;
             padding-top: 35px;
             margin: 40px 0px;
         }
