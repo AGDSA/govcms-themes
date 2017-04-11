@@ -1102,6 +1102,12 @@ footer {
         @include font-size(20);
     }
 }
+.node-type-page .field-name-field-summary{
+    line-height: 31px;
+    p{
+        line-height: 31px;
+    }
+}
 .node-type-page,
 .node-type-news-article,
 .node-type-project,
@@ -1113,10 +1119,11 @@ footer {
 	    	@include from(tablet-l){
 	    		max-height: 200px;
 	            height: 200px;
-                img{
-                    height: 200px;
-                }
+
 	    	}
+            img{
+                height: 200px;
+            }
         }
     }
 }
@@ -1724,6 +1731,7 @@ body.not-front.search-closed{
 	.header-search{
 		height: 0px !important;
         transition: all 0.3s ease;
+        display: none;
 		#edit-submit-2,
 		#edit-keys-2{
             transition: all 0.3s ease;

@@ -1502,6 +1502,11 @@ footer {
     font-size: 20px;
     font-size: 1.25rem; }
 
+.node-type-page .field-name-field-summary {
+  line-height: 31px; }
+  .node-type-page .field-name-field-summary p {
+    line-height: 31px; }
+
 .node-type-page #block-views-banner-image-top-block .block__content,
 .node-type-news-article #block-views-banner-image-top-block .block__content,
 .node-type-project #block-views-banner-image-top-block .block__content,
@@ -1514,12 +1519,12 @@ footer {
     .node-type-project #block-views-banner-image-top-block .block__content,
     .node-type-webform #block-views-banner-image-top-block .block__content {
       max-height: 200px;
-      height: 200px; }
-      .node-type-page #block-views-banner-image-top-block .block__content img,
-      .node-type-news-article #block-views-banner-image-top-block .block__content img,
-      .node-type-project #block-views-banner-image-top-block .block__content img,
-      .node-type-webform #block-views-banner-image-top-block .block__content img {
-        height: 200px; } }
+      height: 200px; } }
+  .node-type-page #block-views-banner-image-top-block .block__content img,
+  .node-type-news-article #block-views-banner-image-top-block .block__content img,
+  .node-type-project #block-views-banner-image-top-block .block__content img,
+  .node-type-webform #block-views-banner-image-top-block .block__content img {
+    height: 200px; }
 
 #block-views-banner-image-top-block .block__content {
   max-height: 200px;
@@ -2044,7 +2049,8 @@ body.not-front.search-open .header-search {
 
 body.not-front.search-closed .header-search {
   height: 0px !important;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  display: none; }
   body.not-front.search-closed .header-search #edit-submit-2,
   body.not-front.search-closed .header-search #edit-keys-2 {
     transition: all 0.3s ease;
@@ -3303,7 +3309,8 @@ div.workbench-info-block {
         .not-front #main .card-view .card-wrapper .view-mode-compact.node-project .field-type-image a img,
         .not-front #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-type-image a img,
         .not-front #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-image a img {
-          width: 100%; }
+          width: 100%;
+          display: block; }
       .not-front #main .card-view .view-content .views-row .field-name-title,
       .not-front #main .card-view .view-content .view-mode-compact.node-page .field-name-title,
       .not-front #main .card-view .view-content .view-mode-compact.node-project .field-name-title,
