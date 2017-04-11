@@ -1197,7 +1197,8 @@ footer {
             margin-top: -5px;
             position: absolute;
             right: -19px;
-    		top: 29%;
+    		top: 71%;
+            transform: translateY(-50%);
         }
     }
 }
@@ -1462,7 +1463,7 @@ body.not-front #page #main aside.sidebars {
         }
         div.node{
             border: 1px solid #c9c9c9;
-            padding: 15px 40px;
+                padding: 20px;
             margin: 10px;
             display: block;
             margin: 5px 0px;
@@ -1480,6 +1481,7 @@ body.not-front #page #main aside.sidebars {
                 color: $primary-gray-text;
                 padding-right: 140px;
                 position: relative;
+                font-weight: normal;
                 &:after {
                     content: "View page";
                     display: block;
@@ -1493,7 +1495,8 @@ body.not-front #page #main aside.sidebars {
                     margin-top: -5px;
                     position: absolute;
                     right: -19px;
-                    top: 29%;
+                    top: 57%;
+                    transform: translateY(-50%);
                 }
             }
         }

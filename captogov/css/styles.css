@@ -1590,7 +1590,10 @@ footer {
       margin-top: -5px;
       position: absolute;
       right: -19px;
-      top: 29%; }
+      top: 71%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
 
 .field-name-body p {
   margin-top: 40px;
@@ -1845,7 +1848,7 @@ body.not-front #page #main aside.sidebars a.active {
     display: none; }
   #main .field-name-field-reference div.node {
     border: 1px solid #c9c9c9;
-    padding: 15px 40px;
+    padding: 20px;
     margin: 10px;
     display: block;
     margin: 5px 0px; }
@@ -1861,7 +1864,8 @@ body.not-front #page #main aside.sidebars a.active {
       width: 95%;
       color: #818285;
       padding-right: 140px;
-      position: relative; }
+      position: relative;
+      font-weight: normal; }
       #main .field-name-field-reference div.node a:after {
         content: "View page";
         display: block;
@@ -1875,7 +1879,10 @@ body.not-front #page #main aside.sidebars a.active {
         margin-top: -5px;
         position: absolute;
         right: -19px;
-        top: 29%; }
+        top: 57%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
 
 @media (max-width: 960px) {
   #block-bean-flexible-block {
