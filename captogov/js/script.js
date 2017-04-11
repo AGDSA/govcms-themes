@@ -54,7 +54,7 @@ $(document).ready(function() {
         clearInterval(navHideInterval);
         clearInterval(navShowInterval);
       }
-    }, 200);
+    }, 150);
      }
   }).mouseleave(function() {
     var $t = $(this);

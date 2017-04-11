@@ -1848,7 +1848,7 @@ body.not-front #page #main aside.sidebars a.active {
     display: none; }
   #main .field-name-field-reference div.node {
     border: 1px solid #c9c9c9;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px;
     display: block;
     margin: 5px 0px; }
@@ -1871,7 +1871,7 @@ body.not-front #page #main aside.sidebars a.active {
         display: block;
         color: #c6003c;
         border: 2px solid #c6003c;
-        padding: 2px 15px;
+        padding: 2px 14px;
         float: right;
         font-size: 0.8em;
         font-weight: bold;
@@ -1882,7 +1882,8 @@ body.not-front #page #main aside.sidebars a.active {
         top: 57%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        line-height: 23px; }
 
 @media (max-width: 960px) {
   #block-bean-flexible-block {
@@ -1899,7 +1900,7 @@ body.not-front #page #main aside.sidebars a.active {
     float: none;
     margin: 0;
     margin-right: 0px;
-    max-height: 379px; }
+    max-height: 350px; }
     #page #main .bean-image-and-text .field-name-field-bean-image img {
       width: 100%; }
   #page #main .bean-image-and-text .text {

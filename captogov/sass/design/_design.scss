@@ -1463,7 +1463,7 @@ body.not-front #page #main aside.sidebars {
         }
         div.node{
             border: 1px solid #c9c9c9;
-                padding: 20px;
+            padding: 10px 20px;
             margin: 10px;
             display: block;
             margin: 5px 0px;
@@ -1487,7 +1487,7 @@ body.not-front #page #main aside.sidebars {
                     display: block;
                     color: $secondary-color;
                     border: 2px solid $secondary-color;
-                    padding: 2px 15px;
+                    padding: 2px 14px;
                     float: right;
                     font-size: 0.8em;
                     font-weight: bold;
@@ -1497,6 +1497,7 @@ body.not-front #page #main aside.sidebars {
                     right: -19px;
                     top: 57%;
                     transform: translateY(-50%);
+                    line-height: 23px;
                 }
             }
         }
@@ -1524,7 +1525,7 @@ body.not-front #page #main aside.sidebars {
             float: none;
             margin: 0;
             margin-right: 0px;
-                max-height: 379px;
+                max-height: 350px;
         img{
             width: 100%;
         }
