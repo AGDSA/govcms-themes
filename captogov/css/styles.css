@@ -369,6 +369,8 @@ div.accordion-container {
   display: inline; }
   .media-element-container .file, .media-element-container h2, .media-element-container div, .media-element-container a {
     display: inline; }
+  .media-element-container .file img {
+    display: inline; }
 
 /* ---------- Import reset of govcms styles ---------- */
 /* GOVCMS RESET */
@@ -1886,22 +1888,11 @@ body.not-front #page #main aside.sidebars a.active {
   padding: 15px;
   position: relative; }
   .bean-image-and-text .field-name-field-bean-image {
-    position: relative; }
-    .bean-image-and-text .field-name-field-bean-image .field-type-image {
-      float: none;
-      margin: 0; }
+    position: relative;
+    float: none;
+    margin: 0; }
     .bean-image-and-text .field-name-field-bean-image img {
       width: 100%; }
-    .bean-image-and-text .field-name-field-bean-image:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: rgba(0, 32, 86, 0.14);
-      background: linear-gradient(to bottom, rgba(0, 32, 86, 0.14) 0%, rgba(20, 63, 136, 0.68) 54%, rgba(20, 63, 136, 0.89) 75%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002056', endColorstr='#143f88', GradientType=0 ); }
   .bean-image-and-text .text {
     padding: 30px 20px;
     background-color: #143f88;

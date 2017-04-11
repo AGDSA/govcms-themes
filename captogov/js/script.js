@@ -39,25 +39,33 @@ $(document).ready(function() {
   $('li.sf-depth-1', $sfMenu).mouseenter(function() {
     var $t = $(this);
     var $ddNav = $t.children('ul');
+     if($ddNav.not(':visible')) {
+    navShowInterval = setInterval(function() {
+   
+    console.log('mouseenter');
+      if($ddNav.length > 0) {
+        $ddNav.css('display', 'block');
 
-    if($ddNav.length > 0) {
-      $ddNav.css('display', 'block');
+        // console.log($ddNav.height());
+        // calculate height for the gray modal
+        $innerModal.css('height', $ddNav.outerHeight() + 60); // 60 for bottom padding
 
-      // console.log($ddNav.height());
-      // calculate height for the gray modal
-      $innerModal.css('height', $ddNav.outerHeight() + 140); // 60 for bottom padding
-
-      $body.addClass('nav-dropdown-open');
-      clearInterval(navHideInterval);
-    }
+        $body.addClass('nav-dropdown-open');
+        clearInterval(navHideInterval);
+        clearInterval(navShowInterval);
+      }
+    }, 500);
+     }
   }).mouseleave(function() {
     var $t = $(this);
     var $ddNav = $t.children('ul');
-
+    clearInterval(navShowInterval);
     if($ddNav.is(':visible')) {
+      console.log('mouseleave');
       navHideInterval = setInterval(function() {
         $body.removeClass('nav-dropdown-open');
         clearInterval(navHideInterval);
+        clearInterval(navShowInterval);
       }, 800);
     } else {
       $body.removeClass('nav-dropdown-open');
@@ -65,6 +73,7 @@ $(document).ready(function() {
 
   });
 });
+
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.my_custom_behavior = {
