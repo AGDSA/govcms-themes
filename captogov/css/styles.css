@@ -3907,7 +3907,8 @@ div.header-secondary-menu {
     margin: 0 auto; }
     div.header-secondary-menu #block-menu-block-3 ul.menu {
       text-align: right;
-      padding: 10px 0; }
+      padding: 10px 0;
+      margin: 0px; }
       div.header-secondary-menu #block-menu-block-3 ul.menu li {
         display: inline;
         padding-left: 20px; }
