@@ -1277,8 +1277,9 @@ div.header-secondary-menu{
     #block-menu-block-3{
         max-width: 1120px;
         margin: 0 auto;
-        @include from(desktop-mid){
-            display: none;
+        display: none;
+        @include to(desktop-mid){
+            display: block;
         }
         ul.menu{
             text-align: right;

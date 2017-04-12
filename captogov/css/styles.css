@@ -3904,10 +3904,11 @@ div.header-secondary-menu {
   background-color: #e4e4e3; }
   div.header-secondary-menu #block-menu-block-3 {
     max-width: 1120px;
-    margin: 0 auto; }
-    @media (min-width: 1121px) {
+    margin: 0 auto;
+    display: none; }
+    @media (max-width: 1350px) {
       div.header-secondary-menu #block-menu-block-3 {
-        display: none; } }
+        display: block; } }
     div.header-secondary-menu #block-menu-block-3 ul.menu {
       text-align: right;
       padding: 6px 0px;
