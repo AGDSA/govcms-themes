@@ -155,7 +155,7 @@ a.external:after {
 
 hr {
   border: 2px solid #143f88;
-  margin: 4em 0; }
+  margin: 40px 0; }
 
 blockquote {
   color: #143f88;
@@ -476,6 +476,9 @@ body.page-search #content .search-form .form-item-keys:after, .front #main .card
   height: 0;
   clear: both;
   visibility: hidden; }
+
+span.file img, span.file a {
+  display: inline; }
 
 /* ---------- Import design ---------- */
 /*
@@ -1502,9 +1505,9 @@ footer {
     font-size: 20px;
     font-size: 1.25rem; }
 
-.node-type-page .field-name-field-summary {
+.node-type-page #content .field-name-field-summary {
   line-height: 31px; }
-  .node-type-page .field-name-field-summary p {
+  .node-type-page #content .field-name-field-summary p {
     line-height: 31px; }
 
 .node-type-page #block-views-banner-image-top-block .block__content,
@@ -2443,7 +2446,7 @@ body.page-search #content .search-form {
       background-color: #007bb6; }
 
 #block-menu-menu-footer-menu .block__content > ul.menu > li.menu__item > a {
-  cursor: initial; }
+  cursor: default; }
 
 /*
 

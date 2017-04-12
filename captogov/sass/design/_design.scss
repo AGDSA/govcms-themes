@@ -1102,7 +1102,7 @@ footer {
         @include font-size(20);
     }
 }
-.node-type-page .field-name-field-summary{
+.node-type-page #content .field-name-field-summary{
     line-height: 31px;
     p{
         line-height: 31px;
@@ -2169,5 +2169,5 @@ body.page-search{
 
 //remove cursor on footer links in sidebar
 #block-menu-menu-footer-menu .block__content > ul.menu > li.menu__item > a{
-    cursor: initial;
+    cursor: default;
 }
