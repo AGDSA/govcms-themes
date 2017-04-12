@@ -1486,7 +1486,7 @@ footer {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
 
-.breadcrumb.wrapper {
+.breadcrumb-wrapper {
   width: 100%;
   border-bottom: 1px solid #e4e4e3; }
 
