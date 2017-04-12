@@ -37,13 +37,13 @@ $(document).ready(function() {
   var navHideInterval;
 
   $('li.sf-depth-1', $sfMenu).mouseenter(function() {
+        clearInterval(navHideInterval);
     var $t = $(this);
     var $ddNav = $t.children('ul');
-        clearInterval(navShowInterval);
      if($ddNav.not(':visible')) {
     navShowInterval = setInterval(function() {
    
-    console.log($ddNav.outerHeight());
+    // console.log('mouseenter');
       if($ddNav.length > 0) {
         $ddNav.css('display', 'block');
 
@@ -52,7 +52,7 @@ $(document).ready(function() {
         $innerModal.css('height', $ddNav.outerHeight() + 60); // 60 for bottom padding
 
         $body.addClass('nav-dropdown-open');
-        clearInterval(navHideInterval);
+        clearInterval(navShowInterval);
       }
     }, 150);
      }
