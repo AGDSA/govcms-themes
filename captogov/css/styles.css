@@ -3901,13 +3901,13 @@ pages with constrained content
 */
 div.header-secondary-menu {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto; }
+  background-color: #e4e4e3; }
   div.header-secondary-menu #block-menu-block-3 {
-    background-color: #e4e4e3; }
+    max-width: 1120px;
+    margin: 0 auto; }
     div.header-secondary-menu #block-menu-block-3 ul.menu {
       text-align: right;
-      margin: 10px 0; }
+      padding: 10px 0; }
       div.header-secondary-menu #block-menu-block-3 ul.menu li {
         display: inline;
         padding-left: 20px; }
@@ -3916,6 +3916,8 @@ div.header-secondary-menu {
           text-decoration: none;
           font-size: 14px;
           font-size: 0.875rem; }
+          div.header-secondary-menu #block-menu-block-3 ul.menu li a:hover {
+            color: #004b85; }
 
 /* ---------- Components ---------- 
 @import 'components/blockquote';
