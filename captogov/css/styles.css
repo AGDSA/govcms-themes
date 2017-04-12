@@ -230,7 +230,7 @@ img {
   display: inline-block; }
 
 #content ul {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 30px; }
   #content ul li {
     margin-bottom: 5px; }
@@ -516,7 +516,7 @@ span.file img, span.file a {
   background: rgba(20, 63, 136, 0.8);
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s all ease-in-out; }
+  transition: 0.3s all ease-in-out; }
   .nav-dropdown-open .nav-modal {
     visibility: visible;
     opacity: 1; }
@@ -530,7 +530,7 @@ span.file img, span.file a {
     height: 440px;
     width: 100%;
     background-color: #e4e4e3;
-    transition: 0.5s height ease-in-out; }
+    transition: 0.3s height ease-in-out; }
 
 .not-front header.header #block-superfish-1 {
   margin-right: 70px; }
@@ -1605,10 +1605,10 @@ footer {
       top: 71%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      transition: all 0.3 ease; }
     .field-type-file .file a:hover::after {
       color: #ffffff;
-      border: 2px solid #ffffff;
       background-color: #c6003c; }
 
 .field-name-body p {
@@ -1901,10 +1901,10 @@ body.not-front #page #main aside.sidebars a.active {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        line-height: 23px; }
+        line-height: 23px;
+        transition: all 0.3 ease; }
       #main .field-name-field-reference div.node a:hover::after {
         color: #ffffff;
-        border: 2px solid #ffffff;
         background-color: #c6003c; }
 
 @media (max-width: 960px) {

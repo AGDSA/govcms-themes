@@ -43,7 +43,7 @@
 
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.5s all ease-in-out;
+	transition: 0.3s all ease-in-out;
 
 	.nav-dropdown-open & {
 		visibility: visible;
@@ -60,7 +60,7 @@
 		height: 440px;
 		width: 100%;
 		background-color: $primary-gray;
-		transition: 0.5s height ease-in-out;
+		transition: 0.3s height ease-in-out;
 	}
 }
 
@@ -1210,11 +1210,12 @@ footer {
             right: -19px;
     		top: 71%;
             transform: translateY(-50%);
+            transition: all 0.3 ease;
         }
         &:hover{
             &::after{
                 color: #ffffff;
-                border: 2px solid #ffffff;
+                // border: 2px solid #ffffff;
                 background-color: $secondary-color;
             }
         }
@@ -1519,11 +1520,12 @@ body.not-front #page #main aside.sidebars {
                     top: 57%;
                     transform: translateY(-50%);
                     line-height: 23px;
+                    transition: all 0.3 ease;
                 }
                 &:hover{
                     &::after{
                         color: #ffffff;
-                        border: 2px solid #ffffff;
+                        // border: 2px solid #ffffff;
                         background-color: $secondary-color;
                     }
                 }
