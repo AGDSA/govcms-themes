@@ -869,6 +869,7 @@ div.workbench-info-block {
             .mm-listview {
                 background-color: $light-bg-color;
                 padding: 5px;
+                padding-bottom: 0;
             }
             .mm-listview>li:not(.mm-divider):after {
                 content: none;
@@ -876,6 +877,20 @@ div.workbench-info-block {
             .menu__item {
                 margin: 5px;
                 background-color: #ffffff;
+            }
+            .menu-mlid-1186 > a{
+                position: relative;
+                &:after{
+                    content:" ";
+                    background: #fff url(/sites/g/files/net2876/themes/site/captogov/images/search.svg) no-repeat center center;
+                    height: 50px;
+                    width: 50px;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border-left: 1px solid $primary-gray;
+                }
             }
         }
     }
@@ -1296,6 +1311,21 @@ div.header-secondary-menu{
                         color: $primary-blue;   
                     }
                 }
+            }
+        }
+    }
+}
+#mobile-menu{
+    #block-menu-block-4{
+        margin-top: 0;
+        ul.menu.mm-listview{
+            padding-top: 0;
+            li.first{
+                margin-top: 0;
+
+            }
+            a{
+                border: none;
             }
         }
     }
