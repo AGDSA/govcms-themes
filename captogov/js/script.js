@@ -66,7 +66,7 @@ $(document).ready(function() {
         $body.removeClass('nav-dropdown-open');
         clearInterval(navHideInterval);
         clearInterval(navShowInterval);
-      }, 800);
+      }, 600);
     } else {
       $body.removeClass('nav-dropdown-open');
     }

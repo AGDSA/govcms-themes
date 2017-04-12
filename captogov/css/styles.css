@@ -1606,7 +1606,7 @@ footer {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      transition: all 0.3 ease; }
+      transition: all 0.3s ease; }
     .field-type-file .file a:hover::after {
       color: #ffffff;
       background-color: #c6003c; }
