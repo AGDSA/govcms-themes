@@ -39,6 +39,7 @@ $(document).ready(function() {
   $('li.sf-depth-1', $sfMenu).mouseenter(function() {
     var $t = $(this);
     var $ddNav = $t.children('ul');
+        clearInterval(navShowInterval);
      if($ddNav.not(':visible')) {
     navShowInterval = setInterval(function() {
    
@@ -52,7 +53,6 @@ $(document).ready(function() {
 
         $body.addClass('nav-dropdown-open');
         clearInterval(navHideInterval);
-        clearInterval(navShowInterval);
       }
     }, 150);
      }

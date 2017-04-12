@@ -72,10 +72,10 @@
 		#block-superfish-1{
 			margin-right: 70px;
 			#menu-914-1{
-				margin-left: 0px;
+				padding-left: 0px;
 			}
 			li.sf-depth-1{
-				margin-left: 20px;
+				padding-left: 20px;
 				@include font-size(16);
 			}
 		}
@@ -104,7 +104,7 @@ header.header {
                     @include font-size(17);
                 }
                 li.sf-depth-1{
-                    margin-left: 27px;
+                    padding-left: 27px;
                 }
             }
         }
@@ -127,7 +127,7 @@ header.header {
         // }
         li.sf-depth-1 {
             text-align: right;
-            margin-left: 32px;
+            padding-left: 32px;
             position: relative;
 						& > ul {
 							opacity: 0;
