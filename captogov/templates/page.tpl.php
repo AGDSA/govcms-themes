@@ -58,8 +58,9 @@
   <?php print render($page['highlighted']); ?>
   
   </div>
-  <?php print $breadcrumb; ?>
-
+  <div class="breadcrumb-wrapper">
+    <?php print $breadcrumb; ?>
+  </div>
   <div id="main" role="main">
     <div class="title-wrapper" class="column">
       <a href="#skip-link" id="skip-content" class="element-invisible">Go to top of page</a>

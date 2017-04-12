@@ -1486,10 +1486,13 @@ footer {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
 
+.breadcrumb.wrapper {
+  width: 100%;
+  border-bottom: 1px solid #e4e4e3; }
+
 .breadcrumb {
   padding-left: 0px;
-  color: #c6003c;
-  border-bottom: 1px solid #e4e4e3; }
+  color: #c6003c; }
   .breadcrumb a {
     font-size: 14px;
     font-size: 0.875rem;

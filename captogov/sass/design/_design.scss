@@ -1081,11 +1081,14 @@ footer {
     margin-bottom: 30px;
     @include title-bar($secondary-color, before, 30px)
 }
-
+.breadcrumb.wrapper {
+    width: 100%;
+    border-bottom: 1px solid #e4e4e3;
+}
 .breadcrumb {
 	padding-left: 0px;
     color: $secondary-color;
-    border-bottom: 1px solid #e4e4e3;
+    // border-bottom: 1px solid #e4e4e3;
     a {
         @include font-size(14);
         text-decoration: none;
