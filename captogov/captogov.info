@@ -93,6 +93,7 @@ scripts[] = js/script.js
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 regions[header_search]  = Header Search
+regions[header_secondary_menu]         = Header Secondary Menu
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted

@@ -17,6 +17,9 @@
 <div class="nav-modal"><div class="nav-modal-inner"></div></div>
 
 <header class="header clearfix" id="header" role="banner">
+<div class="header-secondary-menu">
+  <?php print render($page['header_secondary_menu']); ?>
+</div>
   <div class="header__inner clearfix">
       <!-- h1 class="site-name">Attorney General's Department</h1 -->
     <?php
