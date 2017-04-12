@@ -55,7 +55,7 @@ body.navbar-administration {
         }
     }
     .header__logo-image {
-        padding-top: 5px;
+        padding-top: 10px;
         padding-left: 5px;
         max-width: 310px;
         @include to(desktop-mid) {
@@ -342,7 +342,7 @@ body.not-front.node-type-project{
 }
 
 #page {
-    margin-top: 95px;
+    margin-top: 87px;
 }
 
 //Homepage main content

@@ -2269,7 +2269,8 @@ body.page-search #content .search-form {
     padding: 10px;
     box-shadow: 0px 0px 33px -7px #818285;
     border: none;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    padding-left: 20px; }
     @media (min-width: 769px) {
       .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper input {
         padding: 30px;
@@ -2310,7 +2311,7 @@ body.page-search #content .search-form {
     content: "Start date";
     position: absolute;
     top: 5px;
-    left: 30px;
+    left: 20px;
     font-size: 14px;
     font-size: 0.875rem;
     color: #6f6f6f; }
@@ -2321,7 +2322,7 @@ body.page-search #content .search-form {
     content: "End date";
     position: absolute;
     top: 5px;
-    left: 30px;
+    left: 20px;
     font-size: 14px;
     font-size: 0.875rem;
     color: #6f6f6f; }
@@ -2483,7 +2484,7 @@ body.navbar-administration header {
       .header__inner .site-name {
         left: 60%; } }
   .header__inner .header__logo-image {
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 5px;
     max-width: 310px; }
     @media (max-width: 1350px) {
@@ -2711,7 +2712,7 @@ body.not-front.node-type-project aside.sidebars {
     width: auto; }
 
 #page {
-  margin-top: 95px; }
+  margin-top: 87px; }
 
 #main #panels-ipe-paneid-16,
 #main .pane-search-api-page-search {
