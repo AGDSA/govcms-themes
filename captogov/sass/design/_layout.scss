@@ -1278,7 +1278,7 @@ div.header-secondary-menu{
         max-width: 1120px;
         margin: 0 auto;
         display: none;
-        @include to(desktop-mid){
+        @include from(desktop-mid){
             display: block;
         }
         ul.menu{

@@ -3906,7 +3906,7 @@ div.header-secondary-menu {
     max-width: 1120px;
     margin: 0 auto;
     display: none; }
-    @media (max-width: 1350px) {
+    @media (min-width: 1121px) {
       div.header-secondary-menu #block-menu-block-3 {
         display: block; } }
     div.header-secondary-menu #block-menu-block-3 ul.menu {
