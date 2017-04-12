@@ -1906,6 +1906,9 @@ body.not-front #page #main aside.sidebars a.active {
         color: #ffffff;
         background-color: #c6003c; }
 
+#block-views-project-news-button-block .button, #block-views-project-news-button-block #main .card-view .more-link a, #main .card-view .more-link #block-views-project-news-button-block a, #block-views-project-news-button-block .square-view .view .more-link a, .square-view .view .more-link #block-views-project-news-button-block a, #block-views-project-news-button-block .node-type-project #main .field-name-field-cta-buttons .field-item, .node-type-project #main .field-name-field-cta-buttons #block-views-project-news-button-block .field-item {
+  text-align: center; }
+
 @media (max-width: 960px) {
   #block-bean-flexible-block {
     display: block;
