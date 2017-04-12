@@ -1901,7 +1901,7 @@ body.not-front #page #main aside.sidebars a.active {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         line-height: 23px;
-        transition: all 0.3 ease; }
+        transition: all 0.3s ease; }
       #main .field-name-field-reference div.node a:hover::after {
         color: #ffffff;
         background-color: #c6003c; }

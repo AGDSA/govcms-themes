@@ -1519,7 +1519,7 @@ body.not-front #page #main aside.sidebars {
                     top: 57%;
                     transform: translateY(-50%);
                     line-height: 23px;
-                    transition: all 0.3 ease;
+                    transition: all 0.3s ease;
                 }
                 &:hover{
                     &::after{
