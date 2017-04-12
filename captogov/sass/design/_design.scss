@@ -94,7 +94,7 @@ header.header {
     @include clearfix;
 
     #block-superfish-1 {
-        @include to(desktop) {
+        @include to(desktop-mid) {
             display: none;
         }
         @include to(desktop-mid){

@@ -558,7 +558,7 @@ header.header {
   header.header #block-superfish-1 {
     padding-top: 1.8em;
     float: right; }
-    @media (max-width: 1120px) {
+    @media (max-width: 1350px) {
       header.header #block-superfish-1 {
         display: none; } }
     @media (max-width: 1350px) {
@@ -3566,14 +3566,14 @@ div.workbench-info-block {
               -webkit-transform: rotate(-45deg);
               -ms-transform: rotate(-45deg);
               transform: rotate(-45deg); }
-    #mobile-menu .region-mobile-menu #block-menu-block-govcms-menu-block-main-menu {
+    #mobile-menu .region-mobile-menu .block-menu-block {
       margin-top: 70px; }
-      #mobile-menu .region-mobile-menu #block-menu-block-govcms-menu-block-main-menu .mm-listview {
+      #mobile-menu .region-mobile-menu .block-menu-block .mm-listview {
         background-color: #F8F7F7;
         padding: 5px; }
-      #mobile-menu .region-mobile-menu #block-menu-block-govcms-menu-block-main-menu .mm-listview > li:not(.mm-divider):after {
+      #mobile-menu .region-mobile-menu .block-menu-block .mm-listview > li:not(.mm-divider):after {
         content: none; }
-      #mobile-menu .region-mobile-menu #block-menu-block-govcms-menu-block-main-menu .menu__item {
+      #mobile-menu .region-mobile-menu .block-menu-block .menu__item {
         margin: 5px;
         background-color: #ffffff; }
   #mobile-menu .mm-navbar {
@@ -3905,9 +3905,12 @@ div.header-secondary-menu {
   div.header-secondary-menu #block-menu-block-3 {
     max-width: 1120px;
     margin: 0 auto; }
+    @media (min-width: 1121px) {
+      div.header-secondary-menu #block-menu-block-3 {
+        display: none; } }
     div.header-secondary-menu #block-menu-block-3 ul.menu {
       text-align: right;
-      padding: 10px 0;
+      padding: 10px 10px;
       margin: 0px; }
       div.header-secondary-menu #block-menu-block-3 ul.menu li {
         display: inline;

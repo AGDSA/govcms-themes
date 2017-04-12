@@ -864,7 +864,7 @@ div.workbench-info-block {
                 }
             }
         }
-        #block-menu-block-govcms-menu-block-main-menu {
+        .block-menu-block {
             margin-top: 70px;
             .mm-listview {
                 background-color: $light-bg-color;
@@ -1277,9 +1277,12 @@ div.header-secondary-menu{
     #block-menu-block-3{
         max-width: 1120px;
         margin: 0 auto;
+        @include from(desktop-mid){
+            display: none;
+        }
         ul.menu{
             text-align: right;
-            padding: 10px 0;
+            padding: 10px 10px;
             margin: 0px;
             li{
                 display: inline;
