@@ -797,6 +797,9 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
     .quick-links {
       padding-top: 25px;
       padding-bottom: 50px; } }
+  @media (max-width: 768px) {
+    .quick-links .field-item:nth-child(n+4) {
+      display: none; } }
   .quick-links .field-name-field-link {
     width: 80%;
     max-width: 800px;

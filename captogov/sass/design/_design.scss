@@ -443,6 +443,11 @@ html.mm-opened #block-block-4 .mobile-menu-button{
         padding-top: 25px;
         padding-bottom: 50px; 
     }
+    @include to(tablet-p){
+        .field-item:nth-child(n+4) {
+            display: none;
+        }
+    }
     .field-name-field-link {
         width: 80%;
         max-width: 800px;
