@@ -2144,6 +2144,17 @@ body.page-search{
             #edit-field-news-date-value-1-value{
                 width: 100%;
             }
+            #edit-field-news-date-value-1-wrapper{
+                position: relative
+                &:before{
+                    content: "To";
+                    position: absolute;
+                    top: 26px;
+                    left: -26px;
+                    font-weight: bold;
+                    color: $primary-color;
+                }
+            }
         }
     }
 }

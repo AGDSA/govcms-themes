@@ -2431,6 +2431,16 @@ body.page-search #content .search-form {
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-value {
   width: 100%; }
 
+.page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
+  position: relative .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper; }
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper :before {
+    content: "To";
+    position: absolute;
+    top: 26px;
+    left: -26px;
+    font-weight: bold;
+    color: #002056; }
+
 .node-type-news-article .field-name-field-news-date span {
   display: inline-block;
   background-color: #002056;
