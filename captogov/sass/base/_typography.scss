@@ -320,6 +320,7 @@ div.accordion-container{
 		h3{
 			color: $primary-color-lighter;
 			@include font-size(24);
+			font-weight: normal;
 		}
 		ul{
 			margin-left: 0px;

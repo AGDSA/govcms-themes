@@ -1945,7 +1945,7 @@ body.page-search{
                 width: 100%;
                 padding: .5em 0 0 0;
                 @include from(desktop){
-                    width: 58%;  
+                    width: 45%;  
                     padding: .5em 1em 0 0;
                 }
                 label{
@@ -2115,6 +2115,33 @@ body.page-search{
     }
     .feed-icon img{
         margin-bottom: 20px;
+    }
+}
+
+.page-newsroom {
+    .view-id-latest_news {
+        .views-exposed-form{
+            select{
+                width: 100px;
+                padding: 20px;
+                box-shadow: 0px 0px 33px -7px #818285;
+                border: none;
+                background-color: #fff;
+                color: #002056;
+                font-weight: bold;
+            }
+            #edit-field-news-date-value-wrapper,
+            #edit-field-news-date-value-1-wrapper{
+                width: 23%;
+            }   
+            .form-type-select{
+                display: inline-block;
+                width: 45%;
+            }
+            .form-type-date-select{
+                width: 100%;
+            }
+        }
     }
 }
 
