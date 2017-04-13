@@ -322,6 +322,14 @@ body.not-front.node-type-project{
         position: absolute;
         top: 0;
     }
+    .panels-flexible-region-1-top-inside{
+        @include to(tablet-p){
+            max-height: 450px !important;
+            .view-homepage-banner{
+                height: 450px !important;
+            }
+        }
+    }
 }
 
 .view-homepage-banner {

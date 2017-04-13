@@ -797,14 +797,14 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
     .quick-links {
       padding-top: 25px;
       padding-bottom: 50px; } }
-  @media (max-width: 768px) {
-    .quick-links .field-item:nth-child(n+4) {
-      display: none; } }
   .quick-links .field-name-field-link {
     width: 80%;
     max-width: 800px;
     margin: auto;
     text-align: center; }
+    @media (max-width: 768px) {
+      .quick-links .field-name-field-link .field-item:nth-child(n+4) {
+        display: none; } }
     .quick-links .field-name-field-link .field-item {
       display: inline-block;
       padding-right: 20px;
@@ -2759,6 +2759,12 @@ body.not-front.node-type-project aside.sidebars {
 .front .pane-search-api-page-search {
   position: absolute;
   top: 0; }
+
+@media (max-width: 768px) {
+  .front .panels-flexible-region-1-top-inside {
+    max-height: 450px !important; }
+    .front .panels-flexible-region-1-top-inside .view-homepage-banner {
+      height: 450px !important; } }
 
 .view-homepage-banner .field-content {
   height: 580px;
