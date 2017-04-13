@@ -3562,7 +3562,7 @@ div.workbench-info-block {
   top: 71px;
   box-shadow: 0 0 10px black; }
   #mobile-menu .region-mobile-menu {
-    height: 100vh;
+    height: 85vh;
     padding-left: 0;
     position: relative; }
     #mobile-menu .region-mobile-menu #block-block-8 {
@@ -3719,8 +3719,10 @@ pages with constrained content
     padding-left: 0;
     padding-right: 0;
     position: relative;
-    margin-top: 60px;
     margin-bottom: 50px; }
+    @media (min-width: 769px) {
+      .page-search #content #search-api-page-search-form {
+        margin-top: 60px; } }
     .page-search #content #search-api-page-search-form .form-item-keys-2 {
       width: 100%;
       margin: 0; }
