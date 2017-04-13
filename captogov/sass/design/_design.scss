@@ -2122,7 +2122,6 @@ body.page-search{
     .view-id-latest_news {
         .views-exposed-form{
             select{
-                width: 100px;
                 padding: 20px;
                 box-shadow: 0px 0px 33px -7px #818285;
                 border: none;
@@ -2136,9 +2135,13 @@ body.page-search{
             }   
             .form-type-select{
                 display: inline-block;
-                width: 45%;
+                width: 45% !important;
+                margin-right: 10px;
             }
             .form-type-date-select{
+                width: 100%;
+            }
+            #edit-field-news-date-value-1-value{
                 width: 100%;
             }
         }

@@ -401,16 +401,16 @@ Drupal.behaviors.my_custom_behavior = {
   jQuery('.toc-filter-top').parent().css({'height': '0px', 'margin' : '0px'});
 
   	//Hide the header secondary menu
-	$(window).scroll(function() {
-	    if ($(this).scrollTop()>0)
-	    {
-        $('div.header-secondary-menu').slideUp();
-	    }
-	    else
-	    {
-        $('div.header-secondary-menu').slideDown();
-	   }
- 	});
+	// $(window).scroll(function() {
+	//     if ($(this).scrollTop()>0)
+	//     {
+ //        $('div.header-secondary-menu').slideUp();
+	//     }
+	//     else
+	//     {
+ //        $('div.header-secondary-menu').slideDown();
+	//    }
+ // 	});
 
    }}
 })(jQuery, Drupal, this, this.document);

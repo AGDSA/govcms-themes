@@ -865,7 +865,7 @@ div.workbench-info-block {
             }
         }
         .block-menu-block {
-            margin-top: 70px;
+            margin-top: 10px;
             .mm-listview {
                 background-color: $light-bg-color;
                 padding: 5px;
@@ -1143,16 +1143,13 @@ pages with constrained content
 //Project pages
 .node-type-project {
     #block-views-related-new-stories-block {
+        padding-top: 30px;
         position: relative;
         .block-title {
-            position: absolute;
-            top: 15px;
-            right: 50%;
-            transform: translateX(50%);
             z-index: 10;
         }
         .view-id-related_new_stories {
-            padding-top: 60px;
+            padding-top: 30px;
         }
         .node {
             background-color: $light-bg-color;
