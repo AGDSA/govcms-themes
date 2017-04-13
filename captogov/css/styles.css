@@ -2441,6 +2441,9 @@ body.page-search #content .search-form {
     font-weight: bold;
     color: #002056; }
 
+.page-newsroom #page .view-id-latest_news .node .field-name-field-summary {
+  margin-bottom: 0; }
+
 .node-type-news-article .field-name-field-news-date span {
   display: inline-block;
   background-color: #002056;
