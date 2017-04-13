@@ -351,6 +351,9 @@ body.not-front.node-type-project{
 
 #page {
     margin-top: 87px;
+    @include from(desktop-mid){
+        margin-top: 100px;
+    }
 }
 
 //Homepage main content

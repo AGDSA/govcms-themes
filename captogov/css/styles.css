@@ -2783,6 +2783,9 @@ body.not-front.node-type-project aside.sidebars {
 
 #page {
   margin-top: 87px; }
+  @media (min-width: 1121px) {
+    #page {
+      margin-top: 100px; } }
 
 #main #panels-ipe-paneid-16,
 #main .pane-search-api-page-search {
