@@ -2765,7 +2765,7 @@ body.not-front.node-type-project aside.sidebars {
     max-height: 450px !important; } }
 
 @media (max-width: 768px) {
-  .front .view-homepage-banner {
+  .front .view-homepage-banner img {
     height: 450px !important; } }
 
 .view-homepage-banner .field-content {
