@@ -325,9 +325,11 @@ body.not-front.node-type-project{
     .panels-flexible-region-1-top-inside{
         @include to(tablet-p){
             max-height: 450px !important;
-            .view-homepage-banner{
-                height: 450px !important;
-            }
+        }
+    }
+    .view-homepage-banner{
+        @include to(tablet-p){
+            height: 450px !important;
         }
     }
 }

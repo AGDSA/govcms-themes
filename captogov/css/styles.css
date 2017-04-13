@@ -2762,9 +2762,11 @@ body.not-front.node-type-project aside.sidebars {
 
 @media (max-width: 768px) {
   .front .panels-flexible-region-1-top-inside {
-    max-height: 450px !important; }
-    .front .panels-flexible-region-1-top-inside .view-homepage-banner {
-      height: 450px !important; } }
+    max-height: 450px !important; } }
+
+@media (max-width: 768px) {
+  .front .view-homepage-banner {
+    height: 450px !important; } }
 
 .view-homepage-banner .field-content {
   height: 580px;
