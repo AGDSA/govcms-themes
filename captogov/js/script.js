@@ -398,7 +398,7 @@ Drupal.behaviors.my_custom_behavior = {
    });
 
   //Make table of contents top elements height smaller
-  jQuery('.toc-filter-top').parent().css('height': '0px', 'margin' : '0px');
+  jQuery('.toc-filter-top').parent().css({'height': '0px', 'margin' : '0px'});
 
   	//Hide the header secondary menu
 	$(window).scroll(function() {
