@@ -342,7 +342,7 @@ header.header {
         position: absolute;
         top: 8px;
         right: 20px;
-        @include to(desktop) {
+        @include to(desktop-mid) {
             display: block;
         }
         .mobile-menu-button {

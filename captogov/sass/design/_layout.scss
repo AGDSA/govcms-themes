@@ -342,7 +342,7 @@ body.not-front.node-type-project{
 }
 
 #page {
-    margin-top: 87px;
+    margin-top: 100px;
 }
 
 //Homepage main content
@@ -801,7 +801,7 @@ div.workbench-info-block {
     top: 71px;
     box-shadow: 0 0 10px black;
     .region-mobile-menu {
-        height: 100vh;
+        height: 85vh;
         // padding-right: 135px;
         padding-left: 0;
         position: relative;
@@ -992,8 +992,10 @@ pages with constrained content
             padding-left: 0;
             padding-right: 0;
             position: relative;
-            margin-top: 60px;
             margin-bottom: 50px;
+            @include from(tablet-l){
+                margin-top: 60px;                
+            } 
             .form-item-keys-2 {
                 width: 100%;
                 margin: 0;

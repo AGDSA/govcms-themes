@@ -725,7 +725,7 @@ header.header {
     position: absolute;
     top: 8px;
     right: 20px; }
-    @media (max-width: 1120px) {
+    @media (max-width: 1350px) {
       header.header #block-block-4 {
         display: block; } }
     header.header #block-block-4 .mobile-menu-button {
@@ -2760,7 +2760,7 @@ body.not-front.node-type-project aside.sidebars {
     width: auto; }
 
 #page {
-  margin-top: 87px; }
+  margin-top: 100px; }
 
 #main #panels-ipe-paneid-16,
 #main .pane-search-api-page-search {
