@@ -380,7 +380,7 @@ Drupal.behaviors.my_custom_behavior = {
 
   //Open/close the header search bar
   var $body = jQuery3('body');
-  jQuery3('#menu-1186-1 a, .menu-mlid-1186 a').click(function(e) {
+  jQuery3('#menu-1186-1 a').click(function(e) {
     e.preventDefault();
     jQuery3('body').toggleClass("search-closed search-open");
     jQuery3('#edit-keys-2').focus();
@@ -398,7 +398,19 @@ Drupal.behaviors.my_custom_behavior = {
    });
 
   //Make table of contents top elements height smaller
-  jQuery('.toc-filter-top').parent().css('height', '0px');
+  jQuery('.toc-filter-top').parent().css('height': '0px', 'margin' : '0px');
+
+  	//Hide the header secondary menu
+	$(window).scroll(function() {
+	    if ($(this).scrollTop()>0)
+	    {
+        $('div.header-secondary-menu').slideUp();
+	    }
+	    else
+	    {
+        $('div.header-secondary-menu').slideDown();
+	   }
+ 	});
 
    }}
 })(jQuery, Drupal, this, this.document);

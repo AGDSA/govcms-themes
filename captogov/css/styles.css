@@ -755,6 +755,9 @@ header.header {
           position: absolute;
           top: 15px; }
 
+.front .menu-mlid-1186 {
+  display: none; }
+
 html.mm-opened #block-block-4 .mobile-menu-button span {
   background-color: #ffffff; }
   html.mm-opened #block-block-4 .mobile-menu-button span:before {
@@ -1504,6 +1507,7 @@ footer {
 
 .node-type-page .field-name-field-summary, .node-type-page .node-type-project {
   margin: 30px 0;
+  margin-top: 21px;
   font-size: 20px;
   font-size: 1.25rem; }
   .node-type-page .field-name-field-summary p, .node-type-page .node-type-project p {
@@ -2343,13 +2347,15 @@ body.page-search #content .search-form {
 
 .page-newsroom .view-id-latest_news .node {
   background-color: #F8F7F7;
-  padding: 40px;
+  padding: 30px;
   margin-bottom: 20px; }
   .page-newsroom .view-id-latest_news .node .field-name-title a,
   .page-newsroom .view-id-latest_news .node .field-name-field-summary {
     text-decoration: none;
     font-size: 20px;
     font-size: 1.25rem; }
+  .page-newsroom .view-id-latest_news .node .field-name-field-summary {
+    margin-bottom: 0; }
   .page-newsroom .view-id-latest_news .node h2 {
     margin-top: 0; }
   .page-newsroom .view-id-latest_news .node .field-name-field-news-date span {
@@ -3954,7 +3960,8 @@ div.header-secondary-menu {
     #mobile-menu #block-menu-block-4 ul.menu.mm-listview li.first {
       margin-top: 0; }
     #mobile-menu #block-menu-block-4 ul.menu.mm-listview a {
-      border: none; }
+      border: none;
+      font-weight: normal; }
 
 /* ---------- Components ---------- 
 @import 'components/blockquote';
