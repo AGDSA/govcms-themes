@@ -1339,6 +1339,7 @@ footer {
     height: 10px;
     width: 100%;
     background: url(../images/bars.svg);
+    background-size: 100%;
     position: absolute;
     bottom: 100%; }
     @media (min-width: 769px) {
@@ -2263,20 +2264,20 @@ body.page-search #content .search-form {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input::placeholder {
       font-weight: normal; }
 
-.page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper {
-  width: 65%; }
+.page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
+  width: 32%; }
   @media (min-width: 961px) {
-    .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper {
-      width: 33%; } }
-  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper label, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper .description {
+    .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
+      width: 15%; } }
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper label, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper .description, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper label, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper .description {
     display: none; }
-  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-min-wrapper {
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-min-wrapper, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper #edit-field-news-date-value-min-wrapper {
     width: 48%;
     float: left; }
-  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-max-wrapper {
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-max-wrapper, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper #edit-field-news-date-value-max-wrapper {
     width: 48%;
     float: right; }
-  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper input {
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper input, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper input {
     width: 100%;
     min-height: 50px;
     padding: 10px;
@@ -2285,14 +2286,18 @@ body.page-search #content .search-form {
     background-color: #ffffff;
     padding-left: 20px; }
     @media (min-width: 769px) {
-      .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper input {
+      .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper input, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper input {
         padding: 30px;
         padding-top: 35px; } }
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #form-item-field-news-date-value-min,
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-min,
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper .form-item,
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-max,
-  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-max-datepicker-popup-0 {
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper #edit-field-news-date-value-max-datepicker-popup-0, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper #form-item-field-news-date-value-min,
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper #edit-field-news-date-value-min,
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper .form-item,
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper #edit-field-news-date-value-max,
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper #edit-field-news-date-value-max-datepicker-popup-0 {
     width: 100%; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form .views-submit-button {
@@ -2318,9 +2323,9 @@ body.page-search #content .search-form {
       .page-newsroom .view-id-latest_news .views-exposed-form .views-submit-button input {
         height: 60px; } }
 
-.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date {
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-value-date {
   position: relative; }
-  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-min-date:before {
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-value-date:before {
     content: "Start date";
     position: absolute;
     top: 5px;
@@ -2329,9 +2334,9 @@ body.page-search #content .search-form {
     font-size: 0.875rem;
     color: #6f6f6f; }
 
-.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date {
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-1-value-date {
   position: relative; }
-  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-max-date:before {
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-1-value-date:before {
     content: "End date";
     position: absolute;
     top: 5px;

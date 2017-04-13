@@ -1960,10 +1960,10 @@ body.page-search{
                     }
                 }
             }
-            #edit-field-news-date-value-wrapper{
-                width: 65%;
+            #edit-field-news-date-value-wrapper, #edit-field-news-date-value-1-wrapper{
+                width: 32%;
                 @include from(desktop){
-                  width: 33%;  
+                  width: 15%;  
                 }
                 label, .description{
                     display: none;
@@ -2020,7 +2020,7 @@ body.page-search{
                     }
                 }               
             }
-            .form-item-field-news-date-value-min-date{
+            .form-item-field-news-date-value-value-date{
 	            	position: relative;
                 	&:before{
 	    				content:"Start date";
@@ -2031,7 +2031,7 @@ body.page-search{
 	    				color: $darker-gray-text;
 	    			}
             }
-            .form-item-field-news-date-value-max-date{
+            .form-item-field-news-date-value-1-value-date{
     	        	position: relative;                	
                 	&:before{
 	    				content:"End date";
