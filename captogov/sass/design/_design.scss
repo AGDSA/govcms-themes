@@ -1181,7 +1181,7 @@ footer {
                     text-align: center;
                     @include font-size(40);
                     color: #ffffff;
-                    background-color: initial;
+                    background: none;
                     z-index: 100;
                 }
             }
