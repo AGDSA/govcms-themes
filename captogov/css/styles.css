@@ -2435,8 +2435,8 @@ body.page-search #content .search-form {
   width: 100%; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
-  position: relative .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper; }
-  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper :before {
+  position: relative; }
+  .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper:before {
     content: "To";
     position: absolute;
     top: 26px;
