@@ -1584,7 +1584,9 @@ footer {
 .field-type-file {
   margin-top: 40px; }
   .field-type-file .field-label {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-size: 1.875rem; }
 
 .field-type-file .file {
   border: 1px solid #c9c9c9;
@@ -1993,11 +1995,14 @@ body.not-front #page #main aside.sidebars a.active {
   #block-webform-client-block-22 h2 {
     font-size: 25px;
     font-size: 1.5625rem; }
-  #block-webform-client-block-22 .form-item {
+  #block-webform-client-block-22 .webform-component--was-this-page-useful .form-item {
     display: inline-block;
     padding-left: 20px; }
-    #block-webform-client-block-22 .form-item:first-child {
+    #block-webform-client-block-22 .webform-component--was-this-page-useful .form-item:first-child {
       padding-left: 0px; }
+  #block-webform-client-block-22 .form-item {
+    display: block;
+    padding-left: 0px; }
   #block-webform-client-block-22 .webform-submit {
     font-size: 12px;
     font-size: 0.75rem;

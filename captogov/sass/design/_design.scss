@@ -1192,6 +1192,7 @@ footer {
 	margin-top: 40px;
 	.field-label{
 		margin-bottom: 40px;
+        @include font-size(30);
 	}
 }
 .field-type-file .file {
@@ -1667,12 +1668,18 @@ body.not-front #page #main aside.sidebars {
         h2{
             @include font-size(25);
         }
-    .form-item{
-        display: inline-block;
-        padding-left: 20px;
-        &:first-child{
-            padding-left: 0px;
+    .webform-component--was-this-page-useful{
+        .form-item{
+            display: inline-block;
+            padding-left: 20px;
+            &:first-child{
+                padding-left: 0px;
+            }
         }
+    }
+    .form-item{
+        display: block;
+        padding-left: 0px;
     }
     .webform-submit{
         @include font-size(12);
