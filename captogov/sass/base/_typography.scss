@@ -319,7 +319,6 @@ div.accordion-container{
 		border: none;
 		h3{
 			color: $primary-color-lighter;
-			font-weight: bold;
 			@include font-size(24);
 		}
 		ul{
