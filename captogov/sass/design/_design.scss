@@ -937,6 +937,7 @@ footer {
         height: 10px;
         width: 100%;
         background: url(../images/bars.svg);
+        background-size: 100%;
         position: absolute;
         bottom: 100%;
         @include from(tablet-l) {
