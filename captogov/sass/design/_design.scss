@@ -1137,7 +1137,6 @@ footer {
 	    	@include from(tablet-l){
 	    		max-height: 200px;
 	            height: 200px;
-
 	    	}
         }
     }
@@ -1185,10 +1184,16 @@ footer {
                     transform:translate(-50%,-60%);
                     line-height: 35px;
                     text-align: center;
-                    @include font-size(40);
+                    @include font-size(30);
                     color: #ffffff;
                     background: none;
                     z-index: 100;
+                    width: 100%;
+                    width: 100%;
+                    padding: 0px 40px;
+                    @include from(tablet-l){
+                        @include font-size(40);
+                    }
                 }
             }
         }

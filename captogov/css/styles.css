@@ -1548,11 +1548,18 @@ footer {
     transform: translate(-50%, -60%);
     line-height: 35px;
     text-align: center;
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 30px;
+    font-size: 1.875rem;
     color: #ffffff;
     background: none;
-    z-index: 100; }
+    z-index: 100;
+    width: 100%;
+    width: 100%;
+    padding: 0px 40px; }
+    @media (min-width: 792px) {
+      #block-views-banner-image-top-block .block__content .view-banner-image-top .view-content h1 {
+        font-size: 40px;
+        font-size: 2.5rem; } }
 
 .field-type-file {
   margin-top: 40px; }
