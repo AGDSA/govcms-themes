@@ -1764,6 +1764,7 @@ body.not-front.search-open{
 				background-color: $primary-color-lighter;
 				&::placeholder{
 					color: #ffffff !important;
+                    opacity: 1;
 				}
 			}
 			#edit-submit-2{
@@ -1988,6 +1989,7 @@ body.page-search{
                     &::placeholder{
                         font-weight: normal;
                         color: #5f5f5f !important;
+                        opacity: 1;
                     }
                 }
             }

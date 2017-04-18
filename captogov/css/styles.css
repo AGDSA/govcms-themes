@@ -2003,13 +2003,17 @@ body.not-front.search-open .header-search {
       padding: 10px 40px;
       background-color: #143f88; }
       body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2::-webkit-input-placeholder {
-        color: #ffffff !important; }
+        color: #ffffff !important;
+        opacity: 1; }
       body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2::-moz-placeholder {
-        color: #ffffff !important; }
+        color: #ffffff !important;
+        opacity: 1; }
       body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2:-ms-input-placeholder {
-        color: #ffffff !important; }
+        color: #ffffff !important;
+        opacity: 1; }
       body.not-front.search-open .header-search #block-search-api-page-search #edit-keys-2::placeholder {
-        color: #ffffff !important; }
+        color: #ffffff !important;
+        opacity: 1; }
     body.not-front.search-open .header-search #block-search-api-page-search #edit-submit-2 {
       transition: all 0.3s ease;
       border: none;
@@ -2214,16 +2218,20 @@ body.page-search #content .search-form {
         padding: 30px; } }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input::-webkit-input-placeholder {
       font-weight: normal;
-      color: #5f5f5f !important; }
+      color: #5f5f5f !important;
+      opacity: 1; }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input::-moz-placeholder {
       font-weight: normal;
-      color: #5f5f5f !important; }
+      color: #5f5f5f !important;
+      opacity: 1; }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input:-ms-input-placeholder {
       font-weight: normal;
-      color: #5f5f5f !important; }
+      color: #5f5f5f !important;
+      opacity: 1; }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input::placeholder {
       font-weight: normal;
-      color: #5f5f5f !important; }
+      color: #5f5f5f !important;
+      opacity: 1; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
   width: 32%; }
