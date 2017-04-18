@@ -527,13 +527,13 @@ header.header {
   header.header #block-superfish-1 {
     padding-top: 1.8em;
     float: right; }
-    @media (max-width: 1350px) {
+    @media (max-width: 1120px) {
       header.header #block-superfish-1 {
         display: none; } }
     @media (max-width: 1350px) {
       header.header #block-superfish-1 #superfish-1 a.sf-depth-1 {
-        font-size: 17px;
-        font-size: 1.0625rem; }
+        font-size: 15px;
+        font-size: 0.9375rem; }
       header.header #block-superfish-1 #superfish-1 li.sf-depth-1 {
         padding-left: 27px; } }
     header.header #block-superfish-1 li.sf-depth-1 {
@@ -694,7 +694,7 @@ header.header {
     position: absolute;
     top: 8px;
     right: 20px; }
-    @media (max-width: 1350px) {
+    @media (max-width: 1120px) {
       header.header #block-block-4 {
         display: block; } }
     header.header #block-block-4 .mobile-menu-button {
@@ -2213,13 +2213,17 @@ body.page-search #content .search-form {
       .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input {
         padding: 30px; } }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input::-webkit-input-placeholder {
-      font-weight: normal; }
+      font-weight: normal;
+      color: #5f5f5f; }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input::-moz-placeholder {
-      font-weight: normal; }
+      font-weight: normal;
+      color: #5f5f5f; }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input:-ms-input-placeholder {
-      font-weight: normal; }
+      font-weight: normal;
+      color: #5f5f5f; }
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input::placeholder {
-      font-weight: normal; }
+      font-weight: normal;
+      color: #5f5f5f; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper, .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
   width: 32%; }
@@ -2365,7 +2369,8 @@ body.page-search #content .search-form {
   border: none;
   background-color: #fff;
   color: #002056;
-  margin-right: 0px; }
+  margin-right: 0px;
+  width: 100%; }
   .page-newsroom .view-id-latest_news .views-exposed-form select:focus {
     outline: none; }
 
