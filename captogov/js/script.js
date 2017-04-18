@@ -403,7 +403,12 @@ Drupal.behaviors.my_custom_behavior = {
 
   //  prevent footer links
   $('.menu-block-2 > ul > li > a').click(function(e) {
-    e.preventDefault();
+    // e.preventDefault();
+    if (e.preventDefault) { 
+    	e.preventDefault(); 
+    } else { 
+    	e.returnValue = false; 
+    }
   });
   //make tables stack on mobile
   jQuery3('#content table').stacktable();
@@ -433,7 +438,12 @@ Drupal.behaviors.my_custom_behavior = {
 
   //Make footer sidenav top level item non-clickable
   jQuery3('#block-menu-menu-footer-menu .block__content > ul.menu > li.menu__item > a').click(function(e) {
-  	e.preventDefault();
+  	// e.preventDefault();
+  	if (e.preventDefault) { 
+    	e.preventDefault(); 
+    } else { 
+    	e.returnValue = false; 
+    }
    });
 
   //Make table of contents top elements height smaller

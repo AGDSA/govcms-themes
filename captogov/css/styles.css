@@ -1384,6 +1384,10 @@ footer {
       color: #ffffff;
       font-size: 13px;
       font-size: 0.8125rem; }
+      .page-bottom-wrapper .region-bottom #block-block-16 p a {
+        color: #ffffff; }
+        .page-bottom-wrapper .region-bottom #block-block-16 p a:focus, .page-bottom-wrapper .region-bottom #block-block-16 p a:hover {
+          text-decoration: underline; }
     .page-bottom-wrapper .region-bottom #block-block-3 {
       position: relative;
       display: block;
@@ -1471,8 +1475,10 @@ footer {
   border-bottom: 1px solid #e4e4e3; }
 
 .breadcrumb {
-  padding-left: 0px;
   color: #c6003c; }
+  @media (min-width: 961px) {
+    .breadcrumb {
+      padding-left: 0px; } }
   .breadcrumb a {
     font-size: 14px;
     font-size: 0.875rem;
