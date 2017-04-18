@@ -2215,7 +2215,7 @@ body.page-search #content .search-form {
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper {
   width: 100%;
   padding: .5em 0 0 0; }
-  @media (min-width: 961px) {
+  @media (min-width: 1121px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper {
       width: 35%;
       padding-top: 8px;
@@ -2284,7 +2284,7 @@ body.page-search #content .search-form {
   width: 100%;
   float: right;
   padding: .5em 0 0 0; }
-  @media (min-width: 961px) {
+  @media (min-width: 1121px) {
     .page-newsroom .view-id-latest_news .views-exposed-form .views-submit-button {
       padding: .5em 1em 0 0;
       width: 9%;
@@ -2388,7 +2388,6 @@ body.page-search #content .search-form {
   border: none;
   background-color: #fff;
   color: #002056;
-  font-weight: bold;
   margin-right: 0px; }
   .page-newsroom .view-id-latest_news .views-exposed-form select:focus {
     outline: none; }
@@ -2396,12 +2395,14 @@ body.page-search #content .search-form {
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
   width: 50%;
-  padding-right: 100px; }
-  @media (min-width: 961px) {
+  padding-right: 100px;
+  padding-left: 60px; }
+  @media (min-width: 1121px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
       width: 28%;
-      padding-right: 16px; } }
+      padding-right: 16px;
+      padding-left: 0px; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form .form-type-select {
   display: inline-block;
@@ -2414,38 +2415,44 @@ body.page-search #content .search-form {
   padding-right: 15px; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-value {
-  float: right;
+  float: none;
   box-shadow: 0px 0px 33px -7px #818285; }
+  @media (min-width: 1121px) {
+    .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-value {
+      float: right; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
   position: relative; }
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper:before {
-    content: "End date";
+    content: "End";
     position: absolute;
     top: 26px;
-    left: 88px;
+    left: 0px;
     font-weight: bold;
     color: #002056; }
-    @media (min-width: 961px) {
+    @media (min-width: 1121px) {
       .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper:before {
         left: -15px; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper {
   position: relative; }
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper:before {
-    content: "Start date";
+    content: "Start";
     position: absolute;
     top: 26px;
-    left: 42px;
+    left: 0px;
     font-weight: bold;
     color: #002056; }
-    @media (min-width: 961px) {
+    @media (min-width: 1121px) {
       .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper:before {
         left: -21px; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-value {
-  float: right;
+  float: none;
   box-shadow: 0px 0px 33px -7px #818285; }
+  @media (min-width: 1121px) {
+    .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-value {
+      float: right; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-value-year {
   margin-right: 0px !important; }
