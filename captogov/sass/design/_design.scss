@@ -952,7 +952,7 @@ footer {
     }
     .region-bottom {
         padding: 30px 22px;
-        @include from(desktop){
+        @include from(desktop-mid){
             padding: 30px 0;
         }
         #block-block-2 {
@@ -996,10 +996,13 @@ footer {
         #block-menu-menu-footer-sub-menu {
             width: 100%;
             display: inline-block;
-            padding: 15px 0;
+            padding: 0 0 15px 0;
             @include font-size(14);
             @include from(tablet-l) {
                 width: 46%;                // @include font-size(18);
+            }
+            ul {
+                margin: 0;
             }
             li {
                 @include column(1/5, $gutter: 1);
