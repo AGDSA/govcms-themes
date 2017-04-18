@@ -1950,8 +1950,8 @@ body.page-search{
             #edit-combine-wrapper{
                 width: 100%;
                 padding: .5em 0 0 0;
-                @include from(desktop){
-                    width: 45%;  
+                @include from(tablet-l){
+                    width: 35%;  
                     padding: .5em 1em 0 0;
                 }
                 label{
@@ -2011,7 +2011,7 @@ body.page-search{
                 }
             }
             .views-submit-button{
-                width: 33%;
+                width: 100%;
                 float: right;
                 padding: .5em 0 0 0;
                 @include from(desktop){
@@ -2129,15 +2129,20 @@ body.page-search{
         .views-exposed-form{
             select{
                 padding: 20px;
-                box-shadow: 0px 0px 33px -7px #818285;
+                //box-shadow: 0px 0px 33px -7px #818285;
                 border: none;
                 background-color: #fff;
                 color: #002056;
                 font-weight: bold;
+                margin-right: 0px;
             }
             #edit-field-news-date-value-wrapper,
             #edit-field-news-date-value-1-wrapper{
-                width: 23%;
+                width: 28%;
+
+                @include from(tablet-l){
+                    width: 50%;  
+                }
             }   
             .form-type-select{
                 display: inline-block;
@@ -2146,20 +2151,47 @@ body.page-search{
             }
             .form-type-date-select{
                 width: 100%;
+                margin-right: 0px;
+                padding-right: 15px;
             }
             #edit-field-news-date-value-1-value{
-                width: 100%;
+                float: right;
+                box-shadow: 0px 0px 33px -7px #818285;
             }
             #edit-field-news-date-value-1-wrapper{
                 position: relative;
                 &:before{
-                    content: "To";
+                    content: "End date";
                     position: absolute;
                     top: 26px;
-                    left: -26px;
+                    left: 88px;
                     font-weight: bold;
                     color: $primary-color;
+                    @include from(tablet-l){
+                        left: -28px;
+                    }
                 }
+            }
+            #edit-field-news-date-value-wrapper{
+                position: relative;
+                &:before{
+                    content: "Start date";
+                    position: absolute;
+                    top: 26px;
+                    left: 88px;
+                    font-weight: bold;
+                    color: $primary-color;
+                    @include from(tablet-l){
+                        left: -28px;
+                    }
+                }
+            }
+            #edit-field-news-date-value-value{
+                float: right;
+                box-shadow: 0px 0px 33px -7px #818285;
+            }
+            .form-item-field-news-date-value-value-year {
+                margin-right: 0px !important;
             }
         }
     }
