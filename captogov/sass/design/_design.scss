@@ -935,11 +935,12 @@
                     display: block;
                     margin-bottom: 15px;
                     margin-top: 30px;
-                    @include from(desktop-mid) {
+                    @include from(tablet-l) {
+                        width: 320px;
                         float: right;
+                        margin-top: 0;
                         display: inline-block;
                         margin: initial;
-                        width: 26%;
                     }
                     .block__content {
                         & > p > a {
@@ -966,7 +967,6 @@
                             }
                         }
                         .sa-gov-au-logo {
-                            padding-top: 20px;
                             &:after {
                                 content: none !important;
                             }
@@ -987,7 +987,7 @@
                     li {
                         @include column(1/3, $gutter: 1, $cycle: 3);
                         @include from(tablet-l) {
-                            @include column(1/5, $gutter: 1, $cycle: 0);
+                            @include column(1/5, $gutter: 1, $cycle: 5);
                         }
                         a {
                             color: #ffffff;

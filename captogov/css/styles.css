@@ -1329,12 +1329,13 @@ footer {
       display: block;
       margin-bottom: 15px;
       margin-top: 30px; }
-      @media (min-width: 1121px) {
+      @media (min-width: 792px) {
         .page-bottom-wrapper .region-bottom #block-block-2 {
+          width: 320px;
           float: right;
+          margin-top: 0;
           display: inline-block;
-          margin: initial;
-          width: 26%; } }
+          margin: initial; } }
       .page-bottom-wrapper .region-bottom #block-block-2 .block__content > p > a {
         float: left;
         clear: none;
@@ -1364,10 +1365,8 @@ footer {
           width: 100%; }
       .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-logo:after {
         content: none !important; }
-      .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-gov-au-logo {
-        padding-top: 20px; }
-        .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-gov-au-logo:after {
-          content: none !important; }
+      .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-gov-au-logo:after {
+        content: none !important; }
     .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu {
       width: 100%;
       display: inline-block;
@@ -1411,8 +1410,15 @@ footer {
               content: '';
               display: table;
               clear: both; }
-            .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:last-child {
-              margin-right: 0%; } }
+            .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:nth-child(n) {
+              margin-right: 1%;
+              float: left;
+              clear: none; }
+            .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:nth-child(5n) {
+              margin-right: 0%;
+              float: right; }
+            .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:nth-child(5n + 1) {
+              clear: both; } }
         .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li a {
           color: #ffffff;
           text-align: center !important;
