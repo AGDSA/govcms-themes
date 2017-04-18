@@ -1763,7 +1763,7 @@ body.not-front.search-open{
 				padding: 10px 40px;
 				background-color: $primary-color-lighter;
 				&::placeholder{
-					color: #ffffff;
+					color: #ffffff !important;
 				}
 			}
 			#edit-submit-2{
@@ -1987,7 +1987,7 @@ body.page-search{
                     }
                     &::placeholder{
                         font-weight: normal;
-                        color: #5f5f5f;
+                        color: #5f5f5f !important;
                     }
                 }
             }
