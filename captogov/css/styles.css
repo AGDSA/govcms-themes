@@ -3937,12 +3937,39 @@ pages with constrained content
 .webform-client-form {
   margin-bottom: 40px; }
 
-.page-node-108 #page #main #content {
+.page-node-108 #page #main #content,
+.page-node-83 #page #main #content,
+.page-node-80 #page #main #content,
+.page-node-82 #page #main #content,
+.page-node-71 #page #main #content,
+.page-node-76 #page #main #content,
+.page-node-77 #page #main #content,
+.page-node-78 #page #main #content,
+.page-node-461 #page #main #content,
+.page-node-466 #page #main #content,
+.page-node-471 #page #main #content,
+.page-node-476 #page #main #content,
+.page-node-481 #page #main #content {
   max-width: 900px;
   margin: auto;
   width: auto;
   float: none;
   left: 0; }
+
+.page-node-108 #page #main .sidebars,
+.page-node-83 #page #main .sidebars,
+.page-node-80 #page #main .sidebars,
+.page-node-82 #page #main .sidebars,
+.page-node-71 #page #main .sidebars,
+.page-node-76 #page #main .sidebars,
+.page-node-77 #page #main .sidebars,
+.page-node-78 #page #main .sidebars,
+.page-node-461 #page #main .sidebars,
+.page-node-466 #page #main .sidebars,
+.page-node-471 #page #main .sidebars,
+.page-node-476 #page #main .sidebars,
+.page-node-481 #page #main .sidebars {
+  display: none; }
 
 /*
  ____   ____      ______          ____        _____        ______        _____
