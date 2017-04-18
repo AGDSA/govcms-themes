@@ -1346,8 +1346,12 @@ footer {
         transform: translatey(-63%); }
         .page-bottom-wrapper .region-bottom #block-block-2 .block__content a:nth-child(2) {
           left: 50%; }
+      .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-logo:after {
+        content: none !important; }
       .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-gov-au-logo {
         padding-top: 20px; }
+        .page-bottom-wrapper .region-bottom #block-block-2 .block__content .sa-gov-au-logo:after {
+          content: none !important; }
     .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu {
       width: 100%;
       display: inline-block;
@@ -2367,14 +2371,16 @@ body.page-search #content .search-form {
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
-  width: 50%;
+  width: 100%;
   padding-right: 100px;
   padding-left: 60px;
-  clear: both; }
+  clear: both;
+  min-width: 400px; }
   @media (min-width: 792px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
-      clear: none; } }
+      clear: none;
+      width: 50%; } }
   @media (min-width: 1121px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
@@ -2435,8 +2441,9 @@ body.page-search #content .search-form {
 .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-value-year {
   margin-right: 0px !important; }
 
-.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-1-value {
-  padding-right: 0px; }
+@media (min-width: 792px) {
+  .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-1-value {
+    padding-right: 0px; } }
 
 .page-newsroom #page .view-id-latest_news .node .field-name-field-summary {
   margin-bottom: 0; }

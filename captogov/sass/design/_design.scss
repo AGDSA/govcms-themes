@@ -980,9 +980,16 @@ footer {
 									left: 50%;
 								}
 							}
-							.sa-logo {}
+							.sa-logo {
+                                &:after{
+                                    content: none !important;
+                                }
+                            }
 						.sa-gov-au-logo {	
                             padding-top: 20px;	
+                            &:after{
+                                    content: none !important;
+                                }
                         }
             }
         }
@@ -2150,12 +2157,14 @@ body.page-search{
             }
             #edit-field-news-date-value-wrapper,
             #edit-field-news-date-value-1-wrapper{
-                width: 50%;
+                width: 100%;
                 padding-right: 100px;
                 padding-left: 60px;
                 clear: both;
+                min-width: 400px;
                 @include from(tablet-l){
                     clear: none;
+                    width: 50%;
                 }
                 @include from(desktop-mid){
                     width: 28%;
@@ -2219,7 +2228,9 @@ body.page-search{
                 margin-right: 0px !important;
             }
             .form-item-field-news-date-value-1-value{
-                padding-right: 0px;
+                @include from(tablet-l){
+                    padding-right: 0px;
+                }
             }
         }
     }
