@@ -2165,6 +2165,7 @@ body.page-search{
                 @include from(tablet-l){
                     clear: none;
                     width: 50%;
+                    min-width: 0;
                 }
                 @include from(desktop-mid){
                     width: 28%;

@@ -2380,7 +2380,8 @@ body.page-search #content .search-form {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
       clear: none;
-      width: 50%; } }
+      width: 50%;
+      min-width: 0; } }
   @media (min-width: 1121px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
