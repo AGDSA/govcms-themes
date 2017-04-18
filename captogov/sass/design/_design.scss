@@ -985,7 +985,10 @@
                         margin: 0;
                     }
                     li {
-                        @include column(1/5, $gutter: 1);
+                        @include column(1/3, $gutter: 1, $cycle: 3);
+                        @include from(tablet-l) {
+                            @include column(1/5, $gutter: 1, $cycle: 0);
+                        }
                         a {
                             color: #ffffff;
                             text-align: center !important;

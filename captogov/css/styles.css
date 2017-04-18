@@ -1383,15 +1383,36 @@ footer {
         float: left;
         clear: none;
         text-align: inherit;
-        width: 19.2%;
+        width: 32.66667%;
         margin-left: 0%;
         margin-right: 1%; }
         .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li::after {
           content: '';
           display: table;
           clear: both; }
-        .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:last-child {
-          margin-right: 0%; }
+        .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:nth-child(n) {
+          margin-right: 1%;
+          float: left;
+          clear: none; }
+        .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:nth-child(3n) {
+          margin-right: 0%;
+          float: right; }
+        .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:nth-child(3n + 1) {
+          clear: both; }
+        @media (min-width: 792px) {
+          .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li {
+            float: left;
+            clear: none;
+            text-align: inherit;
+            width: 19.2%;
+            margin-left: 0%;
+            margin-right: 1%; }
+            .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li::after {
+              content: '';
+              display: table;
+              clear: both; }
+            .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li:last-child {
+              margin-right: 0%; } }
         .page-bottom-wrapper .region-bottom #block-menu-menu-footer-sub-menu li a {
           color: #ffffff;
           text-align: center !important;
