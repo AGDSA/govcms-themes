@@ -1245,14 +1245,31 @@ pages with constrained content
     margin-bottom: 40px;
 }
 
-//Special layout for tableau page /projects/domestic-violence/explore-data
-.page-node-108 #page #main{
-    #content{
-        max-width: 900px;
-        margin: auto;
-        width: auto;
-        float: none;
-        left: 0;
+//Special layout for tableau pages 
+.page-node-108,
+.page-node-83,
+.page-node-80,
+.page-node-82,
+.page-node-71,
+.page-node-76,
+.page-node-77,
+.page-node-78,
+.page-node-461,
+.page-node-466,
+.page-node-471,
+.page-node-476,
+.page-node-481{ 
+    #page #main{
+        #content{
+            max-width: 900px;
+            margin: auto;
+            width: auto;
+            float: none;
+            left: 0;
+        }
+        .sidebars{
+            display: none;
+        }
     }
 }
 /*
