@@ -1950,9 +1950,12 @@ body.page-search{
             #edit-combine-wrapper{
                 width: 100%;
                 padding: .5em 0 0 0;
-                @include from(tablet-l){
+                @include from(desktop){
                     width: 35%;  
-                    padding: .5em 1em 0 0;
+                    padding-top: 8px;
+                    padding-bottom: 0px;
+                    padding-left: 0px;
+                    padding-right: 26px;
                 }
                 label{
                     display: none;
@@ -2135,13 +2138,17 @@ body.page-search{
                 color: #002056;
                 font-weight: bold;
                 margin-right: 0px;
+                &:focus{
+                    outline: none;
+                }
             }
             #edit-field-news-date-value-wrapper,
             #edit-field-news-date-value-1-wrapper{
-                width: 28%;
-
-                @include from(tablet-l){
-                    width: 50%;  
+                width: 50%;
+                padding-right: 100px;
+                @include from(desktop){
+                    width: 28%;
+                    padding-right: 16px;
                 }
             }   
             .form-type-select{
@@ -2167,8 +2174,8 @@ body.page-search{
                     left: 88px;
                     font-weight: bold;
                     color: $primary-color;
-                    @include from(tablet-l){
-                        left: -28px;
+                    @include from(desktop){
+                        left: -15px;
                     }
                 }
             }
@@ -2178,11 +2185,11 @@ body.page-search{
                     content: "Start date";
                     position: absolute;
                     top: 26px;
-                    left: 88px;
+                    left: 42px;
                     font-weight: bold;
                     color: $primary-color;
-                    @include from(tablet-l){
-                        left: -28px;
+                    @include from(desktop){
+                        left: -21px;
                     }
                 }
             }
@@ -2192,6 +2199,9 @@ body.page-search{
             }
             .form-item-field-news-date-value-value-year {
                 margin-right: 0px !important;
+            }
+            .form-item-field-news-date-value-1-value{
+                padding-right: 0px;
             }
         }
     }

@@ -2215,10 +2215,13 @@ body.page-search #content .search-form {
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper {
   width: 100%;
   padding: .5em 0 0 0; }
-  @media (min-width: 769px) {
+  @media (min-width: 961px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper {
       width: 35%;
-      padding: .5em 1em 0 0; } }
+      padding-top: 8px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 26px; } }
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper label {
     display: none; }
   .page-newsroom .view-id-latest_news .views-exposed-form #edit-combine-wrapper input {
@@ -2387,14 +2390,18 @@ body.page-search #content .search-form {
   color: #002056;
   font-weight: bold;
   margin-right: 0px; }
+  .page-newsroom .view-id-latest_news .views-exposed-form select:focus {
+    outline: none; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
-  width: 28%; }
-  @media (min-width: 769px) {
+  width: 50%;
+  padding-right: 100px; }
+  @media (min-width: 961px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
-      width: 50%; } }
+      width: 28%;
+      padding-right: 16px; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form .form-type-select {
   display: inline-block;
@@ -2419,9 +2426,9 @@ body.page-search #content .search-form {
     left: 88px;
     font-weight: bold;
     color: #002056; }
-    @media (min-width: 769px) {
+    @media (min-width: 961px) {
       .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper:before {
-        left: -28px; } }
+        left: -15px; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper {
   position: relative; }
@@ -2429,12 +2436,12 @@ body.page-search #content .search-form {
     content: "Start date";
     position: absolute;
     top: 26px;
-    left: 88px;
+    left: 42px;
     font-weight: bold;
     color: #002056; }
-    @media (min-width: 769px) {
+    @media (min-width: 961px) {
       .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper:before {
-        left: -28px; } }
+        left: -21px; } }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-value {
   float: right;
@@ -2442,6 +2449,9 @@ body.page-search #content .search-form {
 
 .page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-value-year {
   margin-right: 0px !important; }
+
+.page-newsroom .view-id-latest_news .views-exposed-form .form-item-field-news-date-value-1-value {
+  padding-right: 0px; }
 
 .page-newsroom #page .view-id-latest_news .node .field-name-field-summary {
   margin-bottom: 0; }
