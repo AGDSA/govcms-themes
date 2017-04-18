@@ -290,51 +290,51 @@ Drupal.behaviors.my_custom_behavior = {
     jQuery3('.card-wrapper').slick('resize');
   });
 
-     //Project related news slick slider
-  jQuery3('.view-related-new-stories .view-content').slick({
-    mobileFirst: true,
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 1,
-    arrows: false,
-    infinite: false,
-    variableWidth: true,
-    responsive: [
-      // {
-      //  breakpoint: 1,
-      //  settings: {
-      //    slidesToShow: 1
-      //  }
-      // },
-      {
-        breakpoint: 665,
-        settings: {
-          centerMode: false,
-          slidesToShow: 2
-        }
-      },
-      // {
-      //  breakpoint: 815,
-      //  settings: {
-      //    slidesToShow: 3
-      //  }
-      // },
-      {
-        breakpoint: 1000,
-        settings: "unslick"
-      }
-    ]
-  });
+  //    //Project related news slick slider
+  // jQuery3('.view-related-new-stories .view-content').slick({
+  //   mobileFirst: true,
+  //   centerMode: true,
+  //   centerPadding: '60px',
+  //   slidesToShow: 1,
+  //   arrows: false,
+  //   infinite: false,
+  //   variableWidth: true,
+  //   responsive: [
+  //     // {
+  //     //  breakpoint: 1,
+  //     //  settings: {
+  //     //    slidesToShow: 1
+  //     //  }
+  //     // },
+  //     {
+  //       breakpoint: 665,
+  //       settings: {
+  //         centerMode: false,
+  //         slidesToShow: 2
+  //       }
+  //     },
+  //     // {
+  //     //  breakpoint: 815,
+  //     //  settings: {
+  //     //    slidesToShow: 3
+  //     //  }
+  //     // },
+  //     {
+  //       breakpoint: 1000,
+  //       settings: "unslick"
+  //     }
+  //   ]
+  // });
 
 
-  //slick slider slick/unslick workaround, see: https://github.com/kenwheeler/slick/issues/1730#issuecomment-161691797
-  jQuery3(window).resize(function() {
-    jQuery3('.view-related-new-stories .view-content').slick('resize');
-  });
+  // //slick slider slick/unslick workaround, see: https://github.com/kenwheeler/slick/issues/1730#issuecomment-161691797
+  // jQuery3(window).resize(function() {
+  //   jQuery3('.view-related-new-stories .view-content').slick('resize');
+  // });
 
-  jQuery3(window).on('orientationchange', function() {
-    jQuery3('.view-related-new-stories .view-content').slick('resize');
-  });
+  // jQuery3(window).on('orientationchange', function() {
+  //   jQuery3('.view-related-new-stories .view-content').slick('resize');
+  // });
 
   //facebook share url
   var currentPage = window.location.href;

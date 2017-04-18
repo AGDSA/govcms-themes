@@ -1291,13 +1291,13 @@ body.not-front #page #main aside.sidebars {
             //top level
             & > li.is-active-trail {
                 display: block;
-                padding-top: 40px;
+                padding-top: 20px;
                 & > a {
                     @include font-size(24);
                     line-height: 1.3;
                     color: $primary-color-lighter;
                     font-weight: bold;
-                    padding-top: 0px;
+                    padding-top: 19px;
                     // @include title-bar($secondary-color, before, 0);
                     // &:before {
                     //     left: 20px;
@@ -1400,12 +1400,12 @@ body.not-front #page #main aside.sidebars {
             //top level
             & > li{
                 display: block;
-                padding-top: 40px;
+                padding-top: 20px;
                 & > a {
                     font-size: 2em;
                     color: $primary-color-lighter;
                     font-weight: bold;
-                    padding-top: 0px;
+                    padding-top: 19px;
                     // @include title-bar($secondary-color, before, 0);
                     // &:before {
                     //     left: 35px;
@@ -2148,6 +2148,10 @@ body.page-search{
                 width: 50%;
                 padding-right: 100px;
                 padding-left: 60px;
+                clear: both;
+                @include from(tablet-l){
+                    clear: none;
+                }
                 @include from(desktop-mid){
                     width: 28%;
                     padding-right: 16px;
@@ -2181,7 +2185,7 @@ body.page-search{
                     font-weight: bold;
                     color: $primary-color;
                     @include from(desktop-mid){
-                        left: -15px;
+                        left: 23px;
                     }
                 }
             }
@@ -2195,7 +2199,7 @@ body.page-search{
                     font-weight: bold;
                     color: $primary-color;
                     @include from(desktop-mid){
-                        left: -21px;
+                        left: 10px;
                     }
                 }
             }
