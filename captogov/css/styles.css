@@ -2382,17 +2382,15 @@ body.page-search #content .search-form {
   background-color: #fff;
   color: #002056;
   margin-right: 0px;
-  width: 100%; }
+  width: auto; }
   .page-newsroom .view-id-latest_news .views-exposed-form select:focus {
     outline: none; }
 
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
 .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
   width: 100%;
-  padding-right: 100px;
   padding-left: 60px;
-  clear: both;
-  min-width: 400px; }
+  clear: both; }
   @media (min-width: 792px) {
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-wrapper,
     .page-newsroom .view-id-latest_news .views-exposed-form #edit-field-news-date-value-1-wrapper {
