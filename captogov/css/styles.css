@@ -331,8 +331,8 @@ div.accordion-container {
 
 .toc-bookmark {
   display: block;
-  padding-top: 190px;
-  margin-top: -190px; }
+  padding-top: 200px;
+  margin-top: -200px; }
 
 .media-element-container {
   display: inline; }
@@ -1531,7 +1531,7 @@ footer {
 
 .breadcrumb {
   color: #c6003c; }
-  @media (min-width: 961px) {
+  @media (min-width: 1121px) {
     .breadcrumb {
       padding-left: 0px; } }
   .breadcrumb a {
@@ -2941,7 +2941,8 @@ body.not-front.node-type-project aside.sidebars {
   #main .search-form-widget .form-item-keys-2 {
     width: 85%;
     margin: auto;
-    text-align: center; }
+    text-align: center;
+    padding-right: 60px; }
     @media (min-width: 481px) {
       #main .search-form-widget .form-item-keys-2 {
         width: 65%; } }
@@ -2954,7 +2955,7 @@ body.not-front.node-type-project aside.sidebars {
       padding-left: 30px; }
   #main .search-form-widget #edit-submit-2 {
     position: absolute;
-    right: 7%;
+    right: 7.5%;
     top: 34.6%;
     height: 60px;
     width: 60px;
@@ -2966,10 +2967,10 @@ body.not-front.node-type-project aside.sidebars {
         top: 57.11%; } }
     @media (min-width: 481px) {
       #main .search-form-widget #edit-submit-2 {
-        right: 17%; } }
+        right: 17.5%; } }
     @media (min-width: 961px) {
       #main .search-form-widget #edit-submit-2 {
-        right: 33%; } }
+        right: 35%; } }
 
 .messages,
 .breadcrumb,

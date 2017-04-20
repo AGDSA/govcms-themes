@@ -1108,7 +1108,7 @@
         }
         
         .breadcrumb {
-            @include from(desktop) {
+            @include from(desktop-mid) {
                 padding-left: 0px;
             }
             color: $secondary-color;
