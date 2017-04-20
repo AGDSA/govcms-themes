@@ -910,13 +910,15 @@ div.workbench-info-block {
     .mm-navbar {
         background-color: #ffffff;
         border: none;
-        height: 60px;
+        height: 70px;
+        padding-top: 20px;
         .mm-title {
             color: $secondary-color;
             font-size: 1.2em;
             font-weight: bold;
             padding: 20px;
             @include title-bar($secondary-color, before, 0px)
+            padding-top: 20px;
         }
     }
     .mm-next {
