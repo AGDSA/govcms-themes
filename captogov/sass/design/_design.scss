@@ -529,7 +529,8 @@
                     .view-mode-compact.node-page,
                     .view-mode-compact.node-project,
                     .view-mode-compact.node-landing-page,
-                    .view-mode-compact.node-webform {
+                    .view-mode-compact.node-webform,
+                    .view-mode-compact.node-type-tableau-dashboard {
                         outline: none;
                         background-color: #ffffff;
                         .field-type-image a {
@@ -1145,7 +1146,8 @@
         .node-type-page,
         .node-type-news-article,
         .node-type-project,
-        .node-type-webform {
+        .node-type-webform,
+        .node-type-tableau-dashboard {
             #block-views-banner-image-top-block {
                 .block__content {
                     max-height: 150px;

@@ -849,11 +849,13 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
   #main .card-view .view-content .view-mode-compact.node-project,
   #main .card-view .view-content .view-mode-compact.node-landing-page,
   #main .card-view .view-content .view-mode-compact.node-webform,
+  #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard,
   #main .card-view .card-wrapper .views-row,
   #main .card-view .card-wrapper .view-mode-compact.node-page,
   #main .card-view .card-wrapper .view-mode-compact.node-project,
   #main .card-view .card-wrapper .view-mode-compact.node-landing-page,
-  #main .card-view .card-wrapper .view-mode-compact.node-webform {
+  #main .card-view .card-wrapper .view-mode-compact.node-webform,
+  #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard {
     outline: none;
     background-color: #ffffff; }
     #main .card-view .view-content .views-row .field-type-image a,
@@ -861,11 +863,13 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
     #main .card-view .view-content .view-mode-compact.node-project .field-type-image a,
     #main .card-view .view-content .view-mode-compact.node-landing-page .field-type-image a,
     #main .card-view .view-content .view-mode-compact.node-webform .field-type-image a,
+    #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-type-image a,
     #main .card-view .card-wrapper .views-row .field-type-image a,
     #main .card-view .card-wrapper .view-mode-compact.node-page .field-type-image a,
     #main .card-view .card-wrapper .view-mode-compact.node-project .field-type-image a,
     #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-type-image a,
-    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-image a {
+    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-image a,
+    #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-type-image a {
       position: relative;
       text-decoration: none; }
       #main .card-view .view-content .views-row .field-type-image a:after,
@@ -873,11 +877,13 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
       #main .card-view .view-content .view-mode-compact.node-project .field-type-image a:after,
       #main .card-view .view-content .view-mode-compact.node-landing-page .field-type-image a:after,
       #main .card-view .view-content .view-mode-compact.node-webform .field-type-image a:after,
+      #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-type-image a:after,
       #main .card-view .card-wrapper .views-row .field-type-image a:after,
       #main .card-view .card-wrapper .view-mode-compact.node-page .field-type-image a:after,
       #main .card-view .card-wrapper .view-mode-compact.node-project .field-type-image a:after,
       #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-type-image a:after,
-      #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-image a:after {
+      #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-image a:after,
+      #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-type-image a:after {
         content: "";
         display: block;
         width: 60px;
@@ -892,22 +898,26 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
     #main .card-view .view-content .view-mode-compact.node-project:hover .field-type-image a:after,
     #main .card-view .view-content .view-mode-compact.node-landing-page:hover .field-type-image a:after,
     #main .card-view .view-content .view-mode-compact.node-webform:hover .field-type-image a:after,
+    #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard:hover .field-type-image a:after,
     #main .card-view .card-wrapper .views-row:hover .field-type-image a:after,
     #main .card-view .card-wrapper .view-mode-compact.node-page:hover .field-type-image a:after,
     #main .card-view .card-wrapper .view-mode-compact.node-project:hover .field-type-image a:after,
     #main .card-view .card-wrapper .view-mode-compact.node-landing-page:hover .field-type-image a:after,
-    #main .card-view .card-wrapper .view-mode-compact.node-webform:hover .field-type-image a:after {
+    #main .card-view .card-wrapper .view-mode-compact.node-webform:hover .field-type-image a:after,
+    #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard:hover .field-type-image a:after {
       left: 40px; }
     #main .card-view .view-content .views-row .field-name-title a,
     #main .card-view .view-content .view-mode-compact.node-page .field-name-title a,
     #main .card-view .view-content .view-mode-compact.node-project .field-name-title a,
     #main .card-view .view-content .view-mode-compact.node-landing-page .field-name-title a,
     #main .card-view .view-content .view-mode-compact.node-webform .field-name-title a,
+    #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-name-title a,
     #main .card-view .card-wrapper .views-row .field-name-title a,
     #main .card-view .card-wrapper .view-mode-compact.node-page .field-name-title a,
     #main .card-view .card-wrapper .view-mode-compact.node-project .field-name-title a,
     #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-name-title a,
-    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-title a {
+    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-title a,
+    #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-name-title a {
       color: #143f88;
       font-size: 20px;
       font-size: 1.25rem;
@@ -929,6 +939,9 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
     #main .card-view .view-content .view-mode-compact.node-webform .field-name-body,
     #main .card-view .view-content .view-mode-compact.node-webform .field-name-field-summary,
     #main .card-view .view-content .view-mode-compact.node-webform .field-type-text-long,
+    #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-name-body,
+    #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-name-field-summary,
+    #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-type-text-long,
     #main .card-view .card-wrapper .views-row .field-name-body,
     #main .card-view .card-wrapper .views-row .field-name-field-summary,
     #main .card-view .card-wrapper .views-row .field-type-text-long,
@@ -943,7 +956,10 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
     #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-type-text-long,
     #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-body,
     #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-field-summary,
-    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-text-long {
+    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-text-long,
+    #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-name-body,
+    #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-name-field-summary,
+    #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-type-text-long {
       color: #818285;
       font-size: 13px;
       font-size: 0.8125rem; }
@@ -962,6 +978,9 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
       #main .card-view .view-content .view-mode-compact.node-webform .field-name-body p,
       #main .card-view .view-content .view-mode-compact.node-webform .field-name-field-summary p,
       #main .card-view .view-content .view-mode-compact.node-webform .field-type-text-long p,
+      #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-name-body p,
+      #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-name-field-summary p,
+      #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-type-text-long p,
       #main .card-view .card-wrapper .views-row .field-name-body p,
       #main .card-view .card-wrapper .views-row .field-name-field-summary p,
       #main .card-view .card-wrapper .views-row .field-type-text-long p,
@@ -976,7 +995,10 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
       #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-type-text-long p,
       #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-body p,
       #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-field-summary p,
-      #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-text-long p {
+      #main .card-view .card-wrapper .view-mode-compact.node-webform .field-type-text-long p,
+      #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-name-body p,
+      #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-name-field-summary p,
+      #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-type-text-long p {
         font-size: 13px;
         font-size: 0.8125rem; }
     #main .card-view .view-content .views-row .field-name-node-link a,
@@ -984,11 +1006,13 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
     #main .card-view .view-content .view-mode-compact.node-project .field-name-node-link a,
     #main .card-view .view-content .view-mode-compact.node-landing-page .field-name-node-link a,
     #main .card-view .view-content .view-mode-compact.node-webform .field-name-node-link a,
+    #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-name-node-link a,
     #main .card-view .card-wrapper .views-row .field-name-node-link a,
     #main .card-view .card-wrapper .view-mode-compact.node-page .field-name-node-link a,
     #main .card-view .card-wrapper .view-mode-compact.node-project .field-name-node-link a,
     #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-name-node-link a,
-    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-node-link a {
+    #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-node-link a,
+    #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-name-node-link a {
       text-decoration: none;
       color: #c6003c;
       text-transform: uppercase;
@@ -1005,11 +1029,13 @@ html.mm-opened #block-block-4 .mobile-menu-button span {
       #main .card-view .view-content .view-mode-compact.node-project .field-name-node-link a:hover,
       #main .card-view .view-content .view-mode-compact.node-landing-page .field-name-node-link a:hover,
       #main .card-view .view-content .view-mode-compact.node-webform .field-name-node-link a:hover,
+      #main .card-view .view-content .view-mode-compact.node-type-tableau-dashboard .field-name-node-link a:hover,
       #main .card-view .card-wrapper .views-row .field-name-node-link a:hover,
       #main .card-view .card-wrapper .view-mode-compact.node-page .field-name-node-link a:hover,
       #main .card-view .card-wrapper .view-mode-compact.node-project .field-name-node-link a:hover,
       #main .card-view .card-wrapper .view-mode-compact.node-landing-page .field-name-node-link a:hover,
-      #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-node-link a:hover {
+      #main .card-view .card-wrapper .view-mode-compact.node-webform .field-name-node-link a:hover,
+      #main .card-view .card-wrapper .view-mode-compact.node-type-tableau-dashboard .field-name-node-link a:hover {
         background-color: #c6003c;
         color: #fff; }
 
@@ -1564,14 +1590,16 @@ footer {
 .node-type-page #block-views-banner-image-top-block .block__content,
 .node-type-news-article #block-views-banner-image-top-block .block__content,
 .node-type-project #block-views-banner-image-top-block .block__content,
-.node-type-webform #block-views-banner-image-top-block .block__content {
+.node-type-webform #block-views-banner-image-top-block .block__content,
+.node-type-tableau-dashboard #block-views-banner-image-top-block .block__content {
   max-height: 150px;
   height: 150px; }
   @media (min-width: 792px) {
     .node-type-page #block-views-banner-image-top-block .block__content,
     .node-type-news-article #block-views-banner-image-top-block .block__content,
     .node-type-project #block-views-banner-image-top-block .block__content,
-    .node-type-webform #block-views-banner-image-top-block .block__content {
+    .node-type-webform #block-views-banner-image-top-block .block__content,
+    .node-type-tableau-dashboard #block-views-banner-image-top-block .block__content {
       max-height: 200px;
       height: 200px; } }
 
