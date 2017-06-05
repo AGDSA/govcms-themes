@@ -1064,12 +1064,21 @@ pages with constrained content
                 .node {
                     border-bottom: 1px solid $primary-gray;
                     margin-bottom: 35px;
+                    &.node-news-article{
+                        .field-name-title{
+                            &:before{
+                                content:"News";
+                                color: $secondary-color;
+                            }
+                        }
+                    }
                     img{
                         display: none;
                     }
                     .field-name-title {
+                        margin-top: 12px;
                         h2{
-                            margin-top: 12px;
+                            margin-top: 0px;
                         }
                         a {
                             text-decoration: none;
