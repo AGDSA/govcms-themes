@@ -1974,6 +1974,8 @@
                         height: 60px;
                     }
                 }
+
+
             }
         }
         
@@ -2349,3 +2351,44 @@
         #block-menu-menu-footer-menu .block__content > ul.menu > li.menu__item > a {
             cursor: default;
         }
+//Adding download style for WYSIWYG
+.file-download .file {
+    border: 1px solid #c9c9c9;
+    padding: 20px;
+    margin: 10px;
+    display: block;
+    margin: 5px 0px;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        width: 95%;
+        color: $primary-gray-text;
+        padding-right: 140px;
+        position: relative;
+        &:after {
+            content: "Download";
+            display: block;
+            color: $secondary-color;
+            border: 2px solid $secondary-color;
+            padding: 2px 15px;
+            // float: right;
+            font-size: 0.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-top: -5px;
+            position: absolute;
+            right: -19px;
+            top: 71%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+        &:hover {
+            &::after {
+                color: #ffffff;
+                // border: 2px solid #ffffff;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
