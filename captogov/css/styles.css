@@ -2703,7 +2703,7 @@ body.page-search #content .search-form {
     width: 97%;
     color: #818285; }
     .node-type-news-article .field-name-field-related-links .field-item a:after {
-      content: "Visit Website";
+      content: "Visit website";
       display: block;
       color: #c6003c;
       border: 2px solid #c6003c;
