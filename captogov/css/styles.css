@@ -331,10 +331,14 @@ div.accordion-container {
           font-size: 14px;
           font-size: 0.875rem; }
 
-.toc-bookmark {
+.toc-bookmark, .empty-anchor {
   display: block;
-  padding-top: 200px;
-  margin-top: -200px; }
+  padding-top: 150px;
+  margin-top: -150px; }
+  @media (min-width: 1121px) {
+    .toc-bookmark, .empty-anchor {
+      padding-top: 200px;
+      margin-top: -200px; } }
 
 .media-element-container {
   display: inline; }
@@ -2749,7 +2753,6 @@ body.page-search #content .search-form {
 .file-download .file {
   border: 1px solid #c9c9c9;
   padding: 20px;
-  margin: 10px;
   display: block;
   margin: 5px 0px; }
   .file-download .file a {
@@ -2781,6 +2784,12 @@ body.page-search #content .search-form {
     .file-download .file a:hover::after {
       color: #ffffff;
       background-color: #c6003c; }
+
+.cke_editable .file-download {
+  border: 1px solid #c9c9c9;
+  padding: 20px;
+  display: block;
+  margin: 5px 0px; }
 
 /*
 

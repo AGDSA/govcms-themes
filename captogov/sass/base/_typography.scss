@@ -338,8 +338,15 @@ div.accordion-container{
 
 .toc-bookmark{
 	display: block;
-	padding-top: 200px;
-    margin-top: -200px;
+	padding-top: 150px;
+    margin-top: -150px;
+    @include from(desktop-mid){
+		padding-top: 200px;
+    	margin-top: -200px;
+    }
+}
+.empty-anchor{
+	@extend .toc-bookmark;
 }
 
 

@@ -2355,7 +2355,7 @@
 .file-download .file {
     border: 1px solid #c9c9c9;
     padding: 20px;
-    margin: 10px;
+    // margin: 10px;
     display: block;
     margin: 5px 0px;
     a {
@@ -2391,4 +2391,10 @@
         }
     }
 }
-
+//Style so author can see class has been applied in WYSIWYG
+.cke_editable .file-download{
+    border: 1px solid #c9c9c9;
+    padding: 20px;
+    display: block;
+    margin: 5px 0px;
+}
