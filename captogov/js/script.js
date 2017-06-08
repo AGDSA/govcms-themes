@@ -77,7 +77,7 @@ $(document).ready(function() {
 //adding class to empty a tags
 $('a').each(function() {
   if(
-    ($(this).attr('href') === undefined) && (!$(this).hasClass("test"))
+    ($(this).attr('href') === undefined) && (!$(this).hasClass("toc-filter-top"))
     ){ 
  $(this).addClass('empty-anchor');
 }
