@@ -74,10 +74,6 @@ $(document).ready(function() {
   });
   /* ===== END MEGAMENU ===== */
 
-  //adding class to empty a tags
-  $('a:not([href])').addClass('empty-anchor');
-});
-
 //adding class to empty a tags
 $('a').each(function() {
   if(
@@ -86,6 +82,11 @@ $('a').each(function() {
  $(this).addClass('empty-anchor');
 }
 });
+
+  
+});
+
+
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.my_custom_behavior = {
