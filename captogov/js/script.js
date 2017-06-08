@@ -79,7 +79,12 @@ $(document).ready(function() {
 });
 
 //adding class to empty a tags
-  $('a:not([href])').addClass('empty-anchor');
+$('a').each(function() {
+  if(
+    ($(this).attr('href') === undefined) && (!$(this).hasClass("test"))
+    ){ 
+ $(this).addClass('empty-anchor');
+}
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
