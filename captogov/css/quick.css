@@ -1,0 +1,4 @@
+/* There were issue compilng for some reason, until they are fixed this is here */
+.header__logo-image{
+	image-rendering: -webkit-optimize-contrast;
+}
