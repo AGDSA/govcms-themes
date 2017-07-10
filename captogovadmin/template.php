@@ -77,7 +77,7 @@
 function captogovadmin_form_alter( &$form, &$form_state, $form_id ){
 	if($form_id == "page_node_form" && $form['type']['#value'] == "page") {
 		$form['scheduler_settings']['unpublish_on']['#title'] = "Set review date";
-		$form['scheduler_settings']['unpublish_on']['#description'] = "Leave blank for no review schedule";
+		$form['scheduler_settings']['unpublish_on']['#description'] = "Leave blank for no review schedule. At the scheduled time depending on the 'Remain published when requiring review' setting the page may be unpublished.";
 	}
 }
 
