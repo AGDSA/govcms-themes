@@ -2,3 +2,134 @@
 .header__logo-image{
 	image-rendering: -webkit-optimize-contrast;
 }
+
+/* Working out events styles */
+
+/* Event View Form */
+.view-id-events .views-exposed-form{
+  width: 100%;
+}
+.view-id-events .views-exposed-form #edit-combine-wrapper label{
+  display: none;
+}
+.view-id-events .views-exposed-form #edit-combine-wrapper{
+  width: 50%;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 26px;
+}
+@media (max-width: 950px) {
+  .view-id-events .views-exposed-form #edit-combine-wrapper{
+    width: 100%;
+  }
+  .view-id-events .views-exposed-form #edit-field-start-date-value-wrapper{
+    width: 70%;
+  }
+  .view-id-events .views-exposed-form .views-submit-button{
+    width: 30%;
+    min-width: 115px;
+  }
+}
+.view-id-events .views-exposed-form #edit-combine-wrapper input{    
+  width: 100%;
+  padding: 20px;
+  height: 60px;
+  box-shadow: 0px 0px 33px -7px #818285;
+  border: none;
+  background-color: #ffffff;
+  color: #002056;
+  font-weight: bold;
+}
+.view-id-events .views-exposed-form input#edit-combine::placeholder {
+    font-weight: normal;
+}
+
+
+
+
+
+.view-id-events .views-exposed-form #edit-field-start-date-value-wrapper{
+  width: 30%;
+}
+.view-id-events .views-exposed-form #edit-field-start-date-value-wrapper label{
+  display: inline-block;
+  width: 30%;
+  height: 60px;
+  padding-top: 20px;
+}
+.view-id-events .views-exposed-form #edit-field-start-date-value-wrapper .views-widget{
+  display: inline-block;
+  width: 69%;
+  box-shadow: 0px 0px 33px -7px #818285;
+}
+
+.view-id-events .views-exposed-form #edit-field-start-date-value-wrapper .views-widget .form-item-field-start-date-value-value,
+.view-id-events .views-exposed-form #edit-field-start-date-value-wrapper .views-widget #edit-field-start-date-value-value{
+  width: 100%;
+}
+
+.view-id-events .views-exposed-form #edit-field-start-date-value-wrapper .views-widget #edit-field-start-date-value-value .form-item{
+  width: 50%;
+}
+
+
+
+.view-id-events .views-exposed-form #edit-field-start-date-value-wrapper .views-widget #edit-field-start-date-value-value .form-item select{
+  width: 100%;
+  padding: 20px;
+  height: 60px;
+  border: none;
+  background-color: #fff;
+  color: #002056;
+  margin-right: 0px;
+  width: auto;
+}
+
+.view-id-events .views-exposed-form .views-submit-button{
+  width: 20%;
+}
+.view-id-events .views-exposed-form .views-submit-button input{
+  height: 60px;
+  margin-top: 0;
+}
+
+
+
+/* Event View Listing */
+
+.view-id-events .view-content{
+  border-top: 6px solid #143f88;
+  padding-top: 35px;
+  margin: 40px 0px;
+}
+
+.view-id-events .view-content .node{
+  background-color: #F8F7F7;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.view-id-events .view-content .node .field-name-field-start-date span{
+  display: inline-block;
+  background-color: #002056;
+  padding: 4px 20px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+
+.view-id-events .view-content .node .field-name-title h2{
+  margin-top: 0;
+}
+.view-id-events .view-content .node .field-name-title h2 a{
+  text-decoration: none;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.view-id-events .view-content .node .field-name-body{
+  margin-bottom: 0;
+}
