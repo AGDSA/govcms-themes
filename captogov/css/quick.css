@@ -133,3 +133,16 @@
 .view-id-events .view-content .node .field-name-body{
   margin-bottom: 0;
 }
+
+/* Event internal page */
+.node-type-event #block-views-banner-image-top-block .block__content{
+  max-height: 200px;
+  height: 200px;
+}
+
+@media (max-width: 950px) {
+  .node-type-event #block-views-banner-image-top-block .block__content{
+    max-height: 150px;
+    height: 150px !important;
+  }
+}
