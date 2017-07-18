@@ -51,10 +51,11 @@
 
 .view-id-events .views-exposed-form #edit-field-start-date-value-wrapper{
   width: 30%;
+  display: flex;
 }
 .view-id-events .views-exposed-form #edit-field-start-date-value-wrapper label{
   display: inline-block;
-  width: 30%;
+  width: 28%;
   height: 60px;
   line-height: 60px;
 }
