@@ -24,10 +24,10 @@
     width: 100%;
   }
   .view-id-events .views-exposed-form #edit-field-start-date-value-wrapper{
-    width: 70%;
+    width: 70% !important;
   }
   .view-id-events .views-exposed-form .views-submit-button{
-    width: 30%;
+    width: 30% !important;
     min-width: 115px;
   }
 }
