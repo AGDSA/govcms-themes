@@ -56,7 +56,7 @@
   display: inline-block;
   width: 30%;
   height: 60px;
-  padding-top: 20px;
+  line-height: 60px;
 }
 .view-id-events .views-exposed-form #edit-field-start-date-value-wrapper .views-widget{
   display: inline-block;
