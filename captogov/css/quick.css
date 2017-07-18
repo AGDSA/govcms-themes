@@ -147,3 +147,7 @@
     height: 150px !important;
   }
 }
+body.node-type-event #main{
+  max-width: 830px;
+  margin: auto;
+}
