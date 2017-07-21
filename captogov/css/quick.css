@@ -9,8 +9,8 @@ body..page-node-2846 aside.sidebars,
 body.page-node-2861 aside.sidebars{
   display: none;
 }
-body.page-node-2846 #content,
-body.page-node-2861 #content{
+body.page-node-2846 #page #main #content,
+body.page-node-2861 #page #main #content{
     max-width: 1120px;
     width: 100%;
     margin: 0 auto;
