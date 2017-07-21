@@ -6,7 +6,9 @@
 /* Working out events styles */
 
 body.page-node-2846 aside.sidebars,
-body.page-node-2861 aside.sidebars{
+body.page-node-2861 aside.sidebars,
+body.page-node-2846 #block-webform-client-block-22,
+body.page-node-2861 #block-webform-client-block-22{
   display: none;
 }
 body.page-node-2846 #page #main #content,
@@ -179,8 +181,6 @@ body.node-type-event #main .field-label {
   color: #6f6f6f;
   margin-top: 30px;
 }
-
-
 
 /* Event view pager */
 .view-id-events .pager{
