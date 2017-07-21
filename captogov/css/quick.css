@@ -5,6 +5,18 @@
 
 /* Working out events styles */
 
+.page-node-2846 aside.sidebars{
+  display: none;
+}
+body.page-node-2846 #content{
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    float: none;
+    left: auto;
+    right: auto;
+}
 /* Event View Form */
 .view-id-events .views-exposed-form{
   width: 100%;
@@ -99,6 +111,7 @@
 
 /* Event View Listing */
 
+
 .view-id-events .view-content{
   border-top: 6px solid #143f88;
   padding-top: 35px;
@@ -155,4 +168,12 @@ body.node-type-event #main{
 body.node-type-event .breadcrumb-wrapper .breadcrumb{
   max-width: 830px;
   margin: auto;
+}
+body.node-type-event #main .field-name-field-start-date {
+  font-weight: bold;
+}
+body.node-type-event #main .field-label {
+  font-size: 1.5rem;
+  color: #6f6f6f;
+  margin-top: 30px;
 }
