@@ -149,6 +149,9 @@ function captogov_form_alter( &$form, &$form_state, $form_id )
     if ($form_id == 'search_api_page_search_form_search') {    
         $form['keys_2']['#attributes']['placeholder'] = t( 'Search our website' );
     }
+    if($form_id == "event_node_form" && $form['type']['#value'] == "event") {
+      $form['actions']['submit']['#value'] = t('Submit');  
+    }
 }
 
 //Function to get node ID of children of menu item

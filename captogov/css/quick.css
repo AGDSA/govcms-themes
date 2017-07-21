@@ -5,10 +5,12 @@
 
 /* Working out events styles */
 
-.page-node-2846 aside.sidebars{
+body..page-node-2846 aside.sidebars,
+body.page-node-2861 aside.sidebars{
   display: none;
 }
-body.page-node-2846 #content{
+body.page-node-2846 #content,
+body.page-node-2861 #content{
     max-width: 1120px;
     width: 100%;
     margin: 0 auto;
