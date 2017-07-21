@@ -5,7 +5,7 @@
 
 /* Working out events styles */
 
-body..page-node-2846 aside.sidebars,
+body.page-node-2846 aside.sidebars,
 body.page-node-2861 aside.sidebars{
   display: none;
 }
