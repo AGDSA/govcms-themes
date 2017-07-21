@@ -179,3 +179,38 @@ body.node-type-event #main .field-label {
   color: #6f6f6f;
   margin-top: 30px;
 }
+
+
+
+/* Event view pager */
+.view-id-events .pager{
+  border-top: 3px solid #002056;
+  background-color: #ffffff;
+  padding-top: 40px;
+}
+.view-id-events .pager li.pager-current{
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #c6003c;
+  background: none;
+  border-bottom: 4px solid #c6003c;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0px 8px;
+}
+.view-id-events .pager li.pager-item{
+  background: none;
+}
+.view-id-events .pager li.pager-item a{
+  color: #555;
+  text-decoration: none;
+  font-weight: normal;
+}
+.view-id-events .pager .pager-ellipsis,
+.view-id-events .pager .pager-next,
+.view-id-events .pager .pager-last,
+.view-id-events .pager .pager-previous,
+.view-id-events .pager .pager-first{
+  display: none; 
+}
