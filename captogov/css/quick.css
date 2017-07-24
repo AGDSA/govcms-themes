@@ -128,7 +128,7 @@ body.page-node-2861 #page #main #content{
   padding: 30px;
   margin-bottom: 20px;
 }
-#page .view-id-events .view-content .views-row .field-name-field-start-date span,
+#page .view-id-events .view-content .views-row .views-field-field-start-date span,
 .view-id-events .view-content .node .field-name-field-start-date span{
   display: inline-block;
   background-color: #002056;
@@ -140,19 +140,19 @@ body.page-node-2861 #page #main #content{
   font-size: 0.8125rem;
 }
 
-#page .view-id-events .view-content .views-row .field-name-title h2,
+#page .view-id-events .view-content .views-row .views-field-title h2,
 .view-id-events .view-content .node .field-name-title h2{
   margin-top: 0;
 }
 
-#page .view-id-events .view-content .views-row .field-name-title h2 a,
+#page .view-id-events .view-content .views-row .views-field-title h2 a,
 .view-id-events .view-content .node .field-name-title h2 a{
   text-decoration: none;
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-#page .view-id-events .view-content .views-row .field-name-body,
+#page .view-id-events .view-content .views-row .views-field-body,
 .view-id-events .view-content .node .field-name-body{
   margin-bottom: 0;
 }
