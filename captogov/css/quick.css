@@ -157,6 +157,10 @@ body.page-node-2861 #page #main #content{
   margin-bottom: 0;
 }
 
+#content .view-id-events .views-field {
+    margin-bottom: 20px;
+}
+
 /* Event internal page */
 .node-type-event #block-views-banner-image-top-block .block__content{
   max-height: 200px;
