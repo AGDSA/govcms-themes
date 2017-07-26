@@ -178,6 +178,9 @@ body.node-type-event #main{
   max-width: 830px;
   margin: auto;
 }
+body.node-type-event #main #content .node-event{
+  margin-top: 30px;
+}
 body.node-type-event .breadcrumb-wrapper .breadcrumb{
   max-width: 830px;
   margin: auto;
