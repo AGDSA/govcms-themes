@@ -219,6 +219,7 @@ body.node-type-event #main .field-label {
   text-decoration: none;
   font-weight: normal;
 }
+.not-logged-in .vertical-tabs,
 .view-id-events .pager .pager-ellipsis,
 .view-id-events .pager .pager-next,
 .view-id-events .pager .pager-last,
