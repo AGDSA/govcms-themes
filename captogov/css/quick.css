@@ -152,6 +152,21 @@ body.page-node-2861 #page #main #content{
   font-size: 1.25rem;
 }
 
+
+#page .view-id-events .view-content .views-row .views-field-field-fees div.field-content,
+#page .view-id-events .view-content .views-row .views-field-field-location div.field-content{
+  display: inline;
+}
+
+#page .view-id-events .view-content .views-row .views-field-field-fees .views-label,
+#page .view-id-events .view-content .views-row .views-field-field-location .views-label {
+  font-weight: bold;
+}
+
+#page .view-id-events .view-content .views-row .views-field-field-location{
+  margin-bottom: 5px;
+}
+
 #page .view-id-events .view-content .views-row .views-field-body,
 .view-id-events .view-content .node .field-name-body{
   margin-bottom: 0;
