@@ -47,7 +47,7 @@ body.page-node-2861 #page #main #content{
     min-width: 115px;
   }
 }
-.view-id-events .views-exposed-form #edit-combine-wrapper input{    
+.view-id-events .views-exposed-form #edit-combine-wrapper input{
   width: 100%;
   padding: 20px;
   height: 60px;
@@ -238,5 +238,22 @@ body.node-type-event #main .field-label {
 .view-id-events .pager .pager-last,
 .view-id-events .pager .pager-previous,
 .view-id-events .pager .pager-first{
-  display: none; 
+  display: none;
+}
+
+/* Twitter quick fix */
+@media (min-width: 961px){
+	#single-tweet-feed ul {
+	    height: 200px;
+	}
+	#single-tweet-feed ul:before{
+		height: 196px;
+	}
+	#single-tweet-feed ul li .user{
+		padding-bottom: 20px;
+	}
+	#single-tweet-feed ul li .timePosted{
+		float: none;
+    clear: none;
+	}
 }
