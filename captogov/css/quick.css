@@ -257,3 +257,17 @@ body.node-type-event #main .field-label {
     clear: none;
 	}
 }
+
+/* Test sidebar layout tweak */
+@media (min-width: 961px){
+  body.logged-in.not-front.node-type-page aside,
+  body.logged-in.not-front.node-type-project aside{
+    width: 30%;
+    left: -69%;
+  }
+  body.logged-in.not-front.node-type-page #content,
+  body.logged-in.not-front.node-type-project #content{
+    width: 65%;
+    left: 35%;
+  }
+}
