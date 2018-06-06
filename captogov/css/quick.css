@@ -271,3 +271,27 @@ body.node-type-event #main .field-label {
     left: 35%;
   }
 }
+
+/* Test typography changes */
+body.logged-in h2,
+body.logged-in h3,
+body.logged-in h4{
+  margin-top: 40px;
+}
+
+body.logged-in .field-name-body .field-item h2:first-child{
+  margin-top: 25px;
+}
+
+body.logged-in .field-name-body p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+body.logged-in .accordion-button{
+  padding: 20px 35px;
+}
+
+body.logged-in div.accordion-container {
+    padding: 15px 35px;
+}
