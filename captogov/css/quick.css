@@ -309,6 +309,13 @@ body.logged-in div.accordion-container {
   color: #6f6f6f;
 }
 
+.bean-contact-details p,
+.bean-contact-details a,
+.bean-contact-details ul,
+.bean-contact-details li{
+  font-size: 1.2em;
+}
+
 .bean-contact-details .field-label:before{
   content: " ";
   display: block;
