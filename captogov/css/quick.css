@@ -295,3 +295,49 @@ body.logged-in .accordion-button{
 body.logged-in div.accordion-container {
     padding: 15px 35px;
 }
+
+/* Contact details bean styles */
+.bean-contact-details{
+  border-top: 1px solid #e4e4e3;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.bean-contact-details .field-label{
+  padding-left: 35px;
+  position: relative;
+  color: #6f6f6f;
+}
+
+.bean-contact-details .field-label:before{
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  top: -2px;
+}
+
+.bean-contact-details .field-name-field-phone .field-label:before{
+  background: url("/sites/g/files/net2876/themes/site/captogov/images/phone.svg") no-repeat center center;
+  background-size: 74%;
+}
+
+.bean-contact-details .field-name-field-in-person .field-label:before{
+  background: url("/sites/g/files/net2876/themes/site/captogov/images/people.svg") no-repeat center center;
+  background-size: 100%;
+}
+
+.bean-contact-details .field-name-field-post .field-label:before{
+  background: url("/sites/g/files/net2876/themes/site/captogov/images/letter.svg") no-repeat center center;
+  background-size: 95%;
+}
+
+@media (min-width: 600px){
+  .bean-contact-details .field{
+    width: 32%;
+    display: block;
+    float: left;
+  }
+}
