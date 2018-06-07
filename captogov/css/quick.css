@@ -309,6 +309,10 @@ body.logged-in div.accordion-container {
   color: #6f6f6f;
 }
 
+#content .bean-contact-details div.field.field-type-text-long{
+	margin-bottom: 35px;
+}
+
 .bean-contact-details p,
 .bean-contact-details a,
 .bean-contact-details ul,
@@ -346,5 +350,6 @@ body.logged-in div.accordion-container {
     width: 32%;
     display: block;
     float: left;
+		padding-right: 10px;
   }
 }
