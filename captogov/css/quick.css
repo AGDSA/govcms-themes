@@ -353,3 +353,7 @@ body.logged-in div.accordion-container {
 		padding-right: 10px;
   }
 }
+
+.not-front #content {
+    margin-bottom: 40px !important;
+}
