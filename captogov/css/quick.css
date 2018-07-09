@@ -314,7 +314,6 @@ body.logged-in div.accordion-container {
 }
 
 .bean-contact-details p,
-.bean-contact-details a,
 .bean-contact-details ul,
 .bean-contact-details li{
   font-size: 1.2em;
@@ -343,6 +342,21 @@ body.logged-in div.accordion-container {
 .bean-contact-details .field-name-field-post .field-label:before{
   background: url("/sites/g/files/net2876/themes/site/captogov/images/letter.svg") no-repeat center center;
   background-size: 95%;
+}
+
+.bean-contact-details .field-name-field-web .field-label:before{
+	background: url("/sites/g/files/net2876/themes/site/captogov/images/web.jpg") no-repeat center center;
+  background-size: 100%;
+}
+
+.bean-contact-details .field-name-field-email .field-label:before{
+	background: url("/sites/g/files/net2876/themes/site/captogov/images/email.jpg") no-repeat center center;
+  background-size: 100%;
+}
+
+.bean-contact-details .field-name-field-fax .field-label:before{
+	background: url("/sites/g/files/net2876/themes/site/captogov/images/fax.jpg") no-repeat center center;
+  background-size: 100%;
 }
 
 @media (min-width: 600px){
