@@ -260,39 +260,39 @@ body.node-type-event #main .field-label {
 
 /* Test sidebar layout tweak */
 @media (min-width: 961px){
-  body.logged-in.not-front.node-type-page aside,
-  body.logged-in.not-front.node-type-project aside{
+  body.not-front.node-type-page aside,
+  body.not-front.node-type-project aside{
     width: 30%;
     left: -69%;
   }
-  body.logged-in.not-front.node-type-page #content,
-  body.logged-in.not-front.node-type-project #content{
+  body.not-front.node-type-page #content,
+  body.not-front.node-type-project #content{
     width: 65%;
     left: 35%;
   }
 }
 
 /* Test typography changes */
-body.logged-in h2,
-body.logged-in h3,
-body.logged-in h4{
+body h2,
+body h3,
+body h4{
   margin-top: 45px;
 }
 
-body.logged-in .field-name-body .field-item h2:first-child{
+body .field-name-body .field-item h2:first-child{
   margin-top: 25px;
 }
 
-body.logged-in .field-name-body p {
+body .field-name-body p {
     margin-top: 15px;
     margin-bottom: 25px;
 }
 
-body.logged-in .accordion-button{
+body .accordion-button{
   padding: 20px 35px;
 }
 
-body.logged-in div.accordion-container {
+body div.accordion-container {
     padding: 15px 35px;
 }
 
