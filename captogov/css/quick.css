@@ -319,6 +319,10 @@ body div.accordion-container {
   font-size: 1.2em;
 }
 
+.bean-contact-details a{
+	word-wrap: break-word;
+}
+
 .bean-contact-details .field-label:before{
   content: " ";
   display: block;
