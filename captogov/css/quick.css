@@ -258,6 +258,19 @@ body.node-type-event #main .field-label {
 	}
 }
 
+@media (min-width: 961px) and (max-width: 1121px){
+	#single-tweet-feed ul li .tweet {
+	    width: 60%;
+	}
+}
+
+@media (min-width: 1351px){
+	#single-tweet-feed ul li .tweet {
+	    width: 55%;
+	    max-height: 165px;
+	}
+}
+
 /* Test sidebar layout tweak */
 @media (min-width: 961px){
   body.not-front.node-type-page aside,
