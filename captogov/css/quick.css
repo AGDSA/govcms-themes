@@ -251,6 +251,7 @@ body.node-type-event #main .field-label {
 	}
 	#single-tweet-feed ul li .user{
 		padding-bottom: 20px;
+		min-width: 300px;
 	}
 	#single-tweet-feed ul li .timePosted{
 		float: none;
@@ -260,13 +261,13 @@ body.node-type-event #main .field-label {
 
 @media (min-width: 961px) and (max-width: 1121px){
 	#single-tweet-feed ul li .tweet {
-	    width: 60%;
+	    width: 50%;
 	}
 }
 
 @media (min-width: 1351px){
 	#single-tweet-feed ul li .tweet {
-	    width: 55%;
+	    width: 45%;
 	    max-height: 165px;
 	}
 }
@@ -274,6 +275,12 @@ body.node-type-event #main .field-label {
 #single-tweet-feed ul li .user > div > a > div > span > span:nth-child(2n) {
     left: 44%;
 }
+
+#single-tweet-feed ul li .user span:nth-child(2n) {
+  left: 32%;
+}
+
+
 
 /* Test sidebar layout tweak */
 @media (min-width: 961px){
